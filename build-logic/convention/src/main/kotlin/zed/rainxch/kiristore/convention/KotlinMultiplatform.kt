@@ -5,7 +5,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
-internal fun Project.configureKotlinMultiplatform() {
+fun Project.configureKotlinMultiplatform() {
     if (!isAndroidDisabled) {
         extensions.configure<LibraryExtension> {
             namespace = this@configureKotlinMultiplatform.pathToPackageName()
