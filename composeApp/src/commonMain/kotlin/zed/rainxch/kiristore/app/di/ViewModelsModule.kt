@@ -28,4 +28,3 @@ val viewModelsModule =
         viewModelOf(::TweaksViewModel)
         viewModelOf(::StarredReposViewModel)
     }
-
