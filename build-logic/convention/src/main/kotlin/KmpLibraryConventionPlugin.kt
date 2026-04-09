@@ -5,6 +5,7 @@ import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 import zed.rainxch.kiristore.convention.configureKotlinAndroid
 import zed.rainxch.kiristore.convention.configureKotlinMultiplatform
+import zed.rainxch.kiristore.convention.isAndroidDisabled
 import zed.rainxch.kiristore.convention.libs
 import zed.rainxch.kiristore.convention.pathToResourcePrefix
 
