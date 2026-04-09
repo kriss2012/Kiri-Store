@@ -27,6 +27,6 @@ kotlin {
 
 compose.resources {
     publicResClass = true
-    packageOfResClass = "zed.rainxch.githubstore.core.presentation.res"
+    packageOfResClass = "zed.rainxch.kiristore.core.presentation.res"
     generateResClass = auto
 }
