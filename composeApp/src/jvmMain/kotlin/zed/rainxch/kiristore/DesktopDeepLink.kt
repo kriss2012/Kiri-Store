@@ -174,4 +174,3 @@ object DesktopDeepLink {
             null
         }
 }
-
