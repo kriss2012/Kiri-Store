@@ -1,0 +1,14 @@
+Github Store is a "play store" for GitHub releases that helps you discover and install apps directly from GitHub repositories.
+
+The app automatically discovers repositories that ship installable binaries (APK, EXE, DMG, etc.) and lets you install the latest release with one click.
+
+FEATURES
+
+- Smart discovery with Popular, Recently Updated, and New sections
+- Platform-aware filtering - only shows apps compatible with your device
+- Always installs from the latest published release
+- Rich app details with README, changelog, and statistics
+- GitHub login support for higher API rate limits
+- Material 3 design with dark mode support
+
+Built with Kotlin Multiplatform and Compose Multiplatform.

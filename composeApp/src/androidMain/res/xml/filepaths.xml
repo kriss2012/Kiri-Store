@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Public Downloads/Kiri Store folder (visible in file managers) -->
+    <external-path
+        name="ghs_downloads"
+        path="Download/Kiri Store/" />
+
+    <!-- Legacy app-private downloads (for migration) -->
+    <external-files-path
+        name="ghs_legacy_downloads"
+        path="/" />
+
+    <cache-path
+        name="exports"
+        path="exports/" />
+
+</paths>

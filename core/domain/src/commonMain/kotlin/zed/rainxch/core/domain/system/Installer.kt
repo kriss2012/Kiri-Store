@@ -1,0 +1,63 @@
+package zed.rainxch.core.domain.system
+
+import zed.rainxch.core.domain.model.GithubAsset
+import zed.rainxch.core.domain.model.SystemArchitecture
+
+/**
+ * Result of an [Installer.install] call.
+ */
+enum class InstallOutcome {
+    /**
+     * Installation completed synchronously (e.g. Shizuku silent install).
+     * The package is already installed on the system — no need to wait
+     * for a broadcast to confirm.
+     */
+    COMPLETED,
+
+    /**
+     * Installation was handed off to the system UI or an external process.
+     * The caller should treat the install as pending until a
+     * PACKAGE_ADDED / PACKAGE_REPLACED broadcast confirms it.
+     */
+    DELEGATED_TO_SYSTEM,
+}
+
+interface Installer {
+    suspend fun isSupported(extOrMime: String): Boolean
+
+    suspend fun ensurePermissionsOrThrow(extOrMime: String)
+
+    suspend fun install(
+        filePath: String,
+        extOrMime: String,
+    ): InstallOutcome
+
+    fun uninstall(packageName: String)
+
+    fun isAssetInstallable(assetName: String): Boolean
+
+    fun choosePrimaryAsset(assets: List<GithubAsset>): GithubAsset?
+
+    fun detectSystemArchitecture(): SystemArchitecture
+
+    fun isObtainiumInstalled(): Boolean
+
+    fun openInObtainium(
+        repoOwner: String,
+        repoName: String,
+        onOpenInstaller: () -> Unit,
+    )
+
+    fun isAppManagerInstalled(): Boolean
+
+    fun openInAppManager(
+        filePath: String,
+        onOpenInstaller: () -> Unit,
+    )
+
+    fun getApkInfoExtractor(): InstallerInfoExtractor
+
+    fun openApp(packageName: String): Boolean
+
+    fun openWithExternalInstaller(filePath: String)
+}

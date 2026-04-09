@@ -1,0 +1,622 @@
+<resources>
+
+    <!-- Apps feature - App -->
+    <string name="app_name">Kiri Store</string>
+
+    <!-- Apps feature - Navigation / Top bar -->
+    <string name="installed_apps">설치된 앱</string>
+    <string name="navigate_back">뒤로 이동</string>
+    <string name="check_for_updates">업데이트 확인</string>
+
+    <!-- Apps feature - Errors / messages -->
+    <string name="cannot_launch">%1$s을(를) 실행할 수 없습니다</string>
+    <string name="failed_to_open">%1$s을(를) 열지 못했습니다</string>
+    <string name="failed_to_update">%1$s 업데이트 실패: %2$s</string>
+    <string name="update_failed">업데이트 실패</string>
+    <string name="update_all_failed">모두 업데이트 실패: %1$s</string>
+    <string name="all_apps_updated_successfully">모든 앱이 성공적으로 업데이트되었습니다</string>
+    <string name="no_updates_available">사용 가능한 업데이트가 없습니다</string>
+
+    <!-- Apps feature - Search -->
+    <string name="search_your_apps">앱 검색</string>
+    <string name="no_apps_found">앱을 찾을 수 없습니다</string>
+
+    <!-- Apps feature - Actions -->
+    <string name="update_all">모두 업데이트</string>
+    <string name="update">업데이트</string>
+    <string name="open">열기</string>
+    <string name="cancel">취소</string>
+
+    <!-- Apps feature - Update states -->
+    <string name="checking">확인 중…</string>
+    <string name="updated_successfully">성공적으로 업데이트됨</string>
+    <string name="error_with_message">오류: %1$s</string>
+
+    <!-- Apps feature - Update all progress -->
+    <string name="updating_x_of_y">%2$d개 중 %1$d개 업데이트 중</string>
+    <string name="currently_updating">현재 업데이트 중: %1$s</string>
+
+    <!-- Auth general -->
+    <string name="waiting_for_authorization">인증 대기 중…</string>
+    <string name="signed_in">로그인 완료!</string>
+    <string name="redirecting_message">이제 앱을 사용할 수 있습니다. 이동 중…</string>
+    <string name="try_again">다시 시도</string>
+
+    <!-- Errors -->
+    <string name="auth_error_with_message">오류: %1$s</string>
+
+    <!-- Device flow -->
+    <string name="enter_code_on_github">GitHub에 다음 코드를 입력하세요:</string>
+    <string name="copy_code">코드 복사</string>
+    <string name="open_github">GitHub 열기</string>
+
+    <!-- Logged out -->
+    <string name="unlock_full_experience">전체\n기능 잠금 해제</string>
+
+    <string name="more_requests">더 많은 요청</string>
+    <string name="more_requests_description">
+        로그인하여 API 요청 한도를 늘리고 중단 없이 사용하세요.
+    </string>
+
+    <string name="sign_in_with_github">GitHub로 로그인</string>
+
+    <string name="error_cancelled">취소됨</string>
+    <string name="error_unknown">알 수 없는 오류</string>
+
+    <string name="language_label">언어:</string>
+
+    <string name="discover_repositories">저장소 탐색</string>
+    <string name="search_repositories_hint">저장소, 설명 검색…</string>
+
+    <!-- Filters -->
+    <string name="filter_by_language">언어로 필터링</string>
+
+    <!-- Results -->
+    <string name="results_found">%1$d개의 결과를 찾았습니다</string>
+
+    <!-- Sorting -->
+    <string name="sort_by">정렬 기준</string>
+    <string name="close">닫기</string>
+
+    <string name="sort_most_stars">별 많은 순</string>
+    <string name="sort_most_forks">포크 많은 순</string>
+    <string name="sort_best_match">최적의 결과</string>
+
+    <string name="sort_order_descending">내림차순</string>
+    <string name="sort_order_ascending">오름차순</string>
+    <string name="sort_label">정렬</string>
+
+    <!-- Programming languages -->
+    <string name="language_all">모든 언어</string>
+    <string name="language_kotlin">Kotlin</string>
+    <string name="language_java">Java</string>
+    <string name="language_javascript">JavaScript</string>
+    <string name="language_typescript">TypeScript</string>
+    <string name="language_python">Python</string>
+    <string name="language_swift">Swift</string>
+    <string name="language_rust">Rust</string>
+    <string name="language_go">Go</string>
+    <string name="language_csharp">C#</string>
+    <string name="language_cpp">C++</string>
+    <string name="language_c">C</string>
+    <string name="language_dart">Dart</string>
+    <string name="language_ruby">Ruby</string>
+    <string name="language_php">PHP</string>
+
+    <string name="search_failed">검색 실패</string>
+    <string name="no_repositories_found">저장소를 찾을 수 없습니다</string>
+
+    <!-- Settings -->
+    <string name="profile_title">프로필</string>
+
+    <!-- Sections -->
+    <string name="section_appearance">외관</string>
+    <string name="section_about">정보</string>
+    <string name="section_network">네트워크</string>
+
+    <!-- Appearance -->
+    <string name="theme_color">테마 색상</string>
+    <string name="amoled_black_theme">AMOLED 블랙 테마</string>
+    <string name="amoled_black_description">다크 모드용 순수 블랙 배경</string>
+    <string name="selected_color">선택된 색상: %1$s</string>
+
+    <!-- About -->
+    <string name="version">버전</string>
+    <string name="help_support">도움말 및 지원</string>
+
+    <!-- Account -->
+    <string name="logout">로그아웃</string>
+
+    <!-- Snackbar -->
+    <string name="logout_success">성공적으로 로그아웃되었습니다. 이동 중...</string>
+    <string name="cache_cleared">캐시가 성공적으로 삭제되었습니다</string>
+
+    <!-- Dialog -->
+    <string name="warning">경고!</string>
+    <string name="logout_confirmation">정말 로그아웃하시겠습니까?</string>
+
+    <!-- Theme names -->
+    <string name="theme_dynamic">동적</string>
+    <string name="theme_ocean">오션</string>
+    <string name="theme_purple">퍼플</string>
+    <string name="theme_forest">포레스트</string>
+    <string name="theme_slate">슬레이트</string>
+    <string name="theme_amber">앰버</string>
+
+    <!-- Navigation & actions -->
+    <string name="open_repository">저장소 열기</string>
+    <string name="open_in_browser">브라우저에서 열기</string>
+    <string name="cancel_download">다운로드 취소</string>
+    <string name="show_install_options">설치 옵션 보기</string>
+
+    <!-- Errors & states -->
+    <string name="error_loading_details">상세 정보를 불러오는 중 오류 발생</string>
+    <string name="retry">다시 시도</string>
+    <string name="no_description">설명이 없습니다.</string>
+    <string name="no_release_notes">릴리스 노트가 없습니다.</string>
+    <string name="report_issue">문제 신고</string>
+
+    <!-- Headers -->
+    <string name="about_this_app">이 앱 정보</string>
+    <string name="install_logs">설치 로그</string>
+    <string name="author">작성자</string>
+    <string name="whats_new">새로운 기능</string>
+
+    <!-- Install status -->
+    <string name="installed">설치됨</string>
+    <string name="update_available">업데이트 가능</string>
+    <string name="not_available">사용 불가</string>
+    <string name="install_latest">최신 버전 설치</string>
+    <string name="reinstall">재설치</string>
+    <string name="update_app">앱 업데이트</string>
+
+    <!-- Download stages -->
+    <string name="downloading">다운로드 중</string>
+    <string name="updating">업데이트 중</string>
+    <string name="verifying">검증 중</string>
+    <string name="installing">설치 중</string>
+
+    <!-- Install helpers -->
+    <string name="open_in_obtainium">Obtainium에서 열기</string>
+    <string name="obtainium_description">업데이트 자동 관리</string>
+    <string name="inspect_with_appmanager">AppManager로 검사</string>
+    <string name="appmanager_description">권한, 트래커 및 보안 확인</string>
+
+    <!-- Author -->
+    <string name="profile">프로필</string>
+
+    <!-- Stats -->
+    <string name="forks">포크</string>
+    <string name="stars">별</string>
+    <string name="issues">이슈</string>
+
+    <!-- Misc -->
+    <string name="by_author">%1$s 작성</string>
+    <string name="installed_version">• 설치됨: %1$s</string>
+    <string name="architecture_compatible">아키텍처 호환</string>
+    <string name="update_to_version">%1$s(으)로 업데이트</string>
+
+    <!-- General -->
+    <string name="error_load_details">상세 정보를 불러오지 못했습니다</string>
+    <string name="installer_saved_downloads">설치 파일이 다운로드 폴더에 저장되었습니다</string>
+
+    <!-- Download / install states -->
+    <string name="log_download_started">다운로드 시작됨</string>
+    <string name="log_downloaded">다운로드 완료</string>
+    <string name="log_update_started">업데이트 시작됨</string>
+    <string name="log_installed">설치됨</string>
+    <string name="log_updated">업데이트됨</string>
+    <string name="log_cancelled">취소됨</string>
+    <string name="log_install_started">설치 시작됨</string>
+    <string name="log_error">오류</string>
+    <string name="log_error_with_message">오류: %1$s</string>
+
+    <!-- External tools -->
+    <string name="log_prepare_appmanager">AppManager 준비 중</string>
+    <string name="log_opened_appmanager">AppManager에서 열림</string>
+    <string name="log_permission_blocked">기기 정책에 의해 설치 권한이 차단됨</string>
+    <string name="log_opened_external_installer">외부 설치 프로그램에서 열림</string>
+    <string name="install_permission_unavailable">설치 권한을 사용할 수 없음</string>
+    <string name="install_permission_blocked_message">APK가 성공적으로 다운로드되었지만 이 기기에서는 직접 설치가 허용되지 않습니다. 외부 설치 프로그램으로 열까요?</string>
+    <string name="open_with_external_installer">외부 설치 프로그램으로 열기</string>
+    <string name="external_installer_description">타사 앱을 사용하여 APK 설치</string>
+
+    <!-- Errors -->
+    <string name="error_generic">오류: %1$s</string>
+    <string name="error_asset_not_supported">.%1$s 파일 형식은 지원되지 않습니다</string>
+    <string name="error_file_not_found">다운로드된 파일을 찾을 수 없습니다</string>
+
+    <string name="home_category_trending">인기</string>
+    <string name="home_category_hot_release">핫 릴리스</string>
+    <string name="home_category_most_popular">가장 인기 있는</string>
+
+    <string name="home_topic_privacy">개인정보</string>
+    <string name="home_topic_media">미디어</string>
+    <string name="home_topic_productivity">생산성</string>
+    <string name="home_topic_networking">네트워크</string>
+    <string name="home_topic_dev_tools">개발 도구</string>
+
+    <string name="home_finding_repositories">저장소를 찾는 중...</string>
+    <string name="home_loading_more">더 불러오는 중...</string>
+    <string name="home_no_more_repositories">더 이상 저장소가 없습니다</string>
+    <string name="home_retry">다시 시도</string>
+    <string name="home_failed_to_load_repositories">저장소를 불러오지 못했습니다</string>
+    <string name="home_view_details">상세 보기</string>
+
+    <string name="updated_just_now">방금 업데이트됨</string>
+    <string name="updated_hours_ago">%1$d시간 전 업데이트됨</string>
+    <string name="updated_yesterday">어제 업데이트됨</string>
+    <string name="updated_days_ago">%1$d일 전 업데이트됨</string>
+    <string name="updated_on_date">%1$s에 업데이트됨</string>
+
+    <string name="rate_limit_exceeded">요청 한도 초과</string>
+    <string name="rate_limit_used_all">%1$d개의 API 요청을 모두 사용했습니다.</string>
+    <string name="rate_limit_used_all_free">%1$d개의 무료 API 요청을 모두 사용했습니다.</string>
+    <string name="rate_limit_resets_in_minutes">%1$d분 후 초기화</string>
+    <string name="rate_limit_tip_sign_in">💡 로그인하면 시간당 60회 대신 5,000회 요청을 사용할 수 있습니다!</string>
+    <string name="rate_limit_sign_in">로그인</string>
+    <string name="rate_limit_ok">확인</string>
+    <string name="rate_limit_close">닫기</string>
+
+    <string name="system_font">시스템 글꼴</string>
+    <string name="system_font_description">가독성을 위해 기기 글꼴과 일치</string>
+
+    <string name="theme_light">라이트</string>
+    <string name="theme_dark">다크</string>
+    <string name="theme_system">시스템</string>
+
+    <string name="added_to_favourites">리포지토리를 즐겨찾기에 추가했습니다</string>
+    <string name="removed_from_favourites">리포지토리를 즐겨찾기에서 제거했습니다</string>
+    <string name="add_to_favourites">즐겨찾기에 추가</string>
+    <string name="remove_from_favourites">즐겨찾기에서 제거</string>
+    <string name="favourites">즐겨찾기</string>
+
+    <string name="added_just_now">방금 추가됨</string>
+    <string name="added_hours_ago">%1$d시간 전에 추가됨</string>
+    <string name="added_yesterday">어제 추가됨</string>
+    <string name="added_days_ago">%1$d일 전에 추가됨</string>
+    <string name="added_on_date">%1$s에 추가됨</string>
+
+    <string name="starred_repositories">별표 표시된 저장소</string>
+    <string name="repository_starred">저장소에 별표가 추가되었습니다</string>
+    <string name="repository_not_starred">저장소에 별표가 없습니다</string>
+    <string name="star_from_github">GitHub에서 저장소에 별표를 추가할 수 있습니다</string>
+    <string name="unstar_from_github">GitHub에서 별표를 제거할 수 있습니다</string>
+
+    <string name="sign_in_required">로그인이 필요합니다</string>
+    <string name="no_starred_repos">별표 표시된 저장소가 없습니다</string>
+    <string name="sign_in_with_github_for_stars">GitHub로 로그인하여 별표 저장소를 확인하세요</string>
+    <string name="star_repos_hint">설치 가능한 릴리스가 있는 저장소에 별표를 추가하세요</string>
+    <string name="last_synced">마지막 동기화</string>
+    <string name="just_now">방금</string>
+    <string name="minutes_ago">%1$d분 전</string>
+    <string name="hours_ago">%1$d시간 전</string>
+    <string name="days_ago">%1$d일 전</string>
+    <string name="dismiss">닫기</string>
+    <string name="sync_starred_failed">별표 저장소 동기화에 실패했습니다</string>
+
+    <string name="developer_profile_title">개발자 프로필</string>
+    <string name="open_developer_profile">개발자 프로필 열기</string>
+
+    <!-- Developer Profile - General -->
+    <string name="failed_to_load_repositories">저장소를 불러오지 못했습니다</string>
+    <string name="failed_to_load_profile">프로필을 불러오지 못했습니다</string>
+
+    <!-- Developer Profile - Stats -->
+    <string name="repositories">저장소</string>
+    <string name="followers">팔로워</string>
+    <string name="following">팔로잉</string>
+
+    <!-- Developer Profile - Filter & Sort -->
+    <string name="search_repositories">저장소 검색…</string>
+    <string name="clear_search">검색 지우기</string>
+    <string name="filter_all">전체</string>
+    <string name="filter_with_releases">릴리스 포함</string>
+    <string name="filter_installed">설치됨</string>
+    <string name="filter_favorites">즐겨찾기</string>
+    <string name="sort">정렬</string>
+    <string name="sort_recently_updated">최근 업데이트</string>
+    <string name="sort_name">이름</string>
+
+    <!-- Developer Profile - Repository Count -->
+    <string name="repository_singular">저장소</string>
+    <string name="repositories_plural">저장소</string>
+    <string name="showing_x_of_y_repositories">총 %2$d개 중 %1$d개의 저장소 표시</string>
+
+    <!-- Developer Profile - Empty States -->
+    <string name="no_repos_with_releases">설치 가능한 릴리스가 있는 저장소가 없습니다</string>
+    <string name="no_installed_repos">설치된 저장소가 없습니다</string>
+    <string name="no_favorite_repos">즐겨찾기 저장소가 없습니다</string>
+
+    <!-- Developer Profile - Repository Item -->
+    <string name="updated_x_ago">%1$s 업데이트됨</string>
+    <string name="has_release">릴리스 있음</string>
+
+    <!-- Developer Profile - Relative Time -->
+    <string name="time_years_ago">%1$d 년 전</string>
+    <string name="time_months_ago">%1$d 개월 전</string>
+    <string name="time_days_ago">%1$d 일 전</string>
+    <string name="time_hours_ago">%1$d 시간 전</string>
+    <string name="time_minutes_ago">%1$d 분 전</string>
+
+    <!-- Developer Profile - Count Formatting -->
+    <string name="count_millions">%1$dM</string>
+    <string name="count_thousands">%1$dk</string>
+
+    <string name="released_just_now">방금 출시됨</string>
+    <string name="released_hours_ago">%1$d시간 전에 출시됨</string>
+    <string name="released_yesterday">어제 출시됨</string>
+    <string name="released_days_ago">%1$d일 전에 출시됨</string>
+    <string name="released_on_date">%1$s에 출시됨</string>
+
+    <string name="bottom_nav_home_title">홈</string>
+    <string name="bottom_nav_search_title">검색</string>
+    <string name="bottom_nav_apps_title">앱</string>
+    <string name="bottom_nav_profile_title">프로필</string>
+
+    <string name="forked_repository">포크</string>
+
+    <string name="category_stable">안정 버전</string>
+    <string name="category_pre_release">사전 출시</string>
+    <string name="category_all">전체</string>
+    <string name="select_version">버전 선택</string>
+    <string name="pre_release_badge">사전 출시</string>
+    <string name="no_version_selected">선택된 버전 없음</string>
+    <string name="versions_title">버전</string>
+
+    <!-- Install status -->
+    <string name="pending_install">설치 대기 중</string>
+
+    <!-- Uninstall / Open -->
+    <string name="uninstall">제거</string>
+    <string name="open_app">열기</string>
+    <string name="downgrade_requires_uninstall">다운그레이드를 위해 제거가 필요합니다</string>
+    <string name="downgrade_warning_message">버전 %1$s을(를) 설치하려면 현재 버전(%2$s)을 먼저 제거해야 합니다. 앱 데이터가 삭제됩니다.</string>
+    <string name="uninstall_first">먼저 제거</string>
+    <string name="install_version">%1$s 설치</string>
+    <string name="failed_to_open_app">%1$s 열기 실패</string>
+    <string name="failed_to_uninstall">%1$s 제거 실패</string>
+
+    <!-- Version picker -->
+    <string name="latest_badge">최신</string>
+
+    <!-- Apps feature - Last checked -->
+    <string name="last_checked">마지막 확인: %1$s</string>
+    <string name="last_checked_never">확인한 적 없음</string>
+    <string name="last_checked_just_now">방금</string>
+    <string name="last_checked_minutes_ago">%1$d분 전</string>
+    <string name="last_checked_hours_ago">%1$d시간 전</string>
+    <string name="checking_for_updates">업데이트 확인 중…</string>
+
+    <!-- Proxy -->
+    <string name="proxy_type">프록시 유형</string>
+    <string name="proxy_none">없음</string>
+    <string name="proxy_system">시스템</string>
+    <string name="proxy_http">HTTP</string>
+    <string name="proxy_socks">SOCKS</string>
+    <string name="proxy_host">호스트</string>
+    <string name="proxy_port">포트</string>
+    <string name="proxy_username">사용자 이름 (선택 사항)</string>
+    <string name="proxy_password">비밀번호 (선택 사항)</string>
+    <string name="proxy_save">프록시 저장</string>
+    <string name="proxy_saved">프록시 설정이 저장되었습니다</string>
+    <string name="proxy_system_description">기기의 프록시 설정을 사용합니다</string>
+    <string name="proxy_port_error">포트는 1–65535 사이여야 합니다</string>
+    <string name="proxy_none_description">직접 연결, 프록시 없음</string>
+    <string name="failed_to_save_proxy_settings">프록시 설정을 저장하지 못했습니다</string>
+    <string name="proxy_host_required">프록시 호스트가 필요합니다</string>
+    <string name="invalid_proxy_port">잘못된 프록시 포트</string>
+    <string name="proxy_show_password">비밀번호 표시</string>
+    <string name="proxy_hide_password">비밀번호 숨기기</string>
+
+
+    <!-- Track app feature -->
+    <string name="track_this_app">이 앱 추적</string>
+    <string name="app_tracked_successfully">앱이 추적 목록에 추가되었습니다</string>
+    <string name="failed_to_track_app">앱 추적 실패: %1$s</string>
+    <string name="already_tracked">이미 추적 중인 앱입니다</string>
+
+    <!-- Profile section -->
+    <string name="profile_sign_in_title">GitHub에 로그인</string>
+    <string name="profile_sign_in_description">전체 기능을 잠금 해제하세요. 앱을 관리하고, 설정을 동기화하고, 더 빠르게 탐색하세요.</string>
+    <string name="profile_repos">저장소</string>
+    <string name="profile_login">로그인</string>
+    <string name="profile_stars_description">GitHub에서 별표한 저장소</string>
+    <string name="profile_favourites_description">로컬에 저장된 즐겨찾기 저장소</string>
+
+    <!-- Session expired dialog -->
+    <string name="session_expired_title">세션 만료</string>
+    <string name="session_expired_message">GitHub 세션이 만료되었거나 토큰이 취소되었습니다. 인증된 기능을 계속 사용하려면 다시 로그인하세요.</string>
+    <string name="session_expired_hint">제한된 API 요청으로 게스트로 계속 탐색할 수 있습니다.</string>
+    <string name="sign_in_again">다시 로그인</string>
+    <string name="continue_as_guest">게스트로 계속</string>
+    <string name="logout_revocation_note">로컬 세션과 캐시 데이터가 삭제됩니다. 접근을 완전히 취소하려면 GitHub Settings > Applications를 방문하세요.</string>
+    <string name="auth_code_expires_in">코드 만료까지 %1$s</string>
+    <string name="auth_error_code_expired">디바이스 코드가 만료되었습니다.</string>
+    <string name="auth_hint_try_again">새 코드를 받으려면 다시 로그인해 주세요.</string>
+    <string name="auth_hint_check_connection">인터넷 연결을 확인하고 다시 시도하세요.</string>
+    <string name="auth_hint_denied">인증 요청을 거부했습니다. 의도하지 않은 경우 다시 시도하세요.</string>
+    <string name="auth_check_status">이미 인증했습니다</string>
+    <string name="auth_polling_status">확인 중…</string>
+    <string name="auth_rate_limited">요청 제한 초과 — %1$d초 후 다시 시도</string>
+
+    <!-- Read More / Show Less -->
+    <string name="read_more">더 보기</string>
+    <string name="show_less">간략히</string>
+
+    <string name="share_repository">저장소 공유</string>
+    <string name="failed_to_share_link">링크 공유에 실패했습니다</string>
+    <string name="link_copied_to_clipboard">링크가 클립보드에 복사되었습니다</string>
+
+    <!-- Translation feature -->
+    <string name="translate">번역</string>
+    <string name="translating">번역 중…</string>
+    <string name="show_original">원문 보기</string>
+    <string name="translated_to">%1$s로 번역됨</string>
+    <string name="translate_to">번역 대상…</string>
+    <string name="search_language">언어 검색</string>
+    <string name="change_language">언어 변경</string>
+    <string name="translation_failed">번역 실패. 다시 시도해주세요.</string>
+
+    <string name="open_github_link">GitHub 링크 열기</string>
+    <string name="clipboard_link_detected">클립보드에서 GitHub 링크 감지됨</string>
+    <string name="auto_detect_clipboard_links">클립보드 링크 자동 감지</string>
+    <string name="auto_detect_clipboard_description">검색을 열 때 클립보드에서 GitHub 링크를 자동으로 감지</string>
+    <string name="detected_links">감지된 링크</string>
+    <string name="open_in_app">앱에서 열기</string>
+    <string name="no_github_link_in_clipboard">클립보드에서 GitHub 링크를 찾을 수 없습니다</string>
+
+    <string name="storage">저장 공간</string>
+    <string name="clear_cache">캐시 지우기</string>
+    <string name="current_size">현재 크기:</string>
+    <string name="clear">지우기</string>
+
+    <string name="sponsor_title">Kiri Store 지원</string>
+    <string name="sponsor_button">프로젝트 지원하기</string>
+    <string name="sponsor_hero_title">영원히 무료.\n여러분이 후원합니다.</string>
+
+    <string name="sponsor_hero_subtitle">여러분의 후원이 Kiri Store를 무료로, 독립적으로, 활발히 유지보수되도록 합니다 — 광고 없음, 추적 없음, 오픈소스 앱을 설치하는 더 나은 방법입니다.</string>
+
+    <string name="sponsor_personal_note">학업을 마치면서 이 프로젝트를 혼자 개발하고 유지하고 있습니다. 모든 기여 — 크든 작든 — 서버 비용, 개발, 그리고 모두를 위해 앱을 광고 없이 유지하는 데 직접 사용됩니다.</string>
+
+    <string name="sponsor_kodee_title">Kiri Store에 투표하세요!</string>
+    <string name="sponsor_kodee_subtitle">Kiri Store가 KotlinConf 2026 Golden Kodee Awards 후보에 올랐습니다.</string>
+
+    <string name="sponsor_kodee_register">1. 등록</string>
+    <string name="sponsor_kodee_vote">2. 투표</string>
+    <string name="sponsor_kodee_deadline">투표 마감: 3월 22일</string>
+
+    <string name="sponsor_kodee_step1">1. 플랫폼에 등록 (Google로 계속)</string>
+    <string name="sponsor_kodee_step2">2. 아래에서 투표 버튼 누르기</string>
+    <string name="sponsor_kodee_step3">3. Usmon Narzullayev를 찾아 투표 클릭</string>
+
+    <string name="sponsor_github_sponsors">GitHub Sponsors</string>
+    <string name="sponsor_github_sponsors_desc">월간 또는 일회성 — 개발을 직접 후원</string>
+
+    <string name="sponsor_buy_me_coffee">Buy Me a Coffee</string>
+    <string name="sponsor_buy_me_coffee_desc">간편한 일회성 기여</string>
+
+    <string name="sponsor_other_ways_title">다른 도움 방법</string>
+
+    <string name="sponsor_star_repo">저장소에 스타 주기</string>
+    <string name="sponsor_star_repo_desc">가시성을 높이고 다른 사람들이 찾을 수 있도록 도움</string>
+
+    <string name="sponsor_report_bugs">버그 신고</string>
+    <string name="sponsor_report_bugs_desc">모든 신고가 모두를 위해 앱을 개선합니다</string>
+
+    <string name="sponsor_share">친구와 공유</string>
+    <string name="sponsor_share_desc">입소문이 최고의 마케팅입니다</string>
+
+    <string name="sponsor_thank_you">모든 기여 — 금전적이든 아니든 — 진정한 변화를 만듭니다. 함께해 주셔서 감사합니다.</string>
+
+
+    <!-- Installation method settings -->
+    <string name="section_installation">설치</string>
+    <string name="installer_type_default">기본</string>
+    <string name="installer_type_default_description">표준 시스템 설치 대화 상자</string>
+    <string name="installer_type_shizuku">Shizuku</string>
+    <string name="installer_type_shizuku_description">확인 없이 자동 설치</string>
+    <string name="shizuku_status_not_installed">Shizuku가 설치되지 않았습니다</string>
+    <string name="shizuku_status_not_running">Shizuku가 실행되고 있지 않습니다</string>
+    <string name="shizuku_status_permission_needed">권한 필요</string>
+    <string name="shizuku_status_ready">준비됨</string>
+    <string name="shizuku_grant_permission">권한 부여</string>
+    <string name="shizuku_install_hint">자동 설치를 활성화하려면 Shizuku를 설치하세요</string>
+    <string name="shizuku_start_hint">자동 설치를 활성화하려면 Shizuku를 시작하세요</string>
+    <string name="shizuku_install_failed_fallback">Shizuku 설치 실패, 표준 설치 프로그램 사용</string>
+
+    <string name="auto_update_title">앱 자동 업데이트</string>
+    <string name="auto_update_description">Shizuku를 통해 백그라운드에서 자동으로 업데이트 다운로드 및 설치</string>
+
+    <string name="section_updates">업데이트</string>
+    <string name="update_check_interval_title">업데이트 확인 주기</string>
+    <string name="update_check_interval_description">백그라운드에서 앱 업데이트를 확인하는 빈도</string>
+    <string name="interval_3h">3시간</string>
+    <string name="interval_6h">6시간</string>
+    <string name="interval_12h">12시간</string>
+    <string name="interval_24h">24시간</string>
+
+    <string name="add_by_link">링크로 추가</string>
+    <string name="link_app_title">앱을 저장소에 연결</string>
+    <string name="pick_installed_app">GitHub 저장소에 연결할 설치된 앱을 선택하세요</string>
+    <string name="search_apps_hint">앱 검색…</string>
+    <string name="enter_repo_url">GitHub 저장소 URL</string>
+    <string name="repo_url_hint">github.com/owner/repo</string>
+    <string name="validating_repo">확인 중…</string>
+    <string name="link_and_track">연결 및 추적</string>
+    <string name="checking_release">최신 릴리스 확인 중…</string>
+    <string name="downloading_for_verification">확인용 APK 다운로드 중…</string>
+    <string name="verifying_signing_key">서명 키 확인 중…</string>
+    <string name="package_name_mismatch">패키지 이름 불일치: APK는 %1$s이지만 선택된 앱은 %2$s입니다</string>
+    <string name="signing_key_mismatch_link">서명 키 불일치: 이 저장소의 APK는 다른 개발자가 서명했습니다</string>
+    <string name="select_asset_title">설치 파일 선택</string>
+    <string name="select_asset_description">설치된 앱과 대조할 APK를 선택하세요</string>
+    <string name="download_failed">다운로드 실패</string>
+    <string name="export_apps">내보내기</string>
+    <string name="import_apps">가져오기</string>
+    <string name="import_apps_title">앱 가져오기</string>
+    <string name="import_apps_description">내보낸 JSON을 붙여넣어 추적 중인 앱을 복원하세요</string>
+    <string name="import_apps_hint">내보낸 JSON을 여기에 붙여넣기…</string>
+    <string name="include_pre_releases_title">사전 릴리스 포함</string>
+    <string name="include_pre_releases_description">업데이트 확인 시 사전 릴리스 버전을 추적합니다. 비활성화하면 안정적인 릴리스만 고려됩니다.</string>
+    <string name="confirm_uninstall_title">앱을 제거하시겠습니까?</string>
+    <string name="confirm_uninstall_message">%1$s을(를) 제거하시겠습니까? 이 작업은 취소할 수 없으며 앱 데이터가 손실될 수 있습니다.</string>
+    <string name="invalid_github_url">잘못된 GitHub URL입니다. 형식: github.com/owner/repo</string>
+    <string name="repo_not_found">저장소를 찾을 수 없음: %1$s/%2$s</string>
+    <string name="rate_limit_try_again">GitHub API 요청 한도를 초과했습니다. 나중에 다시 시도하세요.</string>
+    <string name="failed_to_link">연결 실패: %1$s</string>
+    <string name="failed_to_load_apps">설치된 앱을 불러오지 못했습니다</string>
+    <string name="app_linked_success">%1$s이(가) %2$s/%3$s에 연결됨</string>
+    <string name="export_failed">내보내기 실패: %1$s</string>
+    <string name="import_failed">가져오기 실패: %1$s</string>
+    <string name="imported_apps_summary">%1$d개의 앱을 가져왔습니다</string>
+    <string name="imported_skipped">, %1$d개 건너뜀</string>
+    <string name="imported_failed">, %1$d개 실패</string>
+    <string name="signing_key_changed_title">서명 키가 변경됨</string>
+    <string name="signing_key_changed_message">이 앱의 서명 인증서가 처음 설치된 이후 변경되었습니다.\n\n개발자가 서명 키를 교체했거나 바이너리가 변조되었을 수 있습니다.\n\n예상: %1$s\n수신: %2$s</string>
+    <string name="install_anyway">그래도 설치</string>
+    <string name="verified_build">검증된 빌드</string>
+    <string name="checking_attestation">확인 중\u2026</string>
+    <string name="assets_title">에셋</string>
+    <string name="no_assets_selected">에셋 없음</string>
+    <string name="no_assets_in_list">이 릴리스에 연관된 에셋이 없습니다</string>
+    <string name="assets_selection_label">에셋 옵션 선택</string>
+    <string name="multiple_assets_info_dialog_title">여러 에셋 사용 가능</string>
+    <string name="multiple_assets_info_dialog_text">이 릴리스에 여러 설치 가능한 파일이 있습니다. 목록을 검토하고 기기에 맞는 파일을 선택하세요.</string>
+    <string name="icon_content_description_info">정보</string>
+    <string name="translation_error_retry">재시도</string>
+    <string name="translated_from">자동 감지: %1$s</string>
+    <string name="select_language">언어 선택</string>
+    <string name="update_package_mismatch">패키지 불일치: APK는 %1$s이지만 설치된 앱은 %2$s입니다. 업데이트가 차단되었습니다.</string>
+    <string name="update_signing_key_mismatch">서명 키 불일치: 업데이트가 다른 개발자에 의해 서명되었습니다. 업데이트가 차단되었습니다.</string>
+    <string name="liquid_glass_option_title">리퀴드 글라스 효과</string>
+    <string name="liquid_glass_option_description">매끄러운 유리 같은 외관으로 인터페이스를 향상시킵니다</string>
+
+    <string name="scrollbar_option_title">스크롤바</string>
+    <string name="scrollbar_option_description">스크롤 가능한 목록에 스크롤바 표시 (데스크톱)</string>
+
+    <string name="hide_seen_title">본 저장소 숨기기</string>
+    <string name="hide_seen_description">이미 본 저장소를 디스커버리 피드에서 숨깁니다</string>
+    <string name="clear_seen_history">조회 기록 삭제</string>
+    <string name="clear_seen_history_description">모든 조회 기록을 초기화하여 피드에 다시 표시합니다</string>
+    <string name="seen_history_cleared">조회 기록이 삭제되었습니다</string>
+    <string name="seen_badge">확인함</string>
+
+    <string name="recently_viewed">최근 본 항목</string>
+    <string name="profile_recently_viewed_description">방문한 저장소</string>
+    <string name="downloaded_packages">다운로드된 패키지</string>
+    <string name="downloaded_packages_description">GitHub 릴리스의 APK 및 설치 파일</string>
+    <string name="delete_all">모두 삭제</string>
+    <string name="delete_downloads_confirmation_title">모든 다운로드를 삭제하시겠습니까?</string>
+    <string name="delete_downloads_confirmation_message">모든 APK 및 설치 파일이 영구적으로 삭제됩니다 (%1$s). 언제든 다시 다운로드할 수 있습니다.</string>
+    <string name="downloads_cleared">모든 다운로드된 패키지가 삭제되었습니다.</string>
+    <string name="unable_to_verify_attestation">확인할 수 없음</string>
+
+    <string name="recent_searches">최근 검색</string>
+    <string name="clear_all_history">모두 지우기</string>
+    <string name="remove_search_history_item">삭제</string>
+
+    <string name="bottom_nav_profile_tweaks">조정</string>
+    <string name="tweaks_title">조정</string>
+    <string name="pre_releases">프리릴리스</string>
+</resources>

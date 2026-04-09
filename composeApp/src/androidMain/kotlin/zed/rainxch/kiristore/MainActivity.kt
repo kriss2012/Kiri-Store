@@ -1,0 +1,80 @@
+package zed.rainxch.kiristore
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.util.Consumer
+import org.koin.android.ext.android.inject
+import zed.rainxch.core.data.utils.AndroidShareManager
+import zed.rainxch.core.domain.utils.ShareManager
+import zed.rainxch.kiristore.app.deeplink.DeepLinkParser
+
+class MainActivity : ComponentActivity() {
+    private var deepLinkUri by mutableStateOf<String?>(null)
+    private val shareManager: ShareManager by inject()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
+        enableEdgeToEdge()
+
+        // Register activity result launcher for file picker (must be before STARTED)
+        (shareManager as? AndroidShareManager)?.registerActivityResultLauncher(this)
+
+        super.onCreate(savedInstanceState)
+
+        handleIncomingIntent(intent)
+
+        setContent {
+            DisposableEffect(Unit) {
+                val listener =
+                    Consumer<Intent> { newIntent ->
+                        handleIncomingIntent(newIntent)
+                    }
+                addOnNewIntentListener(listener)
+                onDispose {
+                    removeOnNewIntentListener(listener)
+                }
+            }
+
+            App(deepLinkUri = deepLinkUri)
+        }
+    }
+
+    private fun handleIncomingIntent(intent: Intent?) {
+        if (intent == null) return
+
+        val uriString =
+            when (intent.action) {
+                Intent.ACTION_VIEW -> {
+                    intent.data?.toString()
+                }
+
+                Intent.ACTION_SEND -> {
+                    val sharedText = intent.getStringExtra(Intent.EXTRA_TEXT)
+                    sharedText?.let { DeepLinkParser.extractSupportedUrl(it) }
+                }
+
+                else -> {
+                    null
+                }
+            }
+
+        uriString?.let { deepLinkUri = it }
+    }
+}
+
+@Preview
+@Composable
+fun AppAndroidPreview() {
+    App()
+}
+

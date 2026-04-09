@@ -1,0 +1,23 @@
+package zed.rainxch.core.presentation.model
+
+import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.persistentListOf
+import zed.rainxch.core.domain.model.DiscoveryPlatform
+
+data class GithubRepoSummaryUi(
+    val id: Long,
+    val name: String,
+    val fullName: String,
+    val owner: GithubUserUi,
+    val description: String?,
+    val defaultBranch: String,
+    val htmlUrl: String,
+    val stargazersCount: Int,
+    val forksCount: Int,
+    val language: String?,
+    val topics: ImmutableList<String>?,
+    val releasesUrl: String,
+    val updatedAt: String,
+    val isFork: Boolean = false,
+    val availablePlatforms: ImmutableList<DiscoveryPlatform> = persistentListOf(),
+)

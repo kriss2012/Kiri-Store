@@ -1,0 +1,625 @@
+<resources>
+
+    <!-- Apps feature - App -->
+    <string name="app_name">Kiri Store</string>
+
+    <!-- Apps feature - Navigation / Top bar -->
+    <string name="installed_apps">ইনস্টল করা অ্যাপসমূহ</string>
+    <string name="navigate_back">পেছনে যান</string>
+    <string name="check_for_updates">আপডেট পরীক্ষা করুন</string>
+
+    <!-- Apps feature - Errors / messages -->
+    <string name="cannot_launch">%1$s চালু করা যায়নি</string>
+    <string name="failed_to_open">%1$s খুলতে ব্যর্থ</string>
+    <string name="failed_to_update">%1$s আপডেট করতে ব্যর্থ: %2$s</string>
+    <string name="update_failed">আপডেট ব্যর্থ</string>
+    <string name="update_all_failed">সব আপডেট ব্যর্থ হয়েছে: %1$s</string>
+    <string name="all_apps_updated_successfully">সব অ্যাপ সফলভাবে আপডেট হয়েছে</string>
+    <string name="no_updates_available">কোনো আপডেট পাওয়া যায়নি</string>
+
+    <!-- Apps feature - Search -->
+    <string name="search_your_apps">আপনার অ্যাপ খুঁজুন</string>
+    <string name="no_apps_found">কোনো অ্যাপ পাওয়া যায়নি</string>
+
+    <!-- Apps feature - Actions -->
+    <string name="update_all">সব আপডেট করুন</string>
+    <string name="update">আপডেট</string>
+    <string name="open">খুলুন</string>
+    <string name="cancel">বাতিল</string>
+
+    <!-- Apps feature - Update states -->
+    <string name="checking">পরীক্ষা করা হচ্ছে…</string>
+    <string name="updated_successfully">সফলভাবে আপডেট হয়েছে</string>
+    <string name="error_with_message">ত্রুটি: %1$s</string>
+
+    <!-- Apps feature - Update all progress -->
+    <string name="updating_x_of_y">%2$d এর মধ্যে %1$d টি আপডেট করা হচ্ছে</string>
+    <string name="currently_updating">বর্তমানে: %1$s</string>
+
+    
+    <!-- Auth general -->
+    <string name="waiting_for_authorization">অনুমোদনের জন্য অপেক্ষা করা হচ্ছে…</string>
+    <string name="signed_in">সাইন ইন সম্পন্ন!</string>
+    <string name="redirecting_message">আপনি এখন অ্যাপটি ব্যবহার করতে পারেন। রিডাইরেক্ট করা হচ্ছে…</string>
+    <string name="try_again">আবার চেষ্টা করুন</string>
+
+    <!-- Errors -->
+    <string name="auth_error_with_message">ত্রুটি: %1$s</string>
+
+    <!-- Device flow -->
+    <string name="enter_code_on_github">GitHub-এ এই কোডটি লিখুন:</string>
+    <string name="copy_code">কোড কপি করুন</string>
+    <string name="open_github">GitHub খুলুন</string>
+
+    <!-- Logged out -->
+    <string name="unlock_full_experience">সম্পূর্ণ অভিজ্ঞতা\nআনলক করুন</string>
+
+    <string name="more_requests">আরও অনুরোধ</string>
+    <string name="more_requests_description">
+        বেশি API রেট লিমিট এবং বিঘ্ন থেকে মুক্তি পেতে সাইন ইন করুন।
+    </string>
+
+    <string name="sign_in_with_github">GitHub দিয়ে সাইন ইন করুন</string>
+
+    <string name="error_cancelled">বাতিল করা হয়েছে</string>
+    <string name="error_unknown">অজানা ত্রুটি</string>
+
+    <string name="language_label">ভাষা:</string>
+
+    <string name="discover_repositories">রিপোজিটরি আবিষ্কার করুন</string>
+    <string name="search_repositories_hint">রিপো, বিবরণ খুঁজুন…</string>
+
+    <!-- Filters -->
+    <string name="filter_by_language">ভাষা অনুযায়ী ফিল্টার করুন</string>
+
+    <!-- Results -->
+    <string name="results_found">%1$d টি ফলাফল পাওয়া গেছে</string>
+
+
+    <!-- Sorting -->
+    <string name="sort_by">সাজান</string>
+    <string name="close">বন্ধ করুন</string>
+
+    <string name="sort_most_stars">সবচেয়ে বেশি স্টার</string>
+    <string name="sort_most_forks">সবচেয়ে বেশি ফর্ক</string>
+    <string name="sort_best_match">সেরা মিল</string>
+
+    <string name="sort_order_descending">অধোগামী</string>
+    <string name="sort_order_ascending">ঊর্ধ্বগামী</string>
+    <string name="sort_label">সাজান</string>
+
+    <!-- Programming languages -->
+    <string name="language_all">সব প্রোগ্রামিং ভাষা</string>
+    <string name="language_kotlin">Kotlin</string>
+    <string name="language_java">Java</string>
+    <string name="language_javascript">JavaScript</string>
+    <string name="language_typescript">TypeScript</string>
+    <string name="language_python">Python</string>
+    <string name="language_swift">Swift</string>
+    <string name="language_rust">Rust</string>
+    <string name="language_go">Go</string>
+    <string name="language_csharp">C#</string>
+    <string name="language_cpp">C++</string>
+    <string name="language_c">C</string>
+    <string name="language_dart">Dart</string>
+    <string name="language_ruby">Ruby</string>
+    <string name="language_php">PHP</string>
+
+    <string name="search_failed">অনুসন্ধান ব্যর্থ হয়েছে</string>
+    <string name="no_repositories_found">কোনো রিপোজিটরি পাওয়া যায়নি</string>
+
+    <!-- Settings -->
+    <string name="profile_title">প্রোফাইল</string>
+
+    <!-- Sections -->
+    <string name="section_appearance">চেহারা</string>
+    <string name="section_about">সম্পর্কে</string>
+    <string name="section_network">নেটওয়ার্ক</string>
+
+    <!-- Appearance -->
+    <string name="theme_color">থিমের রঙ</string>
+    <string name="amoled_black_theme">AMOLED কালো থিম</string>
+    <string name="amoled_black_description">অন্ধকার মোডের জন্য সম্পূর্ণ কালো ব্যাকগ্রাউন্ড</string>
+    <string name="selected_color">নির্বাচিত রঙ: %1$s</string>
+
+    <!-- About -->
+    <string name="version">সংস্করণ</string>
+    <string name="help_support">সহায়তা ও সাপোর্ট</string>
+
+    <!-- Account -->
+    <string name="logout">লগআউট</string>
+
+    <!-- Snackbar -->
+    <string name="logout_success">সফলভাবে লগআউট হয়েছে, রিডাইরেক্ট করা হচ্ছে...</string>
+    <string name="cache_cleared">ক্যাশ সফলভাবে পরিষ্কার করা হয়েছে</string>
+
+    <!-- Dialog -->
+    <string name="warning">সতর্কতা!</string>
+    <string name="logout_confirmation">আপনি কি নিশ্চিতভাবে লগআউট করতে চান?</string>
+
+    <!-- Theme names -->
+    <string name="theme_dynamic">ডাইনামিক</string>
+    <string name="theme_ocean">সমুদ্র</string>
+    <string name="theme_purple">বেগুনি</string>
+    <string name="theme_forest">বন</string>
+    <string name="theme_slate">স্লেট</string>
+    <string name="theme_amber">অ্যাম্বার</string>
+
+    <!-- Navigation & actions -->
+    <string name="open_repository">রিপোজিটরি খুলুন</string>
+    <string name="open_in_browser">ব্রাউজারে খুলুন</string>
+    <string name="cancel_download">ডাউনলোড বাতিল করুন</string>
+    <string name="show_install_options">ইনস্টল অপশন দেখান</string>
+
+    <!-- Errors & states -->
+    <string name="error_loading_details">বিস্তারিত লোড করতে ত্রুটি দেখা গেছে</string>
+    <string name="retry">পুনরায় চেষ্টা করুন</string>
+    <string name="no_description">কোনো বিবরণ দেওয়া হয়নি।</string>
+    <string name="no_release_notes">কোনো রিলিজ নোট নেই।</string>
+    <string name="report_issue">সমস্যা রিপোর্ট করুন</string>
+
+    <!-- Headers -->
+    <string name="about_this_app">এই অ্যাপ বৃত্তান্ত</string>
+    <string name="install_logs">ইনস্টল লগ</string>
+    <string name="author">লেখক</string>
+    <string name="whats_new">নতুন কী আছে</string>
+
+    <!-- Install status -->
+    <string name="installed">ইনস্টল করা</string>
+    <string name="update_available">আপডেট উপলব্ধ</string>
+    <string name="not_available">উপলব্ধ নয়</string>
+    <string name="install_latest">সর্বশেষটি ইনস্টল করুন</string>
+    <string name="reinstall">পুনরায় ইনস্টল করুন</string>
+    <string name="update_app">অ্যাপ আপডেট করুন</string>
+
+    <!-- Download stages -->
+    <string name="downloading">ডাউনলোড হচ্ছে</string>
+    <string name="updating">আপডেট হচ্ছে</string>
+    <string name="verifying">যাচাই করা হচ্ছে</string>
+    <string name="installing">ইনস্টল হচ্ছে</string>
+
+    <!-- Install helpers -->
+    <string name="open_in_obtainium">Obtainium-এ খুলুন</string>
+    <string name="obtainium_description">স্বয়ংক্রিয়ভাবে আপডেট পরিচালনা করুন</string>
+    <string name="inspect_with_appmanager">AppManager দিয়ে পরীক্ষা করুন</string>
+    <string name="appmanager_description">অনুমতি, ট্র্যাকার ও নিরাপত্তা যাচাই করুন</string>
+
+    <!-- Author -->
+    <string name="profile">প্রোফাইল</string>
+
+    <!-- Stats -->
+    <string name="forks">ফর্ক</string>
+    <string name="stars">স্টার</string>
+    <string name="issues">ইস্যু</string>
+
+    <!-- Misc -->
+    <string name="by_author">%1$s দ্বারা</string>
+    <string name="installed_version">• ইনস্টল করা: %1$s</string>
+    <string name="architecture_compatible">আর্কিটেকচার উপযোগী</string>
+    <string name="update_to_version">%1$s -এ আপডেট করুন</string>
+
+    <!-- General -->
+    <string name="error_load_details">বিস্তারিত লোড করতে ব্যর্থ</string>
+    <string name="installer_saved_downloads">ইনস্টলারটি Downloads ফোল্ডারে সংরক্ষিত হয়েছে</string>
+
+    <!-- Download / install states -->
+    <string name="log_download_started">ডাউনলোড শুরু হয়েছে</string>
+    <string name="log_downloaded">ডাউনলোড সম্পন্ন</string>
+    <string name="log_update_started">আপডেট শুরু হয়েছে</string>
+    <string name="log_installed">ইনস্টল হয়েছে</string>
+    <string name="log_updated">আপডেট হয়েছে</string>
+    <string name="log_cancelled">বাতিল হয়েছে</string>
+    <string name="log_install_started">ইনস্টলেশন শুরু হয়েছে</string>
+    <string name="log_error">ত্রুটি</string>
+    <string name="log_error_with_message">ত্রুটি: %1$s</string>
+
+    <!-- External tools -->
+    <string name="log_prepare_appmanager">AppManager-এর জন্য প্রস্তুত করা হচ্ছে</string>
+    <string name="log_opened_appmanager">AppManager-এ খোলা হয়েছে</string>
+    <string name="log_permission_blocked">ডিভাইস নীতি দ্বারা ইনস্টল অনুমতি অবরুদ্ধ</string>
+    <string name="log_opened_external_installer">বাহ্যিক ইনস্টলারে খোলা হয়েছে</string>
+    <string name="install_permission_unavailable">ইনস্টল অনুমতি অনুপলব্ধ</string>
+    <string name="install_permission_blocked_message">APK সফলভাবে ডাউনলোড হয়েছে কিন্তু এই ডিভাইসে সরাসরি ইনস্টল করার অনুমতি নেই। আপনি কি এটি বাহ্যিক ইনস্টলার দিয়ে খুলতে চান?</string>
+    <string name="open_with_external_installer">বাহ্যিক ইনস্টলার দিয়ে খুলুন</string>
+    <string name="external_installer_description">APK ইনস্টল করতে তৃতীয় পক্ষের অ্যাপ ব্যবহার করুন</string>
+
+    <!-- Errors -->
+    <string name="error_generic">ত্রুটি: %1$s</string>
+    <string name="error_asset_not_supported">.%1$s অ্যাসেট টাইপ সমর্থিত নয়</string>
+    <string name="error_file_not_found">ডাউনলোড করা ফাইল পাওয়া যায়নি</string>
+
+    <string name="home_category_trending">ট্রেন্ডিং</string>
+    <string name="home_category_hot_release">হট রিলিজ</string>
+    <string name="home_category_most_popular">সবচেয়ে জনপ্রিয়</string>
+
+    <string name="home_topic_privacy">গোপনীয়তা</string>
+    <string name="home_topic_media">মিডিয়া</string>
+    <string name="home_topic_productivity">উৎপাদনশীলতা</string>
+    <string name="home_topic_networking">নেটওয়ার্ক</string>
+    <string name="home_topic_dev_tools">ডেভ টুলস</string>
+
+    <string name="home_finding_repositories">রিপোজিটরি খোঁজা হচ্ছে...</string>
+    <string name="home_loading_more">আরও লোড হচ্ছে...</string>
+    <string name="home_no_more_repositories">আর কোনো রিপোজিটরি নেই</string>
+    <string name="home_retry">পুনরায় চেষ্টা</string>
+    <string name="home_failed_to_load_repositories">রিপোজিটরি লোড করতে ব্যর্থ</string>
+    <string name="home_view_details">বিস্তারিত দেখুন</string>
+
+    <string name="updated_just_now">এইমাত্র আপডেট হয়েছে</string>
+    <string name="updated_hours_ago">%1$d ঘণ্টা আগে আপডেট হয়েছে</string>
+    <string name="updated_yesterday">গতকাল আপডেট হয়েছে</string>
+    <string name="updated_days_ago">%1$d দিন আগে আপডেট হয়েছে</string>
+    <string name="updated_on_date">%1$s তারিখে আপডেট হয়েছে</string>
+
+    <string name="rate_limit_exceeded">রেট লিমিট অতিক্রম করেছে</string>
+    <string name="rate_limit_used_all">আপনি সব %1$d টি API অনুরোধ ব্যবহার করেছেন।</string>
+    <string name="rate_limit_used_all_free">আপনি সব %1$d টি ফ্রি API অনুরোধ ব্যবহার করেছেন।</string>
+    <string name="rate_limit_resets_in_minutes">%1$d মিনিটে রিসেট হবে</string>
+    <string name="rate_limit_tip_sign_in">💡 ৬০ এর বদলে প্রতি ঘণ্টায় ৫,০০০ অনুরোধ পেতে সাইন ইন করুন!</string>
+    <string name="rate_limit_sign_in">সাইন ইন</string>
+    <string name="rate_limit_ok">ঠিক আছে</string>
+    <string name="rate_limit_close">বন্ধ করুন</string>
+
+    <string name="system_font">সিস্টেম ফন্ট</string>
+    <string name="system_font_description">আরও ভালো পাঠযোগ্যতার জন্য ডিভাইসের ফন্ট ব্যবহার করুন</string>
+
+    <string name="theme_light">উজ্জ্বল</string>
+    <string name="theme_dark">অন্ধকার</string>
+    <string name="theme_system">সিস্টেম</string>
+
+    <string name="added_to_favourites">রিপোজিটরি প্রিয় তালিকায় যোগ করা হয়েছে</string>
+    <string name="removed_from_favourites">রিপোজিটরি প্রিয় তালিকা থেকে সরানো হয়েছে</string>
+    <string name="add_to_favourites">প্রিয় তালিকায় যোগ করুন</string>
+    <string name="remove_from_favourites">প্রিয় তালিকা থেকে সরান</string>
+    <string name="favourites">প্রিয়</string>
+
+    <string name="added_just_now">এইমাত্র যোগ করা হয়েছে</string>
+    <string name="added_hours_ago">%1$d ঘণ্টা আগে যোগ করা হয়েছে</string>
+    <string name="added_yesterday">গতকাল যোগ করা হয়েছে</string>
+    <string name="added_days_ago">%1$d দিন আগে যোগ করা হয়েছে</string>
+    <string name="added_on_date">%1$s তারিখে যোগ করা হয়েছে</string>
+
+    <string name="starred_repositories">স্টার করা রিপোজিটরি</string>
+    <string name="repository_starred">রিপোজিটরি স্টার করা হয়েছে</string>
+    <string name="repository_not_starred">রিপোজিটরি স্টার করা হয়নি</string>
+    <string name="star_from_github">আপনি GitHub থেকে রিপোজিটরি স্টার করতে পারেন</string>
+    <string name="unstar_from_github">আপনি GitHub থেকে রিপোজিটরির স্টার সরাতে পারেন</string>
+
+    <string name="sign_in_required">সাইন ইন প্রয়োজন</string>
+    <string name="sign_in_with_github_for_stars">স্টার করা রিপোজিটরি দেখতে GitHub দিয়ে সাইন ইন করুন</string>
+    <string name="no_starred_repos">কোনো স্টার করা রিপোজিটরি নেই</string>
+    <string name="star_repos_hint">ইনস্টলযোগ্য রিলিজ থাকা রিপোজিটরি GitHub-এ স্টার করুন</string>
+    <string name="last_synced">শেষ সিঙ্ক</string>
+    <string name="just_now">এইমাত্র</string>
+    <string name="minutes_ago">%1$d মিনিট আগে</string>
+    <string name="hours_ago">%1$d ঘণ্টা আগে</string>
+    <string name="days_ago">%1$d দিন আগে</string>
+    <string name="dismiss">বন্ধ করুন</string>
+    <string name="sync_starred_failed">স্টার করা রিপোজিটরি সিঙ্ক করতে ব্যর্থ হয়েছে</string>
+
+    <string name="developer_profile_title">ডেভেলপার প্রোফাইল</string>
+    <string name="open_developer_profile">ডেভেলপার প্রোফাইল খুলুন</string>
+
+    <!-- Developer Profile - General -->
+    <string name="failed_to_load_repositories">রিপোজিটরি লোড করতে ব্যর্থ</string>
+    <string name="failed_to_load_profile">প্রোফাইল লোড করতে ব্যর্থ</string>
+
+    <!-- Developer Profile - Stats -->
+    <string name="repositories">রিপোজিটরি</string>
+    <string name="followers">অনুসরণকারী</string>
+    <string name="following">অনুসরণ</string>
+
+    <!-- Developer Profile - Filter & Sort -->
+    <string name="search_repositories">রিপোজিটরি খুঁজুন…</string>
+    <string name="clear_search">অনুসন্ধান মুছুন</string>
+    <string name="filter_all">সব</string>
+    <string name="filter_with_releases">রিলিজ সহ</string>
+    <string name="filter_installed">ইনস্টল করা</string>
+    <string name="filter_favorites">পছন্দ</string>
+    <string name="sort">সাজান</string>
+    <string name="sort_recently_updated">সাম্প্রতিক আপডেট</string>
+    <string name="sort_name">নাম</string>
+
+    <!-- Developer Profile - Repository Count -->
+    <string name="repository_singular">রিপোজিটরি</string>
+    <string name="repositories_plural">রিপোজিটরি</string>
+    <string name="showing_x_of_y_repositories">%2$d টির মধ্যে %1$d টি রিপোজিটরি দেখানো হচ্ছে</string>
+
+    <!-- Developer Profile - Empty States -->
+    <string name="no_repos_with_releases">ইনস্টল করার যোগ্য রিলিজ সহ কোনো রিপোজিটরি নেই</string>
+    <string name="no_installed_repos">কোনো রিপোজিটরি ইনস্টল করা হয়নি</string>
+    <string name="no_favorite_repos">কোনো পছন্দের রিপোজিটরি নেই</string>
+
+    <!-- Developer Profile - Repository Item -->
+    <string name="updated_x_ago">%1$s আপডেট করা হয়েছে</string>
+    <string name="has_release">রিলিজ আছে</string>
+
+    <!-- Developer Profile - Relative Time -->
+    <string name="time_years_ago">%1$d বছর আগে</string>
+    <string name="time_months_ago">%1$d মাস আগে</string>
+    <string name="time_days_ago">%1$d দিন আগে</string>
+    <string name="time_hours_ago">%1$d ঘণ্টা আগে</string>
+    <string name="time_minutes_ago">%1$d মিনিট আগে</string>
+
+    <!-- Developer Profile - Count Formatting -->
+    <string name="count_millions">%1$dM</string>
+    <string name="count_thousands">%1$dk</string>
+
+    <string name="released_just_now">এইমাত্র প্রকাশিত</string>
+    <string name="released_hours_ago">%1$d ঘণ্টা আগে প্রকাশিত</string>
+    <string name="released_yesterday">গতকাল প্রকাশিত</string>
+    <string name="released_days_ago">%1$d দিন আগে প্রকাশিত</string>
+    <string name="released_on_date">%1$s তারিখে প্রকাশিত</string>
+
+    <string name="bottom_nav_home_title">হোম</string>
+    <string name="bottom_nav_search_title">অনুসন্ধান</string>
+    <string name="bottom_nav_apps_title">অ্যাপস</string>
+    <string name="bottom_nav_profile_title">প্রোফাইল</string>
+
+    <string name="forked_repository">ফর্ক</string>
+
+    <string name="category_stable">স্থিতিশীল</string>
+    <string name="category_pre_release">প্রি-রিলিজ</string>
+    <string name="category_all">সব</string>
+    <string name="select_version">ভার্সন নির্বাচন করুন</string>
+    <string name="pre_release_badge">প্রি-রিলিজ</string>
+    <string name="no_version_selected">কোনো ভার্সন নির্বাচিত নয়</string>
+    <string name="versions_title">ভার্সনসমূহ</string>
+
+    <!-- Install status -->
+    <string name="pending_install">ইনস্টল মুলতুবি</string>
+
+    <!-- Uninstall / Open -->
+    <string name="uninstall">আনইনস্টল</string>
+    <string name="open_app">খুলুন</string>
+    <string name="downgrade_requires_uninstall">ডাউনগ্রেডের জন্য আনইনস্টল প্রয়োজন</string>
+    <string name="downgrade_warning_message">সংস্করণ %1$s ইনস্টল করতে বর্তমান সংস্করণ (%2$s) প্রথমে আনইনস্টল করতে হবে। অ্যাপের ডেটা মুছে যাবে।</string>
+    <string name="uninstall_first">প্রথমে আনইনস্টল করুন</string>
+    <string name="install_version">%1$s ইনস্টল করুন</string>
+    <string name="failed_to_open_app">%1$s খুলতে ব্যর্থ</string>
+    <string name="failed_to_uninstall">%1$s আনইনস্টল করতে ব্যর্থ</string>
+
+    <!-- Version picker -->
+    <string name="latest_badge">সর্বশেষ</string>
+
+    <!-- Apps feature - Last checked -->
+    <string name="last_checked">সর্বশেষ পরীক্ষা: %1$s</string>
+    <string name="last_checked_never">কখনো পরীক্ষা করা হয়নি</string>
+    <string name="last_checked_just_now">এইমাত্র</string>
+    <string name="last_checked_minutes_ago">%1$d মিনিট আগে</string>
+    <string name="last_checked_hours_ago">%1$d ঘণ্টা আগে</string>
+    <string name="checking_for_updates">আপডেট পরীক্ষা করা হচ্ছে…</string>
+
+    <!-- Proxy -->
+    <string name="proxy_type">প্রক্সি ধরন</string>
+    <string name="proxy_none">নেই</string>
+    <string name="proxy_system">সিস্টেম</string>
+    <string name="proxy_http">HTTP</string>
+    <string name="proxy_socks">SOCKS</string>
+    <string name="proxy_host">হোস্ট</string>
+    <string name="proxy_port">পোর্ট</string>
+    <string name="proxy_username">ব্যবহারকারীর নাম (ঐচ্ছিক)</string>
+    <string name="proxy_password">পাসওয়ার্ড (ঐচ্ছিক)</string>
+    <string name="proxy_save">প্রক্সি সংরক্ষণ</string>
+    <string name="proxy_saved">প্রক্সি সেটিংস সংরক্ষিত হয়েছে</string>
+    <string name="proxy_system_description">আপনার ডিভাইসের প্রক্সি সেটিংস ব্যবহার করে</string>
+    <string name="proxy_port_error">পোর্ট ১–৬৫৫৩৫ এর মধ্যে হতে হবে</string>
+    <string name="proxy_none_description">সরাসরি সংযোগ, কোনো প্রক্সি নেই</string>
+    <string name="failed_to_save_proxy_settings">প্রক্সি সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে</string>
+    <string name="proxy_host_required">প্রক্সি হোস্ট প্রয়োজন</string>
+    <string name="invalid_proxy_port">অবৈধ প্রক্সি পোর্ট</string>
+    <string name="proxy_show_password">পাসওয়ার্ড দেখান</string>
+    <string name="proxy_hide_password">পাসওয়ার্ড লুকান</string>
+
+
+    <!-- Track app feature -->
+    <string name="track_this_app">এই অ্যাপ ট্র্যাক করুন</string>
+    <string name="app_tracked_successfully">অ্যাপ ট্র্যাকিং তালিকায় যোগ করা হয়েছে</string>
+    <string name="failed_to_track_app">অ্যাপ ট্র্যাক করতে ব্যর্থ: %1$s</string>
+    <string name="already_tracked">অ্যাপটি ইতিমধ্যে ট্র্যাক করা হচ্ছে</string>
+
+    <!-- Profile section -->
+    <string name="profile_sign_in_title">GitHub-এ সাইন ইন করুন</string>
+    <string name="profile_sign_in_description">সম্পূর্ণ অভিজ্ঞতা আনলক করুন। আপনার অ্যাপ পরিচালনা করুন, পছন্দ সিঙ্ক করুন এবং দ্রুত ব্রাউজ করুন।</string>
+    <string name="profile_repos">রিপোজিটরি</string>
+    <string name="profile_login">লগইন</string>
+    <string name="profile_stars_description">GitHub-এ আপনার স্টার করা রিপোজিটরি</string>
+    <string name="profile_favourites_description">স্থানীয়ভাবে সংরক্ষিত আপনার প্রিয় রিপোজিটরি</string>
+
+    <!-- Session expired dialog -->
+    <string name="session_expired_title">সেশনের মেয়াদ শেষ</string>
+    <string name="session_expired_message">আপনার GitHub সেশনের মেয়াদ শেষ হয়ে গেছে বা টোকেনটি প্রত্যাহার করা হয়েছে। প্রমাণিত বৈশিষ্ট্যগুলি ব্যবহার চালিয়ে যেতে অনুগ্রহ করে আবার সাইন ইন করুন।</string>
+    <string name="session_expired_hint">আপনি সীমিত API অনুরোধ সহ অতিথি হিসেবে ব্রাউজ করতে পারেন।</string>
+    <string name="sign_in_again">আবার সাইন ইন করুন</string>
+    <string name="continue_as_guest">অতিথি হিসেবে চালিয়ে যান</string>
+    <string name="logout_revocation_note">এটি আপনার স্থানীয় সেশন এবং ক্যাশ ডেটা মুছে ফেলবে। সম্পূর্ণরূপে অ্যাক্সেস প্রত্যাহার করতে, GitHub Settings > Applications এ যান।</string>
+    <string name="auth_code_expires_in">কোডের মেয়াদ শেষ হবে %1$s এ</string>
+    <string name="auth_error_code_expired">ডিভাইস কোডের মেয়াদ শেষ হয়ে গেছে।</string>
+    <string name="auth_hint_try_again">একটি নতুন কোড পেতে অনুগ্রহ করে আবার সাইন ইন করার চেষ্টা করুন।</string>
+    <string name="auth_hint_check_connection">অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="auth_hint_denied">আপনি অনুমোদনের অনুরোধ প্রত্যাখ্যান করেছেন। এটি অনিচ্ছাকৃত হলে আবার চেষ্টা করুন।</string>
+    <string name="auth_check_status">আমি ইতিমধ্যেই অনুমোদন করেছি</string>
+    <string name="auth_polling_status">যাচাই করা হচ্ছে…</string>
+    <string name="auth_rate_limited">অনুরোধ সীমাবদ্ধ — %1$d সেকেন্ডে পুনরায় চেষ্টা করা হবে</string>
+
+    <!-- Read More / Show Less -->
+    <string name="read_more">আরও পড়ুন</string>
+    <string name="show_less">কম দেখান</string>
+
+    <string name="share_repository">রিপোজিটরি শেয়ার করুন</string>
+    <string name="failed_to_share_link">লিংক শেয়ার করতে ব্যর্থ হয়েছে</string>
+    <string name="link_copied_to_clipboard">লিংক ক্লিপবোর্ডে কপি করা হয়েছে</string>
+
+    <!-- Translation feature -->
+    <string name="translate">অনুবাদ করুন</string>
+    <string name="translating">অনুবাদ হচ্ছে…</string>
+    <string name="show_original">মূল দেখান</string>
+    <string name="translated_to">%1$s এ অনুবাদিত</string>
+    <string name="translate_to">অনুবাদ করুন…</string>
+    <string name="search_language">ভাষা খুঁজুন</string>
+    <string name="change_language">ভাষা পরিবর্তন করুন</string>
+    <string name="translation_failed">অনুবাদ ব্যর্থ হয়েছে। আবার চেষ্টা করুন।</string>
+
+    <string name="open_github_link">GitHub লিংক খুলুন</string>
+    <string name="clipboard_link_detected">ক্লিপবোর্ডে GitHub লিংক পাওয়া গেছে</string>
+    <string name="auto_detect_clipboard_links">ক্লিপবোর্ড লিংক স্বয়ংক্রিয় সনাক্তকরণ</string>
+    <string name="auto_detect_clipboard_description">অনুসন্ধান খোলার সময় স্বয়ংক্রিয়ভাবে ক্লিপবোর্ড থেকে GitHub লিংক সনাক্ত করুন</string>
+    <string name="detected_links">সনাক্তকৃত লিংক</string>
+    <string name="open_in_app">অ্যাপে খুলুন</string>
+    <string name="no_github_link_in_clipboard">ক্লিপবোর্ডে কোনো GitHub লিংক পাওয়া যায়নি</string>
+
+    <string name="storage">স্টোরেজ</string>
+    <string name="clear_cache">ক্যাশে পরিষ্কার করুন</string>
+    <string name="current_size">বর্তমান আকার:</string>
+    <string name="clear">পরিষ্কার করুন</string>
+
+    <string name="sponsor_title">Kiri Store সমর্থন করুন</string>
+    <string name="sponsor_button">প্রকল্পকে সমর্থন করুন</string>
+    <string name="sponsor_hero_title">চিরকাল বিনামূল্যে।\nআপনাদের সহায়তায় চলে।</string>
+
+    <string name="sponsor_hero_subtitle">আপনার সমর্থন Kiri Store কে বিনামূল্যে, স্বাধীন এবং সক্রিয়ভাবে রক্ষণাবেক্ষণ করে রাখে — কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকিং নেই, শুধু ওপেন-সোর্স অ্যাপ ইনস্টল করার একটি ভালো উপায়।</string>
+
+    <string name="sponsor_personal_note">আমি পড়াশোনা শেষ করতে করতে একাই এই প্রকল্পটি তৈরি ও রক্ষণাবেক্ষণ করছি। প্রতিটি অবদান — বড় হোক বা ছোট — সরাসরি সার্ভার খরচ, উন্নয়ন এবং সবার জন্য অ্যাপটিকে বিজ্ঞাপনমুক্ত রাখতে ব্যবহৃত হয়।</string>
+
+    <string name="sponsor_kodee_title">Kiri Store এর জন্য ভোট দিন!</string>
+    <string name="sponsor_kodee_subtitle">Kiri Store KotlinConf 2026 এর Golden Kodee Awards এর জন্য মনোনীত হয়েছে।</string>
+
+    <string name="sponsor_kodee_register">1. নিবন্ধন করুন</string>
+    <string name="sponsor_kodee_vote">2. ভোট দিন</string>
+
+    <string name="sponsor_kodee_deadline">ভোট ২২ মার্চ পর্যন্ত</string>
+
+    <string name="sponsor_kodee_step1">1. পুরস্কার প্ল্যাটফর্মে নিবন্ধন করুন (Google দিয়ে চালিয়ে যান)</string>
+    <string name="sponsor_kodee_step2">2. নিচে Vote চাপুন</string>
+    <string name="sponsor_kodee_step3">3. Usmon Narzullayev খুঁজে Vote চাপুন</string>
+
+    <string name="sponsor_github_sponsors">GitHub Sponsors</string>
+    <string name="sponsor_github_sponsors_desc">মাসিক বা একবারের — সরাসরি উন্নয়নে অবদান রাখে</string>
+
+    <string name="sponsor_buy_me_coffee">Buy Me a Coffee</string>
+    <string name="sponsor_buy_me_coffee_desc">দ্রুত একবারের অবদান</string>
+
+    <string name="sponsor_other_ways_title">সহায়তার অন্যান্য উপায়</string>
+
+    <string name="sponsor_star_repo">রিপোজিটরিতে স্টার দিন</string>
+    <string name="sponsor_star_repo_desc">দৃশ্যমানতা বাড়ায় এবং অন্যদের খুঁজে পেতে সাহায্য করে</string>
+
+    <string name="sponsor_report_bugs">বাগ রিপোর্ট করুন</string>
+    <string name="sponsor_report_bugs_desc">প্রতিটি রিপোর্ট সবার জন্য অ্যাপটিকে আরও ভালো করে</string>
+
+    <string name="sponsor_share">বন্ধুদের সাথে শেয়ার করুন</string>
+    <string name="sponsor_share_desc">মুখের কথাই সেরা মার্কেটিং</string>
+
+    <string name="sponsor_thank_you">প্রতিটি অবদান — আর্থিক হোক বা না হোক — সত্যিই একটি পার্থক্য তৈরি করে। এর অংশ হওয়ার জন্য আপনাকে ধন্যবাদ।</string>
+
+    <!-- Installation method settings -->
+    <string name="section_installation">ইনস্টলেশন</string>
+    <string name="installer_type_default">ডিফল্ট</string>
+    <string name="installer_type_default_description">স্ট্যান্ডার্ড সিস্টেম ইনস্টল ডায়ালগ</string>
+    <string name="installer_type_shizuku">Shizuku</string>
+    <string name="installer_type_shizuku_description">প্রম্পট ছাড়া নীরব ইনস্টল</string>
+    <string name="shizuku_status_not_installed">Shizuku ইনস্টল করা নেই</string>
+    <string name="shizuku_status_not_running">Shizuku চলছে না</string>
+    <string name="shizuku_status_permission_needed">অনুমতি প্রয়োজন</string>
+    <string name="shizuku_status_ready">প্রস্তুত</string>
+    <string name="shizuku_grant_permission">অনুমতি দিন</string>
+    <string name="shizuku_install_hint">নীরব ইনস্টল সক্রিয় করতে Shizuku ইনস্টল করুন</string>
+    <string name="shizuku_start_hint">নীরব ইনস্টল সক্রিয় করতে Shizuku চালু করুন</string>
+    <string name="shizuku_install_failed_fallback">Shizuku ইনস্টল ব্যর্থ, স্ট্যান্ডার্ড ইনস্টলার ব্যবহার করা হচ্ছে</string>
+
+    <string name="auto_update_title">স্বয়ংক্রিয়ভাবে অ্যাপ আপডেট করুন</string>
+    <string name="auto_update_description">Shizuku এর মাধ্যমে ব্যাকগ্রাউন্ডে স্বয়ংক্রিয়ভাবে আপডেট ডাউনলোড এবং ইনস্টল করুন</string>
+
+    <string name="section_updates">আপডেট</string>
+    <string name="update_check_interval_title">আপডেট চেক করার ব্যবধান</string>
+    <string name="update_check_interval_description">ব্যাকগ্রাউন্ডে কতক্ষণ পর পর অ্যাপ আপডেট খোঁজা হবে</string>
+    <string name="interval_3h">৩ঘ</string>
+    <string name="interval_6h">৬ঘ</string>
+    <string name="interval_12h">১২ঘ</string>
+    <string name="interval_24h">২৪ঘ</string>
+
+    <string name="add_by_link">লিঙ্ক দিয়ে যোগ করুন</string>
+    <string name="link_app_title">অ্যাপ রিপোজিটরিতে লিঙ্ক করুন</string>
+    <string name="pick_installed_app">GitHub রিপোজিটরিতে লিঙ্ক করতে একটি ইনস্টল করা অ্যাপ বেছে নিন</string>
+    <string name="search_apps_hint">অ্যাপ খুঁজুন…</string>
+    <string name="enter_repo_url">GitHub রিপোজিটরি URL</string>
+    <string name="repo_url_hint">github.com/owner/repo</string>
+    <string name="validating_repo">যাচাই হচ্ছে…</string>
+    <string name="link_and_track">লিঙ্ক এবং ট্র্যাক করুন</string>
+    <string name="checking_release">সর্বশেষ রিলিজ পরীক্ষা হচ্ছে…</string>
+    <string name="downloading_for_verification">যাচাইয়ের জন্য APK ডাউনলোড হচ্ছে…</string>
+    <string name="verifying_signing_key">সাইনিং কী যাচাই হচ্ছে…</string>
+    <string name="package_name_mismatch">প্যাকেজ নাম মেলেনি: APK হলো %1$s, কিন্তু নির্বাচিত অ্যাপ হলো %2$s</string>
+    <string name="signing_key_mismatch_link">সাইনিং কী মেলেনি: এই রিপোজিটরির APK একজন ভিন্ন ডেভেলপার দ্বারা স্বাক্ষরিত</string>
+    <string name="select_asset_title">ইনস্টলার নির্বাচন করুন</string>
+    <string name="select_asset_description">আপনার ইনস্টল করা অ্যাপের সাথে যাচাই করতে APK নির্বাচন করুন</string>
+    <string name="download_failed">ডাউনলোড ব্যর্থ</string>
+    <string name="export_apps">রপ্তানি</string>
+    <string name="import_apps">আমদানি</string>
+    <string name="import_apps_title">অ্যাপ আমদানি করুন</string>
+    <string name="import_apps_description">ট্র্যাক করা অ্যাপ পুনরুদ্ধার করতে রপ্তানি করা JSON পেস্ট করুন</string>
+    <string name="import_apps_hint">রপ্তানি করা JSON এখানে পেস্ট করুন…</string>
+    <string name="include_pre_releases_title">প্রি-রিলিজ অন্তর্ভুক্ত করুন</string>
+    <string name="include_pre_releases_description">আপডেট পরীক্ষার সময় প্রি-রিলিজ সংস্করণ ট্র্যাক করুন। নিষ্ক্রিয় থাকলে, শুধুমাত্র স্থিতিশীল রিলিজ বিবেচনা করা হয়।</string>
+    <string name="confirm_uninstall_title">অ্যাপ আনইনস্টল করবেন?</string>
+    <string name="confirm_uninstall_message">আপনি কি নিশ্চিত যে %1$s আনইনস্টল করতে চান? এই ক্রিয়া পূর্বাবস্থায় ফেরানো যাবে না এবং অ্যাপের ডেটা হারিয়ে যেতে পারে।</string>
+    <string name="invalid_github_url">অবৈধ GitHub URL। ফর্ম্যাট ব্যবহার করুন: github.com/owner/repo</string>
+    <string name="repo_not_found">রিপোজিটরি পাওয়া যায়নি: %1$s/%2$s</string>
+    <string name="rate_limit_try_again">GitHub API হার সীমা অতিক্রম করেছে। পরে আবার চেষ্টা করুন।</string>
+    <string name="failed_to_link">লিঙ্ক করতে ব্যর্থ: %1$s</string>
+    <string name="failed_to_load_apps">ইনস্টল করা অ্যাপ লোড করতে ব্যর্থ</string>
+    <string name="app_linked_success">%1$s %2$s/%3$s এর সাথে লিঙ্ক করা হয়েছে</string>
+    <string name="export_failed">রপ্তানি ব্যর্থ: %1$s</string>
+    <string name="import_failed">আমদানি ব্যর্থ: %1$s</string>
+    <string name="imported_apps_summary">%1$d অ্যাপ আমদানি করা হয়েছে</string>
+    <string name="imported_skipped">, %1$d বাদ দেওয়া হয়েছে</string>
+    <string name="imported_failed">, %1$d ব্যর্থ</string>
+    <string name="signing_key_changed_title">সাইনিং কী পরিবর্তিত হয়েছে</string>
+    <string name="signing_key_changed_message">এই অ্যাপের সাইনিং সার্টিফিকেট প্রথম ইনস্টলের পর থেকে পরিবর্তিত হয়েছে।\n\nএর অর্থ হতে পারে ডেভেলপার তাদের সাইনিং কী পরিবর্তন করেছে, অথবা বাইনারি পরিবর্তন করা হয়েছে।\n\nপ্রত্যাশিত: %1$s\nপ্রাপ্ত: %2$s</string>
+    <string name="install_anyway">যাই হোক ইনস্টল করুন</string>
+    <string name="verified_build">যাচাইকৃত বিল্ড</string>
+    <string name="checking_attestation">পরীক্ষা হচ্ছে\u2026</string>
+    <string name="assets_title">সম্পদ</string>
+    <string name="no_assets_selected">কোনো সম্পদ নেই</string>
+    <string name="no_assets_in_list">এই রিলিজের সাথে কোনো সম্পদ যুক্ত নেই</string>
+    <string name="assets_selection_label">সম্পদ বিকল্প নির্বাচন করুন</string>
+    <string name="multiple_assets_info_dialog_title">একাধিক সম্পদ উপলব্ধ</string>
+    <string name="multiple_assets_info_dialog_text">এই রিলিজের জন্য একাধিক ইনস্টলযোগ্য ফাইল উপলব্ধ। তালিকা পর্যালোচনা করুন এবং আপনার ডিভাইসের জন্য উপযুক্তটি নির্বাচন করুন।</string>
+    <string name="icon_content_description_info">তথ্য</string>
+    <string name="translation_error_retry">পুনরায় চেষ্টা</string>
+    <string name="translated_from">স্বয়ংক্রিয়ভাবে শনাক্ত: %1$s</string>
+    <string name="select_language">ভাষা নির্বাচন করুন</string>
+    <string name="update_package_mismatch">প্যাকেজ অমিল: APK হলো %1$s, কিন্তু ইনস্টল করা অ্যাপ হলো %2$s। আপডেট ব্লক করা হয়েছে।</string>
+    <string name="update_signing_key_mismatch">সাইনিং কী অমিল: আপডেটটি একজন ভিন্ন ডেভেলপার দ্বারা সাইন করা হয়েছে। আপডেট ব্লক করা হয়েছে।</string>
+    <string name="liquid_glass_option_title">লিকুইড গ্লাস ইফেক্ট</string>
+    <string name="liquid_glass_option_description">একটি মসৃণ কাচের মতো চেহারা দিয়ে ইন্টারফেস উন্নত করুন</string>
+
+    <string name="scrollbar_option_title">স্ক্রলবার</string>
+    <string name="scrollbar_option_description">স্ক্রলযোগ্য তালিকায় স্ক্রলবার দেখান (ডেস্কটপ)</string>
+
+    <string name="hide_seen_title">দেখা রিপোজিটরি লুকান</string>
+    <string name="hide_seen_description">আপনি ইতিমধ্যে দেখেছেন এমন রিপোজিটরি আবিষ্কার ফিড থেকে লুকান</string>
+    <string name="clear_seen_history">দেখার ইতিহাস মুছুন</string>
+    <string name="clear_seen_history_description">সমস্ত দেখা রিপোজিটরি রিসেট করুন যাতে সেগুলো ফিডে আবার দেখা যায়</string>
+    <string name="seen_history_cleared">দেখার ইতিহাস মুছে ফেলা হয়েছে</string>
+    <string name="seen_badge">দেখা হয়েছে</string>
+
+    <string name="recently_viewed">সাম্প্রতিক দেখা</string>
+    <string name="profile_recently_viewed_description">আপনি যেসব রিপোজিটরি দেখেছেন</string>
+    <string name="downloaded_packages">ডাউনলোড করা প্যাকেজসমূহ</string>
+    <string name="downloaded_packages_description">GitHub রিলিজ থেকে APK এবং ইনস্টলার</string>
+    <string name="delete_all">সব মুছুন</string>
+    <string name="delete_downloads_confirmation_title">সব ডাউনলোড মুছবেন?</string>
+    <string name="delete_downloads_confirmation_message">এটি সব APK এবং ইনস্টলার স্থায়ীভাবে মুছে ফেলবে (%1$s)। আপনি যেকোনো সময় আবার ডাউনলোড করতে পারবেন।</string>
+    <string name="downloads_cleared">সব ডাউনলোড করা প্যাকেজ মুছে ফেলা হয়েছে।</string>
+    <string name="unable_to_verify_attestation">যাচাই করা যায়নি</string>
+
+    <string name="recent_searches">সাম্প্রতিক অনুসন্ধান</string>
+    <string name="clear_all_history">সব মুছুন</string>
+    <string name="remove_search_history_item">সরান</string>
+
+    <string name="bottom_nav_profile_tweaks">টুইকস</string>
+    <string name="tweaks_title">টুইকস</string>
+    <string name="pre_releases">প্রি-রিলিজ</string>
+</resources>
+
