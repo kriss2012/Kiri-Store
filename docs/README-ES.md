@@ -82,9 +82,7 @@ Construida con Kotlin Multiplatform y Compose Multiplatform para plataformas And
 
 Consulta la [Wiki](https://github.com/OpenHub-Store/GitHub-Store/wiki) de Kiri Store para preguntas frecuentes e informacion util
 
-🌐 **Sitio web:** [github-store.org](https://github-store.org)
 💬 **Discord:** [Unete a la comunidad](https://discord.gg/x9Cvh2Z9qS)
-📜 **Politica de privacidad:** [github-store.org/privacy-policy](https://github-store.org/privacy-policy/)
 
 </div>
 
@@ -122,7 +120,6 @@ GitHub® es una marca registrada de GitHub, Inc.
   <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" height="60" alt="Get it on Obtainium">
 </a>
 
-<a href="https://github-store.org/app?repo=OpenHub-Store/GitHub-Store">
   <img src="../media-resources/ghs_download_badge.png" alt="Get it on Kiri Store" height="64">
 </a>
 </p>
@@ -361,3 +358,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
