@@ -5,4 +5,3 @@ sealed interface MainAction {
 
     data object DismissSessionExpiredDialog : MainAction
 }
-
