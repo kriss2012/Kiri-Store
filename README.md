@@ -118,9 +118,7 @@ One API, any icon pack. Swap your entire icon set in one line.
 
 Check out Kiri Store [Wiki](https://github.com/OpenHub-Store/GitHub-Store/wiki) for FAQ and useful information
 
-🌐 **Website:** [github-store.org](https://github-store.org)
 💬 **Discord:** [Join the community](https://discord.gg/x9Cvh2Z9qS)
-📜 **Privacy Policy:** [github-store.org/privacy-policy](https://github-store.org/privacy-policy/)
 
 </div>
 
@@ -156,10 +154,6 @@ GitHub® is a registered trademark of GitHub, Inc.
 <p align="center">
 <a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/OpenHub-Store/GitHub-Store/">
   <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" height="60" alt="Get it on Obtainium">
-</a>
-
-<a href="https://github-store.org/app?repo=OpenHub-Store/GitHub-Store">
-  <img src="media-resources/ghs_download_badge.png" alt="Get it on Kiri Store" height="64">
 </a>
 </p>
 
@@ -207,7 +201,7 @@ GitHub® is a registered trademark of GitHub, Inc.
     - Rendered README content (“About this app”).
     - Release notes with Markdown formatting for any selected release.
     - List of installers with platform labels and file sizes.
-    - Deep linking support — open repository details via `KiriStore://`, `github.com`, or `github-store.org` URLs.
+    - Deep linking support — open repository details via `KiriStore://` or `github.com` URLs.
     - Developer profile screen to explore a developer’s repositories and activity.
 
 - **App management**
