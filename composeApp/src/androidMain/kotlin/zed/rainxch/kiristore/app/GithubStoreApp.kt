@@ -169,4 +169,3 @@ class KiriStoreApp : Application() {
         const val UPDATE_SERVICE_CHANNEL_ID = "update_service"
     }
 }
-
