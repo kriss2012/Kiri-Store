@@ -85,9 +85,7 @@ Zbudowany z użyciem Kotlin Multiplatform i Compose Multiplatform na platformy A
 
 Sprawdź [Wiki](https://github.com/OpenHub-Store/GitHub-Store/wiki) Kiri Store, aby znaleźć odpowiedzi na najczęściej zadawane pytania i przydatne informacje
 
-🌐 **Strona internetowa:** [github-store.org](https://github-store.org)
 💬 **Discord:** [Dołącz do społeczności](https://discord.gg/x9Cvh2Z9qS)
-📜 **Polityka prywatności:** [github-store.org/privacy-policy](https://github-store.org/privacy-policy/)
 
 </div>
 
@@ -406,4 +404,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
 
