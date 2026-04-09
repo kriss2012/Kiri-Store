@@ -16,4 +16,3 @@ data class MainState(
     val isLiquidGlassEnabled: Boolean = true,
     val isScrollbarEnabled: Boolean = false,
 )
-
