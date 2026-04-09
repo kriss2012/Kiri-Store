@@ -77,7 +77,6 @@ object DeepLinkParser {
                 DeepLinkDestination.None
             }
 
-
             else -> {
                 DeepLinkDestination.None
             }
