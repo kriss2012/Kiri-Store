@@ -58,4 +58,3 @@ object BottomNavigationUtils {
                     it.screen == KiriStoreGraph.AppsScreen
             }
 }
-
