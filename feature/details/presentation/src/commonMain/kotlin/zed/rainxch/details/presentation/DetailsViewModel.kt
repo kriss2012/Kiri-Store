@@ -708,7 +708,7 @@ class DetailsViewModel(
         viewModelScope.launch {
             _state.value.repository?.let { repo ->
                 runCatching {
-                    shareManager.shareText("https://github-store.org/app?repo=${repo.fullName}")
+                    shareManager.shareText("https://github.com/${repo.fullName}")
                 }.onFailure { t ->
                     logger.error("Failed to share link: ${t.message}")
                     _events.send(
