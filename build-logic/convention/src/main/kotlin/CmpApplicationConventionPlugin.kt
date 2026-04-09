@@ -1,7 +1,10 @@
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
+import zed.rainxch.kiristore.convention.configureAndroidTarget
+import zed.rainxch.kiristore.convention.configureJvmTarget
 import zed.rainxch.kiristore.convention.isAndroidDisabled
+import zed.rainxch.kiristore.convention.libs
 
 class CmpApplicationConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
