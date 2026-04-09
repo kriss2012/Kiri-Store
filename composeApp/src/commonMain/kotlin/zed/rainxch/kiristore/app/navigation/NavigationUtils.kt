@@ -22,4 +22,3 @@ fun NavBackStackEntry?.getCurrentScreen(): KiriStoreGraph? {
         else -> null
     }
 }
-
