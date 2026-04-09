@@ -12,6 +12,12 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 apply("com.android.application")
             }
 
+            val signingPropsFile = rootProject.file("local.properties")
+            val signingProps = java.util.Properties()
+            if (signingPropsFile.exists()) {
+                signingPropsFile.inputStream().use { signingProps.load(it) }
+            }
+
             extensions.configure<ApplicationExtension> {
                 namespace = "zed.rainxch.kiristore"
                 compileSdk =
@@ -48,6 +54,15 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                         excludes += "/META-INF/{AL2.0,LGPL2.1}"
                     }
                 }
+                signingConfigs {
+                    create("release") {
+                        storeFile = signingProps.getProperty("signing.keyStorePath")?.let { file(it) }
+                        storePassword = signingProps.getProperty("signing.keyStorePassword")
+                        keyAlias = signingProps.getProperty("signing.keyAlias")
+                        keyPassword = signingProps.getProperty("signing.keyPassword")
+                    }
+                }
+
                 buildTypes {
                     getByName("release") {
                         isMinifyEnabled = true
@@ -57,6 +72,10 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                             getDefaultProguardFile("proguard-android-optimize.txt"),
                             "proguard-rules.pro",
                         )
+
+                        if (signingConfigs.getByName("release").storeFile != null) {
+                            signingConfig = signingConfigs.getByName("release")
+                        }
                     }
                 }
 
