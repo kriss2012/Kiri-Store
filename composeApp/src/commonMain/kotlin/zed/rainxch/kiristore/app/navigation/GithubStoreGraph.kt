@@ -47,4 +47,3 @@ sealed interface KiriStoreGraph {
     @Serializable
     data object SponsorScreen : KiriStoreGraph
 }
-
