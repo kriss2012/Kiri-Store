@@ -77,12 +77,6 @@ object DeepLinkParser {
                 DeepLinkDestination.None
             }
 
-            uri.startsWith("https://github-store.org/app/") -> {
-                extractQueryParam(uri, "repo")?.let { encodedRepoParam ->
-                    val decoded = urlDecode(encodedRepoParam)
-                    parseOwnerRepo(decoded)
-                } ?: DeepLinkDestination.None
-            }
 
             else -> {
                 DeepLinkDestination.None
@@ -220,7 +214,7 @@ object DeepLinkParser {
 
     fun extractSupportedUrl(text: String): String? {
         val regex =
-            """https?://(?:www\.)?(?:github\.com|github-store\.org)(?=[/\s?#]|$)[^\s<>"')\],;.!]*""".toRegex(
+            """https?://(?:www\.)?(?:github\.com)(?=[/\s?#]|$)[^\s<>"')\],;.!]*""".toRegex(
                 RegexOption.IGNORE_CASE,
             )
         return regex.find(text)?.value
