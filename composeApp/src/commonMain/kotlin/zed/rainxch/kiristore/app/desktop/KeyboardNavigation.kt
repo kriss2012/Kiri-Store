@@ -11,4 +11,3 @@ object KeyboardNavigation {
         _events.trySend(event)
     }
 }
-
