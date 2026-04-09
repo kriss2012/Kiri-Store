@@ -226,4 +226,3 @@ object DeepLinkParser {
         return regex.find(text)?.value
     }
 }
-
