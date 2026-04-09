@@ -429,7 +429,7 @@ class HomeViewModel(
             is HomeAction.OnShareClick -> {
                 viewModelScope.launch {
                     runCatching {
-                        shareManager.shareText("https://github-store.org/app?repo=${action.repo.fullName}")
+                        shareManager.shareText("https://github.com/${action.repo.fullName}")
                     }.onFailure { t ->
                         logger.error("Failed to share link: ${t.message}")
                         _events.send(
