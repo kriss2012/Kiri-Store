@@ -51,11 +51,11 @@ ktlint-gradle = "12.1.1"
 flatpak-gradle-generator = "1.7.0"
 
 projectApplicationId = "zed.rainxch.kiristore"
-projectVersionName = "1.7.0"
+projectVersionName = "1.7.1"
 projectMinSdkVersion = "26"
 projectTargetSdkVersion = "36"
 projectCompileSdkVersion = "36"
-projectVersionCode = "14"
+projectVersionCode = "15"
 
 [libraries]
 # Kotlin
