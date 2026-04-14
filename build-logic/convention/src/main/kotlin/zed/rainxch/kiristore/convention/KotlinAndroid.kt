@@ -8,23 +8,37 @@ import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-fun Project.configureKotlinAndroid(commonExtension: CommonExtension<*, *, *, *, *, *>) {
+fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
     with(commonExtension) {
-        compileSdk =
+        (this as? com.android.build.api.dsl.ApplicationExtension)?.compileSdk =
             libs
                 .findVersion("projectCompileSdkVersion")
                 .get()
                 .toString()
                 .toInt()
 
-        defaultConfig.minSdk =
+        (this as? com.android.build.api.dsl.LibraryExtension)?.compileSdk =
+            libs
+                .findVersion("projectCompileSdkVersion")
+                .get()
+                .toString()
+                .toInt()
+
+        (this as? com.android.build.api.dsl.ApplicationExtension)?.defaultConfig?.minSdk =
             libs
                 .findVersion("projectMinSdkVersion")
                 .get()
                 .toString()
                 .toInt()
 
-        compileOptions {
+        (this as? com.android.build.api.dsl.LibraryExtension)?.defaultConfig?.minSdk =
+            libs
+                .findVersion("projectMinSdkVersion")
+                .get()
+                .toString()
+                .toInt()
+
+        compileOptions.run {
             sourceCompatibility = JavaVersion.VERSION_17
             targetCompatibility = JavaVersion.VERSION_17
             isCoreLibraryDesugaringEnabled = true
@@ -33,9 +47,7 @@ fun Project.configureKotlinAndroid(commonExtension: CommonExtension<*, *, *, *, 
         configureKotlin()
 
         dependencies {
-            "coreLibraryDesugaring" {
-                libs.findLibrary("android-desugarJdkLibs").get()
-            }
+            add("coreLibraryDesugaring", libs.findLibrary("android-desugarJdkLibs").get())
         }
     }
 }
