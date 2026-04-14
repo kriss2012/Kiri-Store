@@ -56,7 +56,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 }
                 signingConfigs {
                     create("release") {
-                        storeFile = signingProps.getProperty("signing.keyStorePath")?.let { file(it) }
+                        storeFile = signingProps.getProperty("signing.keyStorePath")?.let { rootProject.file(it) }
                         storePassword = signingProps.getProperty("signing.keyStorePassword")
                         keyAlias = signingProps.getProperty("signing.keyAlias")
                         keyPassword = signingProps.getProperty("signing.keyPassword")
