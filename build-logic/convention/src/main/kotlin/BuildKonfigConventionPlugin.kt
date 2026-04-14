@@ -30,9 +30,16 @@ class BuildKonfigConventionPlugin : Plugin<Project> {
                                 ?: "Ov23linTY28VFpFjFiI9"
                         ).trim()
 
+                    val githubClientSecret =
+                        (
+                            localProps.getProperty("GITHUB_CLIENT_SECRET")
+                                ?: "843622c3b7ea1077a679868e23340abf2d1f7bcf"
+                        ).trim()
+
                     val versionName = libs.findVersion("projectVersionName").get().toString()
 
                     buildConfigField(FieldSpec.Type.STRING, "GITHUB_CLIENT_ID", githubClientId)
+                    buildConfigField(FieldSpec.Type.STRING, "GITHUB_CLIENT_SECRET", githubClientSecret)
                     buildConfigField(FieldSpec.Type.STRING, "VERSION_NAME", versionName)
                 }
             }
