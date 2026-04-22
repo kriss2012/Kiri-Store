@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
@@ -14,6 +15,12 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import io.github.fletchmckee.liquid.LiquidState
 import io.github.fletchmckee.liquid.liquid
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.ui.geometry.Offset
 
 @Composable
 fun Modifier.glassmorphism(
@@ -77,5 +84,36 @@ fun Modifier.premiumGradient(
         width = 1.dp,
         brush = Brush.linearGradient(colors = colors.map { it.copy(alpha = 0.5f) }),
         shape = RoundedCornerShape(32.dp)
+    )
+}
+
+@Composable
+fun Modifier.shimmer(
+    enabled: Boolean = true,
+    durationMillis: Int = 1300,
+): Modifier {
+    if (!enabled) return this
+    
+    val transition = rememberInfiniteTransition(label = "shimmer")
+    val translateAnim by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = 1500f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis),
+            repeatMode = RepeatMode.Restart
+        ),
+        label = "shimmerTranslate"
+    )
+
+    return this.background(
+        brush = Brush.linearGradient(
+            colors = listOf(
+                Color.LightGray.copy(alpha = 0.3f),
+                Color.LightGray.copy(alpha = 0.5f),
+                Color.LightGray.copy(alpha = 0.3f),
+            ),
+            start = Offset(translateAnim - 500f, translateAnim - 500f),
+            end = Offset(translateAnim, translateAnim)
+        )
     )
 }

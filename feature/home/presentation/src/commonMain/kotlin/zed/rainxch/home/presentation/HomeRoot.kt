@@ -92,6 +92,8 @@ import zed.rainxch.home.domain.model.HomeCategory
 import zed.rainxch.home.domain.model.TopicCategory
 import zed.rainxch.home.presentation.components.LiquidGlassCategoryChips
 import zed.rainxch.home.presentation.locals.LocalHomeTopBarLiquid
+import zed.rainxch.core.presentation.utils.glassmorphism
+import zed.rainxch.core.presentation.utils.premiumGradient
 import zed.rainxch.home.presentation.utils.displayText
 import zed.rainxch.home.presentation.utils.icon
 
@@ -246,6 +248,7 @@ fun HomeScreen(
                             onTogglePlatformPopup = {
                                 onAction(HomeAction.OnTogglePlatformPopup)
                             },
+                            isLiquidEnabled = state.isLiquidGlassEnabled
                         )
 
                         FilterChips(state, onAction)
@@ -546,7 +549,10 @@ private fun HomeTopAppBar(
     onChangePlatform: (DiscoveryPlatform) -> Unit,
     isPlatformPopupVisible: Boolean,
     onTogglePlatformPopup: () -> Unit,
+    isLiquidEnabled: Boolean,
 ) {
+    val liquidState = LocalHomeTopBarLiquid.current
+
     TopAppBar(
         navigationIcon = {
             Image(
@@ -610,7 +616,13 @@ private fun HomeTopAppBar(
                 }
             }
         },
-        modifier = Modifier.padding(12.dp),
+        modifier = Modifier
+            .padding(12.dp)
+            .glassmorphism(
+                liquidState = liquidState,
+                enabled = isLiquidEnabled,
+                cornerRadius = 24.dp
+            ),
         contentPadding = PaddingValues(),
         windowInsets = WindowInsets(),
     )

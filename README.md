@@ -47,10 +47,11 @@ Built with **Kotlin Multiplatform** and **Compose Multiplatform**, offering a na
 
 ## 🚀 Key Features
 
-- **💎 Premium UI/UX**
-    - Material You dynamic theming and "Liquid Glass" effects.
-    - Smooth transitions and expressive motion design.
-    - Dark mode, AMOLED black, and custom accent colors.
+- **💎 Expressive UI/UX**
+    - **Liquid Glass**: Advanced glassmorphism effects using Skia shaders.
+    - **Dynamic Theming**: Material You support with vibrant color palettes.
+    - **Smooth Transitions**: Bouncy, organic animations for a premium feel.
+    - **Shimmer States**: High-quality loading placeholders for a polished experience.
 
 - **🔍 Smart Discovery**
     - **Curated Feeds**: "Trending", "Hot Releases", and "Most Popular" with smart filters.

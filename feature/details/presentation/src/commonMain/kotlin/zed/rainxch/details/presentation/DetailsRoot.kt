@@ -63,7 +63,7 @@ import zed.rainxch.core.presentation.components.ScrollbarContainer
 import zed.rainxch.core.presentation.locals.LocalScrollbarEnabled
 import zed.rainxch.core.presentation.theme.KiriStoreTheme
 import zed.rainxch.core.presentation.utils.ObserveAsEvents
-import zed.rainxch.core.presentation.utils.isLiquidFrostAvailable
+import zed.rainxch.core.presentation.utils.glassmorphism
 import zed.rainxch.details.presentation.components.LanguagePicker
 import zed.rainxch.details.presentation.components.sections.about
 import zed.rainxch.details.presentation.components.sections.author
@@ -695,28 +695,11 @@ private fun DetailsTopbar(
             ),
         modifier =
             Modifier
-                .shadow(
-                    elevation = 6.dp,
-                    ambientColor = MaterialTheme.colorScheme.surfaceTint,
-                    spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f),
-                ).background(
-                    Brush.linearGradient(
-                        0f to MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
-                        0.5f to MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.7f),
-                        1f to MaterialTheme.colorScheme.surface.copy(alpha = 0.85f),
-                    ),
-                ).then(
-                    if (state.isLiquidGlassEnabled && isLiquidFrostAvailable()) {
-                        Modifier.liquid(liquidTopbarState) {
-                            this.shape = CutCornerShape(0.dp)
-                            this.frost = 5.dp
-                            this.curve = .25f
-                            this.refraction = .05f
-                            this.dispersion = .1f
-                        }
-                    } else {
-                        Modifier.background(MaterialTheme.colorScheme.surfaceContainerHighest)
-                    },
+                .padding(8.dp)
+                .glassmorphism(
+                    liquidState = liquidTopbarState,
+                    enabled = state.isLiquidGlassEnabled,
+                    cornerRadius = 20.dp
                 ),
     )
 }
