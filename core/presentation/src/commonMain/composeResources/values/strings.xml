@@ -509,7 +509,7 @@
     <string name="sponsor_hero_title">Free forever.\nFunded by you.</string>
     <string name="sponsor_hero_subtitle">Your support keeps Kiri Store free, independent, and actively maintained — no ads, no tracking, just a better way to install open-source apps.</string>
 
-    <string name="sponsor_personal_note">I build and maintain this project solo while finishing school. Every contribution — big or small — goes directly toward server costs, development, and keeping the app ad-free for everyone.</string>
+    <string name="sponsor_personal_note">I build and maintain this project solo. Every contribution — big or small — goes directly toward server costs, development, and keeping the app ad-free for everyone.</string>
 
     <string name="sponsor_kodee_title">Vote for Kiri Store!</string>
     <string name="sponsor_kodee_subtitle">Kiri Store has been nominated for the Golden Kodee Awards at KotlinConf 2026.</string>
@@ -520,7 +520,7 @@
 
     <string name="sponsor_kodee_step1">1. Register on the platform (Sign in with Google)</string>
     <string name="sponsor_kodee_step2">2. Click “Vote” below</string>
-    <string name="sponsor_kodee_step3">3. Find Usmon Narzullayev and click “Vote”</string>
+    <string name="sponsor_kodee_step3">3. Find kriss2012 and click “Vote”</string>
 
     <string name="sponsor_github_sponsors">GitHub Sponsors</string>
     <string name="sponsor_github_sponsors_desc">Monthly or one-time — directly funds development</string>

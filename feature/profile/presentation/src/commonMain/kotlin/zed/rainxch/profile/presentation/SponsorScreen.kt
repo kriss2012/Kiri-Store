@@ -97,7 +97,7 @@ fun SponsorScreen(onNavigateBack: () -> Unit) {
                 title = stringResource(Res.string.sponsor_github_sponsors),
                 description = stringResource(Res.string.sponsor_github_sponsors_desc),
                 onClick = {
-                    onOpenUrl("https://github.com/sponsors/rainxchzed")
+                    onOpenUrl("https://github.com/kriss2012")
                 },
             )
 
@@ -106,7 +106,7 @@ fun SponsorScreen(onNavigateBack: () -> Unit) {
                 title = stringResource(Res.string.sponsor_buy_me_coffee),
                 description = stringResource(Res.string.sponsor_buy_me_coffee_desc),
                 onClick = {
-                    onOpenUrl("https://buymeacoffee.com/rainxchzed")
+                    onOpenUrl("https://buymeacoffee.com/202krishnas")
                 },
             )
 
@@ -279,7 +279,7 @@ private fun OtherWaysSection(onOpenUrl: (String) -> Unit) {
                     title = stringResource(Res.string.sponsor_star_repo),
                     description = stringResource(Res.string.sponsor_star_repo_desc),
                     onClick = {
-                        onOpenUrl("https://github.com/OpenHub-Store/GitHub-Store")
+                        onOpenUrl("https://github.com/kriss2012/Kiri-Store")
                     },
                 )
 
@@ -288,7 +288,7 @@ private fun OtherWaysSection(onOpenUrl: (String) -> Unit) {
                     title = stringResource(Res.string.sponsor_report_bugs),
                     description = stringResource(Res.string.sponsor_report_bugs_desc),
                     onClick = {
-                        onOpenUrl("https://github.com/OpenHub-Store/GitHub-Store/issues")
+                        onOpenUrl("https://github.com/kriss2012/Kiri-Store/issues")
                     },
                 )
 
@@ -297,7 +297,7 @@ private fun OtherWaysSection(onOpenUrl: (String) -> Unit) {
                     title = stringResource(Res.string.sponsor_share),
                     description = stringResource(Res.string.sponsor_share_desc),
                     onClick = {
-                        onOpenUrl("https://github.com/OpenHub-Store/GitHub-Store")
+                        onOpenUrl("https://github.com/kriss2012/Kiri-Store")
                     },
                 )
             }

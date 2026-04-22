@@ -231,7 +231,8 @@ class SearchRepositoryImpl(
                 ""
             }
 
-        return ("$q$scope$common" + languageFilter).trim()
+        val exclusion = " -repo:OpenHub-Store/GitHub-Store"
+        return ("$q$scope$common" + languageFilter + exclusion).trim()
     }
 
     private fun assetMatchesPlatform(

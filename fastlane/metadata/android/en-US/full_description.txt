@@ -1,4 +1,4 @@
-Github Store is a "play store" for GitHub releases that helps you discover and install apps directly from GitHub repositories.
+Kiri Store is a "play store" for GitHub releases that helps you discover and install apps directly from GitHub repositories.
 
 The app automatically discovers repositories that ship installable binaries (APK, EXE, DMG, etc.) and lets you install the latest release with one click.
 

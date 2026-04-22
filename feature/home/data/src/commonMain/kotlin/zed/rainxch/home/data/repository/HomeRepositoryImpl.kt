@@ -499,7 +499,8 @@ class HomeRepositoryImpl(
                 DiscoveryPlatform.Linux -> "linux"
             }
 
-        return if (topic == null) baseQuery else "$baseQuery topic:$topic"
+        val exclusion = "-repo:OpenHub-Store/GitHub-Store"
+        return if (topic == null) "$baseQuery $exclusion" else "$baseQuery topic:$topic $exclusion"
     }
 
     private fun calculatePlatformScore(repo: GithubRepoNetworkModel): Int {
