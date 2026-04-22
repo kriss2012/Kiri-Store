@@ -35,10 +35,6 @@
 <a href="https://github.com/kriss2012/Kiri-Store/releases/latest">
   <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
-
-  <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
-</a>
-
 <br/>
 <br/>
 
