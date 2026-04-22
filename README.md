@@ -39,13 +39,6 @@
 <br/>
 
 
-<p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
- 
-<a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=a95f4a4830bc4a69b56f96ac7efaacf8&claim_uid=sOz1lfiG4ARQYIK&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
-</a>
-</p>
 
 <div align="center">
 
@@ -58,40 +51,6 @@ Built with Kotlin Multiplatform and Compose Multiplatform for Android and Deskto
 </div>
 
 ---
-
-<div align="center">
-
-### 🩵 What's next for Kiri Store
-
-The next major version of Kiri Store will be fully rewritten with
-**[RikkaUI](https://rikkaui.dev)** — a shadcn/ui-inspired component library
-for Compose Multiplatform I'm building in parallel.
-
-Zero Material3. Full ownership. Beautiful by default.
-
-**[Follow the progress →](https://rikkaui.dev)**
-
-</div>
-
----
-
-<div align="center">
-
-### 🎨 Powering the icons
-
-The next Kiri Store will use
-**[RikkaIcons](https://github.com/kriss2012/RikkaIcons)** — semantic icon tokens for Compose Multiplatform.
-One API, any icon pack. Swap your entire icon set in one line.
-
-**[Browse the library →](https://github.com/kriss2012/RikkaIcons)**
-
-</div>
-
----
-
-</br> 
-
-<div align="center"><a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg" alt="Support Palestine" style="width: 100%;"></a></div>
 
 </br> 
 
@@ -155,21 +114,6 @@ GitHub® is a registered trademark of GitHub, Inc.
 
 ---
 
-<p align="center">
-
-# 🏆 Featured In
-</p>
-<p align="center">
-<a href="https://www.youtube.com/@howtomen">
-  <img src="https://img.shields.io/badge/HowToMen-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Featured by HowToMen">
-</a>
-<br/>
-<strong>HowToMen:</strong> <a href="https://www.youtube.com/watch?v=7favc9MDedQ">Top 20 Best Android Apps 2026</a> | <a href="https://www.youtube.com/watch?v=VR-MEwPDw4k">Top 12 App Stores that are Better than Google Play Store </a>
-<br/>
-<strong>HelloGitHub:</strong> <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store">Featured Project</a>
-</p>
-
----
 
 ## 🚀 Features
 
