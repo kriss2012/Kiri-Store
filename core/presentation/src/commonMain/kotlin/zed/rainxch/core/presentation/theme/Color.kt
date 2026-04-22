@@ -3,10 +3,10 @@ package zed.rainxch.core.presentation.theme
 import androidx.compose.material3.ColorScheme
 import androidx.compose.ui.graphics.Color
 
-val primaryLight = Color(0xFF0061A4)
+val primaryLight = Color(0xFF0078D4) // More vibrant blue
 val onPrimaryLight = Color(0xFFFFFFFF)
-val primaryContainerLight = Color(0xFFD1E4FF)
-val onPrimaryContainerLight = Color(0xFF001D36)
+val primaryContainerLight = Color(0xFFDEEBFF)
+val onPrimaryContainerLight = Color(0xFF001E3C)
 val secondaryLight = Color(0xFF535F70)
 val onSecondaryLight = Color(0xFFFFFFFF)
 val secondaryContainerLight = Color(0xFFD7E3F7)
@@ -39,10 +39,10 @@ val surfaceContainerLight = Color(0xFFECEEF4)
 val surfaceContainerHighLight = Color(0xFFE7E8EE)
 val surfaceContainerHighestLight = Color(0xFFE1E2E8)
 
-val primaryDark = Color(0xFF9ECAFF)
-val onPrimaryDark = Color(0xFF003258)
-val primaryContainerDark = Color(0xFF00497D)
-val onPrimaryContainerDark = Color(0xFFD1E4FF)
+val primaryDark = Color(0xFF4FC3F7) // Vibrant light blue
+val onPrimaryDark = Color(0xFF003350)
+val primaryContainerDark = Color(0xFF004C7A)
+val onPrimaryContainerDark = Color(0xFFB3E5FC)
 val secondaryDark = Color(0xFFBBC7DB)
 val onSecondaryDark = Color(0xFF253140)
 val secondaryContainerDark = Color(0xFF3B4858)

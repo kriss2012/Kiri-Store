@@ -45,10 +45,12 @@ import org.jetbrains.compose.resources.stringResource
 import zed.rainxch.core.domain.model.DiscoveryPlatform
 import zed.rainxch.core.presentation.model.DiscoveryRepositoryUi
 import zed.rainxch.core.presentation.model.GithubRepoSummaryUi
-import zed.rainxch.core.presentation.model.GithubUserUi
+import zed.rainxch.core.presentation.locals.LocalCardLiquid
+import zed.rainxch.core.presentation.locals.LocalIsLiquidEnabled
 import zed.rainxch.core.presentation.theme.KiriStoreTheme
 import zed.rainxch.core.presentation.utils.formatReleasedAt
 import zed.rainxch.core.presentation.utils.hasWeekNotPassed
+import zed.rainxch.core.presentation.utils.premiumGradient
 import zed.rainxch.core.presentation.utils.toIcons
 import zed.rainxch.kiristore.core.presentation.res.Res
 import zed.rainxch.kiristore.core.presentation.res.forked_repository
@@ -68,10 +70,14 @@ fun RepositoryCard(
     onDeveloperClick: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val liquidState = LocalCardLiquid.current
+    val isLiquidEnabled = LocalIsLiquidEnabled.current
     val uriHandler = LocalUriHandler.current
 
     ExpressiveCard(
         onClick = onClick,
+        liquidState = liquidState,
+        isLiquidEnabled = isLiquidEnabled,
         modifier = modifier,
     ) {
         Box {
@@ -193,23 +199,47 @@ fun RepositoryCard(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
-                    Text(
-                        text = "⭐ ${discoveryRepositoryUi.repository.stargazersCount}",
-                        style = MaterialTheme.typography.titleMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis,
-                    )
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                            .padding(horizontal = 8.dp, vertical = 4.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Star,
+                            contentDescription = null,
+                            tint = Color(0xFFFFD700), // Gold
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Text(
+                            text = discoveryRepositoryUi.repository.stargazersCount.toString(),
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
 
-                    Text(
-                        text = "• 🌴 ${discoveryRepositoryUi.repository.forksCount}",
-                        style = MaterialTheme.typography.titleMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis,
-                    )
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                            .padding(horizontal = 8.dp, vertical = 4.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Outlined.CallSplit,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.secondary,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Text(
+                            text = discoveryRepositoryUi.repository.forksCount.toString(),
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
 
                     discoveryRepositoryUi.repository.language?.let {
                         Text(
@@ -262,18 +292,40 @@ fun RepositoryCard(
                         if (hasWeekNotPassed(discoveryRepositoryUi.repository.updatedAt)) {
                             append("🔥 ")
                         }
-
                         append(formatReleasedAt(discoveryRepositoryUi.repository.updatedAt))
                     }
 
-                Text(
-                    text = releasedAtText,
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.outline,
-                    maxLines = 1,
-                    softWrap = false,
-                    overflow = TextOverflow.Ellipsis,
-                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .then(
+                            if (hasWeekNotPassed(discoveryRepositoryUi.repository.updatedAt)) {
+                                Modifier.premiumGradient(
+                                    colors = listOf(
+                                        Color(0xFFFF8C00), // DarkOrange
+                                        Color(0xFFFF4500)  // OrangeRed
+                                    )
+                                )
+                            } else Modifier
+                        )
+                        .padding(horizontal = 8.dp, vertical = 4.dp)
+                ) {
+                    Text(
+                        text = releasedAtText,
+                        style = MaterialTheme.typography.labelMedium,
+                        color = if (hasWeekNotPassed(discoveryRepositoryUi.repository.updatedAt)) {
+                            Color.White
+                        } else {
+                            MaterialTheme.colorScheme.outline
+                        },
+                        fontWeight = if (hasWeekNotPassed(discoveryRepositoryUi.repository.updatedAt)) {
+                            FontWeight.Bold
+                        } else FontWeight.Medium,
+                        maxLines = 1,
+                    )
+                }
 
                 Spacer(Modifier.height(12.dp))
 

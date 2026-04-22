@@ -4,7 +4,7 @@
 
 Kiri Store is a cross-platform app store for GitHub releases, built with **Kotlin Multiplatform (KMP)** and **Compose Multiplatform**. Targets **Android** (min API 26) and **Desktop** (Windows, macOS, Linux via JVM).
 
-Package: `zed.rainxch.kiristore` | Version: 1.6.2 (code 13) | Target SDK: 36
+Package: `zed.rainxch.githubstore` | Version: 1.7.1 (code 15) | Target SDK: 36
 
 ## Build & Run Commands
 
