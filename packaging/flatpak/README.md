@@ -115,3 +115,4 @@ flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest zed.rain
 | `disable-android-for-flatpak.sh` | Strips Android targets for sandbox build |
 | `flatpak-sources.json` | Pre-downloaded Gradle dependencies (generated) |
 
+

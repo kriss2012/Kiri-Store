@@ -43,11 +43,9 @@
 </br>
 
 <p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ 
 
-<a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=kriss2012%2FKiri-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
-</a>
+
 </p>
 
 </p>
@@ -62,8 +60,7 @@ Sviluppato con Kotlin Multiplatform e Compose Multiplatform per le piattaforme A
 
 </div>
 
-> [!CAUTION]
-> Android libero e open source è sotto minaccia. Google trasformerà Android in una piattaforma chiusa, limitando la tua libertà fondamentale di installare le app che preferisci. Fai sentire la tua voce – [keepandroidopen.org](https://keepandroidopen.org/).
+
 
 <p align="middle">
     <img src="../media-resources/banner\.png" width="99%" />
@@ -136,7 +133,7 @@ GitHub® è un marchio registrato di GitHub, Inc.
 </br>
 <strong>HowToMen:</strong> <a href="https://www.youtube.com/watch?v=7favc9MDedQ">Top 20 Migliori App Android 2026</a> | <a href="https://www.youtube.com/watch?v=VR-MEwPDw4k">Top 12 Store di App Migliori del Google Play Store</a>
 </br>
-<strong>HelloGitHub:</strong> <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store">Progetto in Evidenza</a>
+<strong>HelloGitHub:</strong> 
 </p>
 
 ---
@@ -345,4 +342,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
 

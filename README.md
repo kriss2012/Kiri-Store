@@ -54,8 +54,7 @@ Built with Kotlin Multiplatform and Compose Multiplatform for Android and Deskto
 
 </br> 
 
-> [!CAUTION]
-> Free and Open-Source Android is under threat. Google will turn Android into a locked-down platform, restricting your essential freedom to install apps of your choice. Make your voice heard – [keepandroidopen.org](https://keepandroidopen.org/).
+
 
 <p align="middle">
     <img src="media-resources/banner.jpeg" width="99%" />
@@ -344,4 +343,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
 
