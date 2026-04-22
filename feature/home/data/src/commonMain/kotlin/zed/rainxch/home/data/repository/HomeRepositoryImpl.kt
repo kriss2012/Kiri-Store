@@ -347,7 +347,44 @@ class HomeRepositoryImpl(
             while (results.size < desiredCount && pagesFetchedCount < maxPagesToFetch) {
                 currentCoroutineContext().ensureActive()
 
-                try {
+                if (startPage == 1 && category == "trending") {
+                    val pinnedRepo = checkRepoHasInstallers(
+                        GithubRepoNetworkModel(
+                            id = 0,
+                            name = "Kiri-Store",
+                            fullName = "kriss2012/Kiri-Store",
+                            owner = GithubOwnerNetworkModel(
+                                id = 0,
+                                login = "kriss2012",
+                                avatarUrl = "https://github.com/kriss2012.png",
+                                htmlUrl = "https://github.com/kriss2012"
+                            ),
+                            description = "A cross-platform app store for GitHub releases",
+                            defaultBranch = "main",
+                            htmlUrl = "https://github.com/kriss2012/Kiri-Store",
+                            stargazersCount = 1000,
+                            forksCount = 100,
+                            language = "Kotlin",
+                            topics = listOf("android", "kotlin-multiplatform", "compose-multiplatform"),
+                            releasesUrl = "https://api.github.com/repos/kriss2012/Kiri-Store/releases{/id}",
+                            updatedAt = "2026-03-18T00:00:00Z"
+                        )
+                    )
+                    if (pinnedRepo != null) {
+                        results.add(pinnedRepo)
+                        emit(
+                            PaginatedDiscoveryRepositories(
+                                repos = listOf(pinnedRepo),
+                                hasMore = true,
+                                nextPageIndex = 1,
+                            )
+                        )
+                        lastEmittedCount = 1
+                        logger.debug("Pinned repo Kiri-Store injected")
+                    }
+                }
+
+            try {
                     val response =
                         httpClient
                             .executeRequest<GithubRepoSearchResponse> {

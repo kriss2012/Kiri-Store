@@ -21,10 +21,10 @@
 <br/>
 <br/>
   
-<img src="https://img.shields.io/github/downloads/OpenHub-Store/GitHub-Store/total?color=aeff4d&style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPmRvd25sb2FkPC90aXRsZT48cGF0aCBkPSJNNSwyMEgxOVYxOEg1TTE5LDlIMTVWM0g5VjlINUwxMiwxNkwxOSw5WiIgZmlsbD0id2hpdGUiIC8+PC9zdmc+&label=Downloads&labelColor=4b731a"/>
+<img src="https://img.shields.io/github/downloads/kriss2012/Kiri-Store/total?color=aeff4d&style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPmRvd25sb2FkPC90aXRsZT48cGF0aCBkPSJNNSwyMEgxOVYxOEg1TTE5LDlIMTVWM0g5VjlINUwxMiwxNkwxOSw5WiIgZmlsbD0id2hpdGUiIC8+PC9zdmc+&label=Downloads&labelColor=4b731a"/>
 
-<a href="https://github.com/OpenHub-Store/GitHub-Store/stargazers">
-<img src="https://img.shields.io/github/stars/OpenHub-Store/GitHub-Store?color=ffff00&style=for-the-badge&labelColor=a1a116&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPnN0YXI8L3RpdGxlPjxwYXRoIGQ9Ik0xMiwxNy4yN0wxOC4xOCwyMUwxNi41NCwxMy45N0wyMiw5LjI0TDE0LjgxLDguNjJMMTIsMkw5LjE5LDguNjJMMiw5LjI0TDcuNDUsMTMuOTdMNS44MiwyMUwxMiwxNy4yN1oiIGZpbGw9IndoaXRlIiAvPjwvc3ZnPg=="/>
+<a href="https://github.com/kriss2012/Kiri-Store/stargazers">
+<img src="https://img.shields.io/github/stars/kriss2012/Kiri-Store?color=ffff00&style=for-the-badge&labelColor=a1a116&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPnN0YXI8L3RpdGxlPjxwYXRoIGQ9Ik0xMiwxNy4yN0wxOC4xOCwyMUwxNi41NCwxMy45N0wyMiw5LjI0TDE0LjgxLDguNjJMMTIsMkw5LjE5LDguNjJMMiw5LjI0TDcuNDUsMTMuOTdMNS44MiwyMUwxMiwxNy4yN1oiIGZpbGw9IndoaXRlIiAvPjwvc3ZnPg=="/>
 </a>
 
 <img src="https://img.shields.io/badge/65K+-Users-8ce2ff?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPmFjY291bnQtZ3JvdXA8L3RpdGxlPjxwYXRoIGQ9Ik0xMiwxMi43NUM3LDEyLjc1IDMsMTMuMzUgMywxNi4yNVYxOEgyMVYxNi4yNUMyMSwxMy4zNSAxNywxMi43NSAxMiwxMi43NU0xNyw3QTE3LDE3IDAgMCwxIDE3LDdNMjEsMTYuMjVWMThIMjRWMTYuMjVDMjQsMTQuNDMgMjEuNSwxMy44NyAxOSwxMy41QzIwLjEyLDE0LjEgMjEsMTUgMjEsMTYuMjVNMiw3QTIsMiAwIDAsMSA0LDVIMjBBMiwyIDAgMCwxIDIyLDdBMiwyIDAgMCwxIDIwLDlINEEyLDIgMCAwLDEgMiw3TTEyLDEwQTMsMyAwIDAsMSA5LDdBMywzIDAgMCwxIDEyLDRBMywzIDAgMCwxIDE1LDdBMywzIDAgMCwxIDEyLDEwWiIgZmlsbD0id2hpdGUiIC8+PC9zdmc+&labelColor=0782ab"/>
@@ -32,11 +32,10 @@
 <br/>
 <br/>
 
-<a href="https://github.com/OpenHub-Store/GitHub-Store/releases/latest">
-  <img src="https://img.shields.io/github/v/release/OpenHub-Store/GitHub-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
+<a href="https://github.com/kriss2012/Kiri-Store/releases/latest">
+  <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
 
-<a href="https://f-droid.org/packages/zed.rainxch.kiristore">
   <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
 </a>
 
@@ -45,9 +44,9 @@
 
 
 <p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="OpenHub-Store%2FGitHub-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
  
-<a href="https://hellogithub.com/en/repository/OpenHub-Store/GitHub-Store" target="_blank">
+<a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
   <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=a95f4a4830bc4a69b56f96ac7efaacf8&claim_uid=sOz1lfiG4ARQYIK&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
 </a>
 </p>
@@ -85,10 +84,10 @@ Zero Material3. Full ownership. Beautiful by default.
 ### 🎨 Powering the icons
 
 The next Kiri Store will use
-**[RikkaIcons](https://github.com/rainxchzed/RikkaIcons)** — semantic icon tokens for Compose Multiplatform.
+**[RikkaIcons](https://github.com/kriss2012/RikkaIcons)** — semantic icon tokens for Compose Multiplatform.
 One API, any icon pack. Swap your entire icon set in one line.
 
-**[Browse the library →](https://github.com/rainxchzed/RikkaIcons)**
+**[Browse the library →](https://github.com/kriss2012/RikkaIcons)**
 
 </div>
 
@@ -116,9 +115,9 @@ One API, any icon pack. Swap your entire icon set in one line.
 
 # 📔 Wiki & Resources
 
-Check out Kiri Store [Wiki](https://github.com/OpenHub-Store/GitHub-Store/wiki) for FAQ and useful information
+Check out Kiri Store [Wiki](https://github.com/kriss2012/Kiri-Store/wiki) for FAQ and useful information
 
-💬 **Discord:** [Join the community](https://discord.gg/x9Cvh2Z9qS)
+💬 **WhatsApp:** [Join the community](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 </div>
 
@@ -142,17 +141,15 @@ GitHub® is a registered trademark of GitHub, Inc.
 </p>
 
 <p align="center">
-<a href="https://github.com/OpenHub-Store/GitHub-Store/releases">
+<a href="https://github.com/kriss2012/Kiri-Store/releases">
    <img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" height="70"/>
 </a>
 
-<a href="https://f-droid.org/en/packages/zed.rainxch.kiristore/">
-   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 </p>
 
 <p align="center">
-<a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/OpenHub-Store/GitHub-Store/">
+<a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/kriss2012/Kiri-Store/">
   <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" height="60" alt="Get it on Obtainium">
 </a>
 </p>
@@ -173,7 +170,7 @@ GitHub® is a registered trademark of GitHub, Inc.
 <br/>
 <strong>HowToMen:</strong> <a href="https://www.youtube.com/watch?v=7favc9MDedQ">Top 20 Best Android Apps 2026</a> | <a href="https://www.youtube.com/watch?v=VR-MEwPDw4k">Top 12 App Stores that are Better than Google Play Store </a>
 <br/>
-<strong>HelloGitHub:</strong> <a href="https://hellogithub.com/en/repository/OpenHub-Store/GitHub-Store">Featured Project</a>
+<strong>HelloGitHub:</strong> <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store">Featured Project</a>
 </p>
 
 ---
@@ -353,8 +350,8 @@ Kiri Store is open to partnerships, sponsorships, and integrations.
 
 If you're interested in working together, reach out:
 
-📧 **Email:** rainxch.dev@email.com
-💬 **Discord:** [Join our community](https://discord.gg/x9Cvh2Z9qS)
+📧 **Email:** krishna@email.com
+💬 **WhatsApp:** [Join our community](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 ---
 
@@ -378,11 +375,11 @@ fit for any particular purpose.
 
 ## Star History
 
-<a href="https://www.star-history.com/#OpenHub-Store/GitHub-Store&type=timeline&legend=top-left">
+<a href="https://www.star-history.com/#kriss2012/Kiri-Store&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=OpenHub-Store/GitHub-Store&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=OpenHub-Store/GitHub-Store&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=OpenHub-Store/GitHub-Store&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kriss2012/Kiri-Store&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kriss2012/Kiri-Store&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kriss2012/Kiri-Store&type=timeline&legend=top-left" />
  </picture>
 </a>
 
@@ -393,7 +390,7 @@ fit for any particular purpose.
 Kiri Store is released under the **Apache License, Version 2.0**.
 
 ```
-Copyright 2025 rainxchzed
+Copyright 2025 kriss2012
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this project except in compliance with the License.

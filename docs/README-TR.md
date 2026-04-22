@@ -36,7 +36,6 @@
   <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
 
-<a href="https://f-droid.org/packages/zed.rainxch.kiristore">
   <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
 </a>
 
@@ -44,10 +43,10 @@
 </br>
 
 <p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="OpenHub-Store%2FGitHub-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=OpenHub-Store%2FGitHub-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
+  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=kriss2012%2FKiri-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
 </a>
 </p>
 
@@ -81,7 +80,7 @@ Android ve Desktop platformları için Kotlin Multiplatform ve Compose Multiplat
 
 SSS ve yararlı bilgiler için Kiri Store [Wiki](https://github.com/kriss2012/Kiri-Store/wiki) sayfasına göz atın
 
-💬 **Discord:** [Topluluğa katılın](https://discord.gg/x9Cvh2Z9qS)
+💬 **WhatsApp:** [Topluluğa katılın](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 </div>
 
@@ -109,8 +108,6 @@ GitHub®, GitHub, Inc.'in tescilli markasıdır.
    <img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" height="70"/>
 </a>
 
-<a href="https://f-droid.org/en/packages/zed.rainxch.kiristore/">
-   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 </p>
 
@@ -301,7 +298,7 @@ Kiri Store, lise öğrencisi tarafından geliştirilmekte ve bakımı yapılmakt
 - ⭐ **Bu depoya yıldız vermek** — başkalarının Kiri Store'u keşfetmesine yardımcı olur
 - 🐛 **Hata bildirmek** — uygulamayı herkes için daha iyi hale getirir
 - 📢 **Arkadaşlarınızla paylaşmak** — diğer geliştiricilere ve yakınlarınıza söyleyin!
-- 💬 **[Discord](https://discord.gg/x9Cvh2Z9qS)'umuza katılmak** — geri bildirimleriniz yol haritasını şekillendirir
+- 💬 **[Discord](https://chat.whatsapp.com/EXAMPLE_LINK)'umuza katılmak** — geri bildirimleriniz yol haritasını şekillendirir
 
 Her türlü destek — finansal ya da değil — çok büyük anlam taşır ve bu projeyi yaşatır. Teşekkürler!
 

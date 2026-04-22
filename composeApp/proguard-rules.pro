@@ -1,5 +1,5 @@
 # ============================================================================
-# ProGuard / R8 Rules for GitHub Store (KMP + Compose Multiplatform)
+# ProGuard / R8 Rules for Kiri Store (KMP + Compose Multiplatform)
 # ============================================================================
 # Used with: proguard-android-optimize.txt (enables optimization passes)
 # ============================================================================

@@ -35,7 +35,6 @@
   <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
 
-<a href="https://f-droid.org/packages/zed.rainxch.kiristore">
   <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
 </a>
 
@@ -44,10 +43,10 @@
 
 
 <p align="center">
-  <a href="https://trendshift.io/repositories/15655" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15655" alt="OpenHub-Store%2FGitHub-Store | Trendshift" style="width: 250px; height: 54px;" width="250" height="55" />
+  <a href="https://trendshift.io/repositories/15655" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15655" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 54px;" width="250" height="55" />
 
 <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=OpenHub-Store%2FGitHub-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
+  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=kriss2012%2FKiri-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
 </a>
 </p>
 
@@ -85,7 +84,7 @@ Zbudowany z użyciem Kotlin Multiplatform i Compose Multiplatform na platformy A
 
 Sprawdź [Wiki](https://github.com/kriss2012/Kiri-Store/wiki) Kiri Store, aby znaleźć odpowiedzi na najczęściej zadawane pytania i przydatne informacje
 
-💬 **Discord:** [Dołącz do społeczności](https://discord.gg/x9Cvh2Z9qS)
+💬 **WhatsApp:** [Dołącz do społeczności](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 </div>
 
@@ -113,8 +112,6 @@ GitHub® jest zarejestrowanym znakiem towarowym GitHub, Inc.
 <a href="https://github.com/kriss2012/Kiri-Store/releases">
    <img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" height="80"/>
 </a>
-<a href="https://f-droid.org/en/packages/zed.rainxch.kiristore/">
-   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 <a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/kriss2012/Kiri-Store/">
   <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" height="60" alt="Get it on Obtainium">
@@ -122,7 +119,7 @@ GitHub® jest zarejestrowanym znakiem towarowym GitHub, Inc.
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/x9Cvh2Z9qS">
+  <a href="https://chat.whatsapp.com/EXAMPLE_LINK">
   <img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Discord">
 </a>
 </p>
@@ -353,7 +350,7 @@ Buduję go i utrzymuję całkowicie samodzielnie, kończąc jednocześnie szkoł
 - ⭐ **Dając gwiazdkę temu repozytorium** — pomaga innym odkryć Kiri Store
 - 🐛 **Zgłaszając błędy** — ulepszasz aplikację dla wszystkich
 - 📢 **Udostępniając znajomym** — rozpowszechniaj informacje wśród innych deweloperów
-- 💬 **Dołączając do naszego [Discorda](https://discord.gg/x9Cvh2Z9qS)** — Twoje opinie kształtują plan rozwoju
+- 💬 **Dołączając do naszego [Discorda](https://chat.whatsapp.com/EXAMPLE_LINK)** — Twoje opinie kształtują plan rozwoju
 
 Każda forma wsparcia — finansowa lub nie — wiele znaczy i utrzymuje ten projekt przy życiu. Dziękuję!
 

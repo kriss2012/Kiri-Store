@@ -1,13 +1,13 @@
 [Desktop Entry]
 Type=Application
-Name=GitHub Store
+Name=Kiri Store
 GenericName=App Store for GitHub Releases
-Comment=Browse, download, and manage apps from GitHub releases
-Icon=zed.rainxch.githubstore
-Exec=githubstore %u
+Comment=A cross-platform app store for GitHub releases
+Icon=zed.rainxch.kiristore
+Exec=kiristore %u
 Terminal=false
 StartupNotify=true
 Categories=Development;PackageManager;
 Keywords=GitHub;Apps;Releases;APK;Store;
-StartupWMClass=GitHub-Store
-MimeType=x-scheme-handler/githubstore;
+StartupWMClass=Kiri-Store
+MimeType=x-scheme-handler/kiristore;

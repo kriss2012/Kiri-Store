@@ -478,7 +478,7 @@ class TweaksViewModel(
 
             TweaksAction.OnHelpClick -> {
                 browserHelper.openUrl(
-                    url = "https://github.com/kriss2012/Kiri-Store/issues",
+                    url = "https://github.com/kriss2012/Kiri-Store/issues/1",
                 )
             }
         }

@@ -288,7 +288,7 @@ private fun OtherWaysSection(onOpenUrl: (String) -> Unit) {
                     title = stringResource(Res.string.sponsor_report_bugs),
                     description = stringResource(Res.string.sponsor_report_bugs_desc),
                     onClick = {
-                        onOpenUrl("https://github.com/kriss2012/Kiri-Store/issues")
+                        onOpenUrl("https://github.com/kriss2012/Kiri-Store/issues/1")
                     },
                 )
 

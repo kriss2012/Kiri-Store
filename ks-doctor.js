@@ -54,7 +54,7 @@ if (fs.existsSync(path.join(__dirname, 'local.properties'))) {
         console.log('\x1b[32m%s\x1b[0m', '✅ local.properties configured properly.');
     }
 } else {
-    console.log('\x1b[31m%s\x1b[0m', '❌ local.properties MISSING. Run "node ghs-init.js".');
+    console.log('\x1b[31m%s\x1b[0m', '❌ local.properties MISSING. Run "node ks-init.js".');
 }
 
 // 5. Gradle Connectivity

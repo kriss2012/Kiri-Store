@@ -1,10 +1,10 @@
-app-id: zed.rainxch.githubstore
+app-id: zed.rainxch.kiristore
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk21
-command: githubstore
+command: kiristore
 
 finish-args:
   # Network access for GitHub API calls and downloading releases
@@ -40,14 +40,14 @@ modules:
         only-arches:
           - aarch64
 
-  # Module 2: Build and install GitHub Store
-  - name: githubstore
+  # Module 2: Build and install Kiri Store
+  - name: kiristore
     buildsystem: simple
     build-options:
       append-path: /usr/lib/sdk/openjdk21/bin
       env:
         JAVA_HOME: /usr/lib/sdk/openjdk21
-        GRADLE_USER_HOME: /run/build/githubstore/.gradle
+        GRADLE_USER_HOME: /run/build/kiristore/.gradle
     build-commands:
       # Use local Gradle distribution (no network needed)
       - sed -i 's|distributionUrl=.*|distributionUrl=gradle-bin.zip|' gradle/wrapper/gradle-wrapper.properties
@@ -58,17 +58,17 @@ modules:
         lines = open('settings.gradle.kts').readlines()
         includes = [l for l in lines if l.strip().startswith('include(')]
         with open('settings.gradle.kts', 'w') as f:
-            f.write('rootProject.name = \"GithubStore\"\n')
+            f.write('rootProject.name = \"KiriStore\"\n')
             f.write('enableFeaturePreview(\"TYPESAFE_PROJECT_ACCESSORS\")\n\n')
             f.write('pluginManagement {\n')
             f.write('    includeBuild(\"build-logic\")\n')
             f.write('    repositories {\n')
-            f.write('        maven { url = uri(\"/run/build/githubstore/offline-repository\") }\n')
+            f.write('        maven { url = uri(\"/run/build/kiristore/offline-repository\") }\n')
             f.write('    }\n')
             f.write('}\n\n')
             f.write('dependencyResolutionManagement {\n')
             f.write('    repositories {\n')
-            f.write('        maven { url = uri(\"/run/build/githubstore/offline-repository\") }\n')
+            f.write('        maven { url = uri(\"/run/build/kiristore/offline-repository\") }\n')
             f.write('    }\n')
             f.write('}\n\n')
             # foojay-resolver-convention plugin removed — not needed in Flatpak
@@ -83,12 +83,12 @@ modules:
             f.write('rootProject.name = \"build-logic\"\n\n')
             f.write('pluginManagement {\n')
             f.write('    repositories {\n')
-            f.write('        maven { url = uri(\"/run/build/githubstore/offline-repository\") }\n')
+            f.write('        maven { url = uri(\"/run/build/kiristore/offline-repository\") }\n')
             f.write('    }\n')
             f.write('}\n\n')
             f.write('dependencyResolutionManagement {\n')
             f.write('    repositories {\n')
-            f.write('        maven { url = uri(\"/run/build/githubstore/offline-repository\") }\n')
+            f.write('        maven { url = uri(\"/run/build/kiristore/offline-repository\") }\n')
             f.write('    }\n\n')
             f.write('    versionCatalogs {\n')
             f.write('        create(\"libs\") {\n')
@@ -110,22 +110,22 @@ modules:
           -Dorg.gradle.parallel=false
       # Install the JAR
       - install -Dm644 "$(find composeApp/build/compose/jars/ -name '*.jar' -type f | head -1)"
-          /app/lib/githubstore.jar
+          /app/lib/kiristore.jar
       # Install launcher script
-      - install -Dm755 packaging/flatpak/githubstore.sh /app/bin/githubstore
+      - install -Dm755 packaging/flatpak/kiristore.sh /app/bin/kiristore
       # Install desktop entry
-      - install -Dm644 packaging/flatpak/zed.rainxch.githubstore.desktop
-          /app/share/applications/zed.rainxch.githubstore.desktop
+      - install -Dm644 packaging/flatpak/zed.rainxch.kiristore.desktop
+          /app/share/applications/zed.rainxch.kiristore.desktop
       # Install AppStream metainfo
-      - install -Dm644 packaging/flatpak/zed.rainxch.githubstore.metainfo.xml
-          /app/share/metainfo/zed.rainxch.githubstore.metainfo.xml
+      - install -Dm644 packaging/flatpak/zed.rainxch.kiristore.metainfo.xml
+          /app/share/metainfo/zed.rainxch.kiristore.metainfo.xml
       # Install icon (512x512)
       - install -Dm644 composeApp/src/jvmMain/resources/logo/app_icon.png
-          /app/share/icons/hicolor/512x512/apps/zed.rainxch.githubstore.png
+          /app/share/icons/hicolor/512x512/apps/zed.rainxch.kiristore.png
     sources:
       # NOTE: For Flathub submission, switch this to:
       #   type: git
-      #   url: https://github.com/OpenHub-Store/GitHub-Store.git
+      #   url: https://github.com/kriss2012/Kiri-Store.git
       #   tag: <release-tag>
       - type: dir
         path: ../../

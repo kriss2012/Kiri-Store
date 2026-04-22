@@ -36,7 +36,6 @@
   <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
 
-<a href="https://f-droid.org/packages/zed.rainxch.kiristore">
   <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
 </a>
 
@@ -45,10 +44,10 @@
 
 
 <p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="OpenHub-Store%2FGitHub-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=OpenHub-Store%2FGitHub-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
+  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=kriss2012%2FKiri-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
 </a>
 </p>
 
@@ -82,7 +81,7 @@ Construida con Kotlin Multiplatform y Compose Multiplatform para plataformas And
 
 Consulta la [Wiki](https://github.com/kriss2012/Kiri-Store/wiki) de Kiri Store para preguntas frecuentes e informacion util
 
-💬 **Discord:** [Unete a la comunidad](https://discord.gg/x9Cvh2Z9qS)
+💬 **WhatsApp:** [Unete a la comunidad](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 </div>
 
@@ -110,8 +109,6 @@ GitHub® es una marca registrada de GitHub, Inc.
    <img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" height="70"/>
 </a>
 
-<a href="https://f-droid.org/en/packages/zed.rainxch.kiristore/">
-   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 </p>
 
@@ -307,7 +304,7 @@ Kiri Store esta construido y mantenido por un estudiante de instituto. Tu apoyo 
 - ⭐ **Dando una estrella a este repositorio** — ayuda a otros a descubrir Kiri Store
 - 🐛 **Reportando errores** — mejora la app para todos
 - 📢 **Compartiendolo con amigos** — difunde la palabra entre otros desarrolladores y amigos!
-- 💬 **Uniendote a nuestro [Discord](https://discord.gg/x9Cvh2Z9qS)** — tus comentarios moldean la hoja de ruta
+- 💬 **Uniendote a nuestro [Discord](https://chat.whatsapp.com/EXAMPLE_LINK)** — tus comentarios moldean la hoja de ruta
 
 Cada forma de apoyo — financiera o no — significa mucho y mantiene este proyecto vivo. ¡Gracias!
 

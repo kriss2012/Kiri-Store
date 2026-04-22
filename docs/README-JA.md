@@ -36,7 +36,6 @@
   <img src="https://img.shields.io/github/v/release/kriss2012/Kiri-Store?color=a1168e&include_prereleases&logo=github&style=for-the-badge&labelColor=700f63"/>
 </a>
 
-<a href="https://f-droid.org/packages/zed.rainxch.kiristore">
   <img src="https://img.shields.io/f-droid/v/zed.rainxch.kiristore?color=a1168e&include_prereleases&logo=FDROID&style=for-the-badge&labelColor=700f63"/>
 </a>
 
@@ -44,10 +43,10 @@
 </br>
 
 <p align="center"> 
- <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="OpenHub-Store%2FGitHub-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/22313" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22313" alt="kriss2012%2FKiri-Store | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 <a href="https://hellogithub.com/en/repository/kriss2012/Kiri-Store" target="_blank">
-  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=OpenHub-Store%2FGitHub-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
+  <img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=kriss2012%2FKiri-Store&claim_uid=&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
 </a>
 </p>
 
@@ -81,7 +80,7 @@ Android および Desktop プラットフォーム向けに Kotlin Multiplatform
 
 FAQ や役立つ情報は Kiri Store の [Wiki](https://github.com/kriss2012/Kiri-Store/wiki) をご覧ください
 
-💬 **Discord:** [コミュニティに参加する](https://discord.gg/x9Cvh2Z9qS)
+💬 **WhatsApp:** [コミュニティに参加する](https://chat.whatsapp.com/EXAMPLE_LINK)
 
 </div>
 
@@ -109,8 +108,6 @@ GitHub® は GitHub, Inc. の登録商標です。
    <img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" height="70"/>
 </a>
 
-<a href="https://f-droid.org/en/packages/zed.rainxch.kiristore/">
-   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 </p>
 
@@ -301,7 +298,7 @@ Kiri Store は高校生によって開発・メンテナンスされています
 - ⭐ **このリポジトリにスターを付ける** — 他の人が Kiri Store を発見するのに役立ちます
 - 🐛 **バグを報告する** — アプリをすべての人のために改善します
 - 📢 **友人にシェアする** — 他の開発者や友人に広めてください！
-- 💬 **[Discord](https://discord.gg/x9Cvh2Z9qS) に参加する** — あなたのフィードバックがロードマップを形成します
+- 💬 **[Discord](https://chat.whatsapp.com/EXAMPLE_LINK) に参加する** — あなたのフィードバックがロードマップを形成します
 
 金銭的か否かを問わず、あらゆる形のサポートが大きな意味を持ち、このプロジェクトを生き続けさせます。ありがとうございます！
 
