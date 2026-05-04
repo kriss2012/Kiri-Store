@@ -143,6 +143,8 @@ fun AppHeader(
                                     strokeCap = StrokeCap.Round,
                                 )
                             }
+
+                            DownloadStage.IDLE -> {}
                         }
                     }
                 }
