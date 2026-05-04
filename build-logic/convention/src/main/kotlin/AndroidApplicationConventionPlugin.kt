@@ -79,6 +79,16 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                     }
                 }
 
+                flavorDimensions += "distribution"
+                productFlavors {
+                    create("foss") {
+                        dimension = "distribution"
+                    }
+                    create("play") {
+                        dimension = "distribution"
+                    }
+                }
+
                 configureKotlinAndroid(this)
             }
         }
