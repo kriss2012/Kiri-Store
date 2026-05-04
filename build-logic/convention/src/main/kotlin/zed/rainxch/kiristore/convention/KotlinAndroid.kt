@@ -1,6 +1,8 @@
 package zed.rainxch.kiristore.convention
 
+import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.CommonExtension
+import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
@@ -10,28 +12,28 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
     with(commonExtension) {
-        (this as? com.android.build.api.dsl.ApplicationExtension)?.compileSdk =
+        (this as? ApplicationExtension)?.compileSdk =
             libs
                 .findVersion("projectCompileSdkVersion")
                 .get()
                 .toString()
                 .toInt()
 
-        (this as? com.android.build.api.dsl.LibraryExtension)?.compileSdk =
+        (this as? LibraryExtension)?.compileSdk =
             libs
                 .findVersion("projectCompileSdkVersion")
                 .get()
                 .toString()
                 .toInt()
 
-        (this as? com.android.build.api.dsl.ApplicationExtension)?.defaultConfig?.minSdk =
+        (this as? ApplicationExtension)?.defaultConfig?.minSdk =
             libs
                 .findVersion("projectMinSdkVersion")
                 .get()
                 .toString()
                 .toInt()
 
-        (this as? com.android.build.api.dsl.LibraryExtension)?.defaultConfig?.minSdk =
+        (this as? LibraryExtension)?.defaultConfig?.minSdk =
             libs
                 .findVersion("projectMinSdkVersion")
                 .get()
@@ -59,4 +61,3 @@ fun Project.configureKotlin() {
         }
     }
 }
-
