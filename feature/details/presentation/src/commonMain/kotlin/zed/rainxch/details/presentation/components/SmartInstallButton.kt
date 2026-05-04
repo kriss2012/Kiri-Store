@@ -55,12 +55,14 @@ import zed.rainxch.details.presentation.model.DownloadStage
 import zed.rainxch.details.presentation.utils.LocalTopbarLiquidState
 import zed.rainxch.details.presentation.utils.extractArchitectureFromName
 import zed.rainxch.details.presentation.utils.isExactArchitectureMatch
+import zed.rainxch.feature.details.presentation.BuildKonfig
 import zed.rainxch.kiristore.core.presentation.res.Res
 import zed.rainxch.kiristore.core.presentation.res.architecture_compatible
 import zed.rainxch.kiristore.core.presentation.res.cancel_download
 import zed.rainxch.kiristore.core.presentation.res.checking_attestation
 import zed.rainxch.kiristore.core.presentation.res.downloading
 import zed.rainxch.kiristore.core.presentation.res.install_latest
+import zed.rainxch.kiristore.core.presentation.res.install_latest_browser
 import zed.rainxch.kiristore.core.presentation.res.install_version
 import zed.rainxch.kiristore.core.presentation.res.installing
 import zed.rainxch.kiristore.core.presentation.res.not_available
@@ -251,7 +253,11 @@ fun SmartInstallButton(
             }
 
             else -> {
-                stringResource(Res.string.install_latest)
+                if (BuildKonfig.IS_PLAY_STORE) {
+                    stringResource(Res.string.install_latest_browser)
+                } else {
+                    stringResource(Res.string.install_latest)
+                }
             }
         }
 
@@ -291,7 +297,7 @@ fun SmartInstallButton(
                     containerColor = buttonColor,
                 ),
             shape =
-                if (state.isObtainiumEnabled || isActiveDownload) {
+                if ((state.isObtainiumEnabled && !BuildKonfig.IS_PLAY_STORE) || isActiveDownload) {
                     RoundedCornerShape(
                         topStart = 24.dp,
                         bottomStart = 24.dp,
@@ -524,7 +530,7 @@ fun SmartInstallButton(
                     tint = MaterialTheme.colorScheme.onErrorContainer,
                 )
             }
-        } else if (state.isObtainiumEnabled) {
+        } else if (state.isObtainiumEnabled && !BuildKonfig.IS_PLAY_STORE) {
             IconButton(
                 onClick = {
                     onAction(DetailsAction.OnToggleInstallDropdown)
