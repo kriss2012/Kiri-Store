@@ -9,6 +9,7 @@ import android.provider.Settings
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
 import co.touchlab.kermit.Logger
+import zed.rainxch.core.data.BuildKonfig
 import zed.rainxch.core.domain.model.AssetArchitectureMatcher
 import zed.rainxch.core.domain.model.GithubAsset
 import zed.rainxch.core.domain.model.SystemArchitecture
@@ -120,15 +121,13 @@ class AndroidInstaller(
     }
 
     override suspend fun ensurePermissionsOrThrow(extOrMime: String) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         val pm = context.packageManager
-        if (!pm.canRequestPackageInstalls()) {
-            val intent =
-                Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
-                    data = "package:${context.packageName}".toUri()
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                }
-            context.startActivity(intent)
-            throw IllegalStateException("Please enable 'Install unknown apps' for this app in Settings and try again.")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            if (!pm.canRequestPackageInstalls()) {
+                Logger.w { "REQUEST_INSTALL_PACKAGES permission is missing." }
+            }
         }
     }
 
@@ -136,6 +135,13 @@ class AndroidInstaller(
         filePath: String,
         extOrMime: String,
     ): InstallOutcome {
+        if (BuildKonfig.IS_PLAY_STORE) {
+            // In Play Store version, we don't install directly. 
+            // The UI should have directed the user to the browser instead.
+            Logger.w { "Install called in Play Store build. This should be handled by UI." }
+            return InstallOutcome.DELEGATED_TO_SYSTEM
+        }
+
         val file = File(filePath)
         if (!file.exists()) {
             throw IllegalStateException("APK file not found: $filePath")
