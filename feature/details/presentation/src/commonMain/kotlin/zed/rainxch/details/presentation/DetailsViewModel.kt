@@ -71,6 +71,7 @@ import zed.rainxch.kiristore.core.presentation.res.rate_limit_exceeded
 import zed.rainxch.kiristore.core.presentation.res.removed_from_favourites
 import zed.rainxch.kiristore.core.presentation.res.translation_failed
 import zed.rainxch.kiristore.core.presentation.res.update_package_mismatch
+import zed.rainxch.feature.details.presentation.BuildKonfig
 import java.io.File
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.coroutines.cancellation.CancellationException
@@ -174,7 +175,13 @@ class DetailsViewModel(
             }
 
             DetailsAction.InstallPrimary -> {
-                install()
+                if (BuildKonfig.IS_PLAY_STORE) {
+                    _state.value.primaryAsset?.downloadUrl?.let {
+                        helper.openUrl(url = it)
+                    }
+                } else {
+                    install()
+                }
             }
 
             DetailsAction.OnRequestUninstall -> {
@@ -194,13 +201,17 @@ class DetailsViewModel(
             }
 
             is DetailsAction.DownloadAsset -> {
-                val release = _state.value.selectedRelease
-                downloadAsset(
-                    downloadUrl = action.downloadUrl,
-                    assetName = action.assetName,
-                    sizeBytes = action.sizeBytes,
-                    releaseTag = release?.tagName ?: "",
-                )
+                if (BuildKonfig.IS_PLAY_STORE) {
+                    helper.openUrl(url = action.downloadUrl)
+                } else {
+                    val release = _state.value.selectedRelease
+                    downloadAsset(
+                        downloadUrl = action.downloadUrl,
+                        assetName = action.assetName,
+                        sizeBytes = action.sizeBytes,
+                        releaseTag = release?.tagName ?: "",
+                    )
+                }
             }
 
             DetailsAction.CancelCurrentDownload -> {
@@ -216,7 +227,13 @@ class DetailsViewModel(
             }
 
             DetailsAction.UpdateApp -> {
-                update()
+                if (BuildKonfig.IS_PLAY_STORE) {
+                    _state.value.primaryAsset?.downloadUrl?.let {
+                        helper.openUrl(url = it)
+                    }
+                } else {
+                    update()
+                }
             }
 
             DetailsAction.OpenApp -> {
