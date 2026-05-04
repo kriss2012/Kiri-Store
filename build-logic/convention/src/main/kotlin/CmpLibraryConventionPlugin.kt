@@ -11,10 +11,11 @@ class CmpLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
+                apply("org.jetbrains.kotlin.multiplatform")
+                apply("zed.rainxch.convention.kmp.library")
                 if (!isAndroidDisabled) {
                     apply("com.android.library")
                 }
-                apply("zed.rainxch.convention.kmp.library")
                 apply("org.jetbrains.kotlin.plugin.compose")
                 apply("org.jetbrains.compose")
             }
