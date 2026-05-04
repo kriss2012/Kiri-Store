@@ -35,10 +35,10 @@ Built with **Kotlin Multiplatform** and **Compose Multiplatform**, offering a na
 <div align="center">
   <table style="width:100%">
     <tr>
-      <td width="24%"><img src="media-resources/screenshots/mobile/search.png" /></td>
-      <td width="24%"><img src="media-resources/screenshots/mobile/details.png" /></td>
-      <td width="24%"><img src="media-resources/screenshots/mobile/details_installing.png" /></td>
-      <td width="24%"><img src="media-resources/screenshots/mobile/settings.png" /></td>
+      <td width="24%"><img src="media-resources/screenshots/mobile/search.jpg" /></td>
+      <td width="24%"><img src="media-resources/screenshots/mobile/details.jpg" /></td>
+      <td width="24%"><img src="media-resources/screenshots/mobile/details_installing.jpg" /></td>
+      <td width="24%"><img src="media-resources/screenshots/mobile/settings.jpg" /></td>
     </tr>
   </table>
 </div>
