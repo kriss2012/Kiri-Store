@@ -191,6 +191,7 @@
     <string name="update_available">Update available</string>
     <string name="not_available">Not available</string>
     <string name="install_latest">Install latest</string>
+    <string name="install_latest_browser">Install via browser</string>
     <string name="reinstall">Reinstall</string>
     <string name="update_app">Update app</string>
     <string name="report_issue">Report issue</string>
