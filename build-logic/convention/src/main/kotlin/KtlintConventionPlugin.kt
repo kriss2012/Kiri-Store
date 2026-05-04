@@ -8,7 +8,7 @@ class KtlintConventionPlugin : Plugin<Project> {
             pluginManager.apply("org.jlleitschuh.gradle.ktlint")
 
             extensions.configure(KtlintExtension::class.java) {
-                version.set("1.8.0")
+                version.set("1.2.1")
                 outputToConsole.set(true)
                 ignoreFailures.set(true)
                 filter {
