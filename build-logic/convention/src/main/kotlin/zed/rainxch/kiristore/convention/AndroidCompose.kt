@@ -1,13 +1,15 @@
 package zed.rainxch.kiristore.convention
 
+import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.CommonExtension
+import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
 fun Project.configureAndroidCompose(commonExtension: CommonExtension) {
-    commonExtension.apply {
-        (this as? com.android.build.api.dsl.ApplicationExtension)?.buildFeatures?.compose = true
-        (this as? com.android.build.api.dsl.LibraryExtension)?.buildFeatures?.compose = true
+    with(commonExtension) {
+        (this as? ApplicationExtension)?.buildFeatures?.compose = true
+        (this as? LibraryExtension)?.buildFeatures?.compose = true
 
         dependencies {
             val composeBom = libs.findLibrary("androidx-compose-bom").get()
@@ -19,4 +21,3 @@ fun Project.configureAndroidCompose(commonExtension: CommonExtension) {
         }
     }
 }
-
