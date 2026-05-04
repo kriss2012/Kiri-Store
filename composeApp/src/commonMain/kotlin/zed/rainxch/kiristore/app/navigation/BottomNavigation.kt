@@ -55,8 +55,6 @@ import io.github.fletchmckee.liquid.liquid
 import io.github.fletchmckee.liquid.rememberLiquidState
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.stringResource
-import zed.rainxch.core.domain.getPlatform
-import zed.rainxch.core.domain.model.Platform
 import zed.rainxch.core.presentation.locals.LocalBottomNavigationLiquid
 import zed.rainxch.core.presentation.theme.KiriStoreTheme
 import zed.rainxch.core.presentation.utils.isLiquidFrostAvailable
