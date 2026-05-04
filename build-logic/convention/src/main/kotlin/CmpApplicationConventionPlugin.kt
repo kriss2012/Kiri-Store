@@ -10,10 +10,10 @@ class CmpApplicationConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
+                apply("org.jetbrains.kotlin.multiplatform")
                 if (!isAndroidDisabled) {
                     apply("zed.rainxch.convention.android.application.compose")
                 }
-                apply("org.jetbrains.kotlin.multiplatform")
                 apply("org.jetbrains.compose")
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
