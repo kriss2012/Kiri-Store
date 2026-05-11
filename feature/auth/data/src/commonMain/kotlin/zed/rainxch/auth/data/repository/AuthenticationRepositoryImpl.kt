@@ -18,7 +18,7 @@ import zed.rainxch.core.data.mappers.toDomain
 import zed.rainxch.core.domain.logging.KiriStoreLogger
 import zed.rainxch.core.domain.model.GithubDeviceStart
 import zed.rainxch.core.domain.model.GithubDeviceTokenSuccess
-import zed.rainxch.feature.auth.data.BuildKonfig
+import zed.rainxch.auth.data.BuildKonfig
 import java.util.concurrent.TimeoutException
 
 class AuthenticationRepositoryImpl(
