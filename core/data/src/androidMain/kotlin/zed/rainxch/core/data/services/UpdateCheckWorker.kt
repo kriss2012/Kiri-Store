@@ -18,6 +18,7 @@ import co.touchlab.kermit.Logger
 import kotlinx.coroutines.flow.first
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
+import zed.rainxch.core.data.BuildKonfig
 import zed.rainxch.core.domain.model.InstallerType
 import zed.rainxch.core.domain.repository.InstalledAppsRepository
 import zed.rainxch.core.domain.repository.TweaksRepository
@@ -41,44 +42,49 @@ class UpdateCheckWorker(
     private val syncInstalledAppsUseCase: SyncInstalledAppsUseCase by inject()
     private val tweaksRepository: TweaksRepository by inject()
 
-    override suspend fun doWork(): Result =
-        try {
-            Logger.i { "UpdateCheckWorker: Starting periodic update check" }
-
-            // Run as foreground service to prevent OS from killing the worker
-            setForeground(createForegroundInfo("Checking for updates..."))
-
-            // First sync installed apps state with system
-            val syncResult = syncInstalledAppsUseCase()
-            if (syncResult.isFailure) {
-                Logger.w { "UpdateCheckWorker: Sync had issues: ${syncResult.exceptionOrNull()?.message}" }
-            }
-
-            // Check all tracked apps for updates
-            installedAppsRepository.checkAllForUpdates()
-
-            val appsWithUpdates = installedAppsRepository.getAppsWithUpdates().first()
-
-            if (appsWithUpdates.isNotEmpty()) {
-                // Check if auto-update via Shizuku is enabled
-                val autoUpdateEnabled = tweaksRepository.getAutoUpdateEnabled().first()
-                val installerType = tweaksRepository.getInstallerType().first()
-
-                if (autoUpdateEnabled && installerType == InstallerType.SHIZUKU) {
-                    Logger.i {
-                        "UpdateCheckWorker: Auto-update enabled with Shizuku, scheduling AutoUpdateWorker for ${appsWithUpdates.size} apps"
-                    }
-                    UpdateScheduler.scheduleAutoUpdate(applicationContext)
-                } else {
-                    // Show notification for manual update
-                    showUpdateNotification(appsWithUpdates)
-                }
+    override suspend fun doWork(): Result {
+        return try {
+            if (BuildKonfig.IS_PLAY_STORE) {
+                Logger.i { "UpdateCheckWorker: Play Store build, skipping update check" }
+                Result.success()
             } else {
-                Logger.d { "UpdateCheckWorker: No updates available" }
-            }
+                Logger.i { "UpdateCheckWorker: Starting periodic update check" }
 
-            Logger.i { "UpdateCheckWorker: Periodic update check completed successfully" }
-            Result.success()
+                // Run as foreground service to prevent OS from killing the worker
+                setForeground(createForegroundInfo("Checking for updates..."))
+
+                // First sync installed apps state with system
+                val syncResult = syncInstalledAppsUseCase()
+                if (syncResult.isFailure) {
+                    Logger.w { "UpdateCheckWorker: Sync had issues: ${syncResult.exceptionOrNull()?.message}" }
+                }
+
+                // Check all tracked apps for updates
+                installedAppsRepository.checkAllForUpdates()
+
+                val appsWithUpdates = installedAppsRepository.getAppsWithUpdates().first()
+
+                if (appsWithUpdates.isNotEmpty()) {
+                    // Check if auto-update via Shizuku is enabled
+                    val autoUpdateEnabled = tweaksRepository.getAutoUpdateEnabled().first()
+                    val installerType = tweaksRepository.getInstallerType().first()
+
+                    if (autoUpdateEnabled && installerType == InstallerType.SHIZUKU) {
+                        Logger.i {
+                            "UpdateCheckWorker: Auto-update enabled with Shizuku, scheduling AutoUpdateWorker for ${appsWithUpdates.size} apps"
+                        }
+                        UpdateScheduler.scheduleAutoUpdate(applicationContext)
+                    } else {
+                        // Show notification for manual update
+                        showUpdateNotification(appsWithUpdates)
+                    }
+                } else {
+                    Logger.d { "UpdateCheckWorker: No updates available" }
+                }
+
+                Logger.i { "UpdateCheckWorker: Periodic update check completed successfully" }
+                Result.success()
+            }
         } catch (e: Exception) {
             Logger.e { "UpdateCheckWorker: Update check failed: ${e.message}" }
             if (runAttemptCount < 3) {
@@ -87,6 +93,7 @@ class UpdateCheckWorker(
                 Result.failure()
             }
         }
+    }
 
     private fun createForegroundInfo(message: String): ForegroundInfo {
         val notification =
