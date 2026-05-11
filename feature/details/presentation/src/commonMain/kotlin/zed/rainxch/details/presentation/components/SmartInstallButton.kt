@@ -55,9 +55,8 @@ import zed.rainxch.details.presentation.model.DownloadStage
 import zed.rainxch.details.presentation.utils.LocalTopbarLiquidState
 import zed.rainxch.details.presentation.utils.extractArchitectureFromName
 import zed.rainxch.details.presentation.utils.isExactArchitectureMatch
-import zed.rainxch.feature.details.presentation.BuildKonfig
-import zed.rainxch.kiristore.core.presentation.res.Res
-import zed.rainxch.kiristore.core.presentation.res.architecture_compatible
+import zed.rainxch.details.presentation.BuildKonfig
+import zed.rainxch.kiristore.core.presentation.res.*
 import zed.rainxch.kiristore.core.presentation.res.cancel_download
 import zed.rainxch.kiristore.core.presentation.res.checking_attestation
 import zed.rainxch.kiristore.core.presentation.res.downloading
@@ -72,7 +71,7 @@ import zed.rainxch.kiristore.core.presentation.res.unable_to_verify_attestation
 import zed.rainxch.kiristore.core.presentation.res.uninstall
 import zed.rainxch.kiristore.core.presentation.res.update_to_version
 import zed.rainxch.kiristore.core.presentation.res.updating
-import zed.rainxch.kiristore.core.presentation.res.verified_build
+import zed.rainxch.kiristore.core.presentation.res.view_on_github
 import zed.rainxch.kiristore.core.presentation.res.verifying
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
@@ -238,6 +237,10 @@ fun SmartInstallButton(
                 stringResource(Res.string.not_available)
             }
 
+            BuildKonfig.IS_PLAY_STORE -> {
+                stringResource(Res.string.view_on_github)
+            }
+
             isUpdateAvailable -> {
                 stringResource(
                     Res.string.update_to_version,
@@ -253,11 +256,7 @@ fun SmartInstallButton(
             }
 
             else -> {
-                if (BuildKonfig.IS_PLAY_STORE) {
-                    stringResource(Res.string.install_latest_browser)
-                } else {
-                    stringResource(Res.string.install_latest)
-                }
+                stringResource(Res.string.install_latest)
             }
         }
 
@@ -420,7 +419,7 @@ fun SmartInstallButton(
                             )
                         }
 
-                        if (primaryAsset != null) {
+                        if (primaryAsset != null && !BuildKonfig.IS_PLAY_STORE) {
                             val assetArch = extractArchitectureFromName(primaryAsset.name)
                             val systemArch = state.systemArchitecture
                             val sizeText = formatFileSize(primaryAsset.size)
