@@ -17,7 +17,7 @@ import zed.rainxch.core.data.network.executeRequest
 import zed.rainxch.core.data.services.FileLocationsProvider
 import zed.rainxch.core.domain.logging.KiriStoreLogger
 import zed.rainxch.core.domain.repository.AuthenticationState
-import zed.rainxch.feature.profile.data.BuildKonfig
+import zed.rainxch.profile.data.BuildKonfig
 import zed.rainxch.profile.data.mappers.toUserProfile
 import zed.rainxch.profile.domain.model.UserProfile
 import zed.rainxch.profile.domain.repository.ProfileRepository
