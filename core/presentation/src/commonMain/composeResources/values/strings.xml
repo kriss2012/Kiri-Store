@@ -169,6 +169,7 @@
     <string name="theme_amber">Amber</string>
 
     <!-- Navigation & actions -->
+    <string name="view_on_github">View on GitHub</string>
     <string name="open_repository">Open repository</string>
     <string name="open_in_browser">Open in browser</string>
     <string name="cancel_download">Cancel download</string>
