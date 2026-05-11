@@ -84,6 +84,7 @@ import kotlin.time.ExperimentalTime
 import kotlin.time.Instant
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
+import zed.rainxch.apps.presentation.BuildKonfig
 import zed.rainxch.apps.presentation.components.InstalledAppIcon
 import zed.rainxch.apps.presentation.components.LinkAppBottomSheet
 import zed.rainxch.apps.presentation.model.AppItem
@@ -424,7 +425,7 @@ fun AppsScreen(
                 }
 
                 val hasUpdates = state.apps.any { it.installedApp.isUpdateAvailable }
-                if (hasUpdates && !state.isUpdatingAll) {
+                if (hasUpdates && !state.isUpdatingAll && !BuildKonfig.IS_PLAY_STORE) {
                     Button(
                         onClick = { onAction(AppsAction.OnUpdateAll) },
                         modifier =
@@ -873,7 +874,7 @@ fun AppItemCard(
                     }
 
                     else -> {
-                        if (app.isUpdateAvailable && !app.isPendingInstall) {
+                        if (app.isUpdateAvailable && !app.isPendingInstall && !BuildKonfig.IS_PLAY_STORE) {
                             Button(
                                 onClick = onUpdateClick,
                                 modifier = Modifier.weight(1f),
