@@ -240,6 +240,8 @@ class AndroidInstaller(
     }
 
     override fun openWithExternalInstaller(filePath: String) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         val file = File(filePath)
         if (!file.exists()) {
             throw IllegalStateException("APK file not found: $filePath")
@@ -268,6 +270,8 @@ class AndroidInstaller(
         filePath: String,
         onOpenInstaller: () -> Unit,
     ) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         val file = File(filePath)
         if (!file.exists()) {
             throw IllegalStateException("APK file not found: $filePath")
