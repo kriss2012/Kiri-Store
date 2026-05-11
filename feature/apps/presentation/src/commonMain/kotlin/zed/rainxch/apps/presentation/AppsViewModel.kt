@@ -18,6 +18,7 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.getString
+import zed.rainxch.apps.presentation.BuildKonfig
 import zed.rainxch.apps.domain.repository.AppsRepository
 import zed.rainxch.apps.presentation.mappers.toDomain
 import zed.rainxch.apps.presentation.mappers.toUi
@@ -439,6 +440,8 @@ class AppsViewModel(
     }
 
     private fun updateSingleApp(app: InstalledAppUi) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         if (activeUpdates.containsKey(app.packageName)) {
             logger.debug("Update already in progress for ${app.packageName}")
             return
@@ -604,6 +607,8 @@ class AppsViewModel(
     }
 
     private fun updateAllApps() {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         if (_state.value.isUpdatingAll) {
             logger.error("Update all already in progress")
             return
@@ -881,6 +886,34 @@ class AppsViewModel(
                 _state.update {
                     it.copy(
                         fetchedRepoInfo = repoInfo.toUi(),
+                    )
+                }
+
+                if (BuildKonfig.IS_PLAY_STORE) {
+                    appsRepository.linkAppToRepo(selectedApp.toDomain(), repoInfo)
+                    _state.update {
+                        it.copy(
+                            isValidatingRepo = false,
+                            linkValidationStatus = null,
+                            showLinkSheet = false,
+                        )
+                    }
+                    _events.send(AppsEvent.AppLinkedSuccessfully(selectedApp.appName))
+                    _events.send(
+                        AppsEvent.ShowSuccess(
+                            getString(
+                                Res.string.app_linked_success,
+                                selectedApp.appName,
+                                repoInfo.owner,
+                                repoInfo.name,
+                            ),
+                        ),
+                    )
+                    return@launch
+                }
+
+                _state.update {
+                    it.copy(
                         linkValidationStatus = getString(Res.string.checking_release),
                     )
                 }
