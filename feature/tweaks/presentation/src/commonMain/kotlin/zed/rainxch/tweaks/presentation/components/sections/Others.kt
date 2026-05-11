@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.stringResource
 import zed.rainxch.core.presentation.components.ExpressiveCard
 import zed.rainxch.kiristore.core.presentation.res.*
+import zed.rainxch.tweaks.presentation.BuildKonfig
 import zed.rainxch.tweaks.presentation.TweaksAction
 import zed.rainxch.tweaks.presentation.TweaksState
 import zed.rainxch.tweaks.presentation.components.SectionHeader
@@ -84,30 +85,34 @@ fun LazyListScope.othersSection(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
 
-                    Text(
-                        text = "${stringResource(Res.string.current_size)} ${state.cacheSize}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        fontWeight = FontWeight.SemiBold,
-                    )
+                    if (!BuildKonfig.IS_PLAY_STORE) {
+                        Text(
+                            text = "${stringResource(Res.string.current_size)} ${state.cacheSize}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            fontWeight = FontWeight.SemiBold,
+                        )
+                    }
                 }
 
-                FilledTonalButton(
-                    onClick = {
-                        onAction(TweaksAction.OnClearCacheClick)
-                    },
-                    shape = RoundedCornerShape(12.dp),
-                    colors =
-                        ButtonDefaults.filledTonalButtonColors(
-                            containerColor = MaterialTheme.colorScheme.errorContainer,
-                            contentColor = MaterialTheme.colorScheme.onErrorContainer,
-                        ),
-                ) {
-                    Icon(
-                        imageVector = Icons.Outlined.DeleteOutline,
-                        contentDescription = null,
-                        modifier = Modifier.size(18.dp),
-                    )
+                if (!BuildKonfig.IS_PLAY_STORE) {
+                    FilledTonalButton(
+                        onClick = {
+                            onAction(TweaksAction.OnClearCacheClick)
+                        },
+                        shape = RoundedCornerShape(12.dp),
+                        colors =
+                            ButtonDefaults.filledTonalButtonColors(
+                                containerColor = MaterialTheme.colorScheme.errorContainer,
+                                contentColor = MaterialTheme.colorScheme.onErrorContainer,
+                            ),
+                    ) {
+                        Icon(
+                            imageVector = Icons.Outlined.DeleteOutline,
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp),
+                        )
+                    }
                 }
             }
         }
