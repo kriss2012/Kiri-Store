@@ -6,6 +6,7 @@ import java.util.Locale
 fun Project.pathToPackageName(): String {
     val relativePackageName =
         path
+            .replace(":feature:", ":")
             .replace(":", ".")
             .replace("-", "_")
             .lowercase()
