@@ -71,7 +71,7 @@ import zed.rainxch.kiristore.core.presentation.res.rate_limit_exceeded
 import zed.rainxch.kiristore.core.presentation.res.removed_from_favourites
 import zed.rainxch.kiristore.core.presentation.res.translation_failed
 import zed.rainxch.kiristore.core.presentation.res.update_package_mismatch
-import zed.rainxch.feature.details.presentation.BuildKonfig
+import zed.rainxch.details.presentation.BuildKonfig
 import java.io.File
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.coroutines.cancellation.CancellationException
@@ -176,8 +176,8 @@ class DetailsViewModel(
 
             DetailsAction.InstallPrimary -> {
                 if (BuildKonfig.IS_PLAY_STORE) {
-                    _state.value.primaryAsset?.downloadUrl?.let {
-                        helper.openUrl(url = it)
+                    _state.value.repository?.let { repo ->
+                        helper.openUrl(url = "https://github.com/${repo.fullName}")
                     }
                 } else {
                     install()
@@ -202,7 +202,9 @@ class DetailsViewModel(
 
             is DetailsAction.DownloadAsset -> {
                 if (BuildKonfig.IS_PLAY_STORE) {
-                    helper.openUrl(url = action.downloadUrl)
+                    _state.value.repository?.let { repo ->
+                        helper.openUrl(url = "https://github.com/${repo.fullName}")
+                    }
                 } else {
                     val release = _state.value.selectedRelease
                     downloadAsset(
@@ -228,8 +230,8 @@ class DetailsViewModel(
 
             DetailsAction.UpdateApp -> {
                 if (BuildKonfig.IS_PLAY_STORE) {
-                    _state.value.primaryAsset?.downloadUrl?.let {
-                        helper.openUrl(url = it)
+                    _state.value.repository?.let { repo ->
+                        helper.openUrl(url = "https://github.com/${repo.fullName}")
                     }
                 } else {
                     update()
