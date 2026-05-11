@@ -18,6 +18,7 @@ import co.touchlab.kermit.Logger
 import kotlinx.coroutines.flow.first
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
+import zed.rainxch.core.data.BuildKonfig
 import zed.rainxch.core.data.services.shizuku.ShizukuServiceManager
 import zed.rainxch.core.data.services.shizuku.model.ShizukuStatus
 import zed.rainxch.core.domain.model.InstalledApp
@@ -48,6 +49,10 @@ class AutoUpdateWorker(
 
     override suspend fun doWork(): Result {
         return try {
+            if (BuildKonfig.IS_PLAY_STORE) {
+                Logger.i { "AutoUpdateWorker: Play Store build, skipping auto-update" }
+                return Result.success()
+            }
             Logger.i { "AutoUpdateWorker: Starting auto-update" }
 
             val autoUpdateEnabled = tweaksRepository.getAutoUpdateEnabled().first()
