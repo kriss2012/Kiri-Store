@@ -69,6 +69,7 @@ class TweaksViewModel(
     val events = _events.receiveAsFlow()
 
     private fun refreshCacheSize() {
+        if (BuildKonfig.IS_PLAY_STORE) return
         if (cacheSizeJob?.isActive == true) return
         cacheSizeJob =
             viewModelScope.launch {
@@ -398,22 +399,26 @@ class TweaksViewModel(
             }
 
             is TweaksAction.OnInstallerTypeSelected -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 viewModelScope.launch {
                     tweaksRepository.setInstallerType(action.type)
                 }
             }
 
             TweaksAction.OnRequestShizukuPermission -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 installerStatusProvider.requestShizukuPermission()
             }
 
             is TweaksAction.OnAutoUpdateToggled -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 viewModelScope.launch {
                     tweaksRepository.setAutoUpdateEnabled(action.enabled)
                 }
             }
 
             is TweaksAction.OnUpdateCheckIntervalChanged -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 viewModelScope.launch {
                     tweaksRepository.setUpdateCheckInterval(action.hours)
                     updateScheduleManager.reschedule(action.hours)
@@ -421,6 +426,7 @@ class TweaksViewModel(
             }
 
             is TweaksAction.OnIncludePreReleasesToggled -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 viewModelScope.launch {
                     tweaksRepository.setIncludePreReleases(action.enabled)
                 }
@@ -450,10 +456,12 @@ class TweaksViewModel(
             }
 
             TweaksAction.OnClearCacheClick -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 _state.update { it.copy(isClearDownloadsDialogVisible = true) }
             }
 
             TweaksAction.OnClearDownloadsConfirm -> {
+                if (BuildKonfig.IS_PLAY_STORE) return
                 _state.update { it.copy(isClearDownloadsDialogVisible = false) }
                 viewModelScope.launch {
                     runCatching {
