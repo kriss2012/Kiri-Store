@@ -108,7 +108,7 @@ class MainViewModel(
 
         viewModelScope.launch(Dispatchers.IO) {
             syncUseCase().onSuccess {
-                installedAppsRepository.checkAllForUpdates()
+                // Background update checks are handled by WorkManager on Android.
             }
         }
     }
