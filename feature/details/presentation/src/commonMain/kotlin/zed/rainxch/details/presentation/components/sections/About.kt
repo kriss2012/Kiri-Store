@@ -27,6 +27,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Brush
@@ -123,10 +124,13 @@ fun LazyListScope.about(
         val liquidState = LocalTopbarLiquidState.current
 
         val displayContent =
-            if (translationState.isShowingTranslation && translationState.translatedText != null) {
-                translationState.translatedText
-            } else {
-                readmeMarkdown
+            remember(translationState, readmeMarkdown) {
+                val content = if (translationState.isShowingTranslation && translationState.translatedText != null) {
+                    translationState.translatedText
+                } else {
+                    readmeMarkdown
+                }
+                if (content.isBlank()) "" else content
             }
 
         AnimatedContent(
@@ -190,22 +194,33 @@ fun ExpandableMarkdownContent(
                         Modifier
                     },
             ) {
-                Markdown(
-                    content = content,
-                    colors = colors,
-                    typography = typography,
-                    flavour = flavour,
-                    imageTransformer = imageTransformer,
-                    modifier =
-                        Modifier
+                if (content.isNotBlank()) {
+                    Markdown(
+                        content = content,
+                        colors = colors,
+                        typography = typography,
+                        flavour = flavour,
+                        imageTransformer = imageTransformer,
+                        modifier =
+                            Modifier
+                                .fillMaxWidth()
+                                .onGloballyPositioned { coordinates ->
+                                    val measured = coordinates.size.height.toFloat()
+                                    if (measured > contentHeightPx) {
+                                        contentHeightPx = measured
+                                    }
+                                },
+                    )
+                } else {
+                    Text(
+                        text = "No description available", // Or a localized string if available
+                        style = typography.paragraph,
+                        color = colors.text,
+                        modifier = Modifier
                             .fillMaxWidth()
-                            .onGloballyPositioned { coordinates ->
-                                val measured = coordinates.size.height.toFloat()
-                                if (measured > contentHeightPx) {
-                                    contentHeightPx = measured
-                                }
-                            },
-                )
+                            .padding(vertical = 8.dp)
+                    )
+                }
             }
 
             if (!isExpanded && needsExpansion) {
