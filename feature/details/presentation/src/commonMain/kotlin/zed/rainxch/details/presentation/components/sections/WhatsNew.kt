@@ -179,10 +179,13 @@ private fun ExpandableMarkdownContent(
     onToggleExpanded: () -> Unit,
 ) {
     val displayContent =
-        if (translationState.isShowingTranslation && translationState.translatedText != null) {
-            translationState.translatedText
-        } else {
-            release.description ?: stringResource(Res.string.no_release_notes)
+        remember(translationState, release) {
+            val content = if (translationState.isShowingTranslation && translationState.translatedText != null) {
+                translationState.translatedText
+            } else {
+                release.description ?: ""
+            }
+            if (content.isBlank()) "" else content
         }
 
     val density = LocalDensity.current
@@ -218,29 +221,40 @@ private fun ExpandableMarkdownContent(
                             Modifier
                         },
                 ) {
-                    Markdown(
-                        content = content,
-                        colors = colors,
-                        typography = typography,
-                        flavour = flavour,
-                        imageTransformer = MarkdownImageTransformer,
-                        modifier =
-                            Modifier
-                                .fillMaxWidth()
-                                .then(
-                                    if (isLiquidGlassEnabled) {
-                                        Modifier.liquefiable(liquidState)
-                                    } else {
-                                        Modifier
+                    if (content.isNotBlank()) {
+                        Markdown(
+                            content = content,
+                            colors = colors,
+                            typography = typography,
+                            flavour = flavour,
+                            imageTransformer = MarkdownImageTransformer,
+                            modifier =
+                                Modifier
+                                    .fillMaxWidth()
+                                    .then(
+                                        if (isLiquidGlassEnabled) {
+                                            Modifier.liquefiable(liquidState)
+                                        } else {
+                                            Modifier
+                                        },
+                                    )
+                                    .onGloballyPositioned { coordinates ->
+                                        val measured = coordinates.size.height.toFloat()
+                                        if (measured > contentHeightPx) {
+                                            contentHeightPx = measured
+                                        }
                                     },
-                                )
-                                .onGloballyPositioned { coordinates ->
-                                    val measured = coordinates.size.height.toFloat()
-                                    if (measured > contentHeightPx) {
-                                        contentHeightPx = measured
-                                    }
-                                },
-                    )
+                        )
+                    } else {
+                        Text(
+                            text = stringResource(Res.string.no_release_notes),
+                            style = typography.paragraph,
+                            color = colors.text,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 8.dp)
+                        )
+                    }
                 }
 
                 if (!isExpanded && needsExpansion) {
