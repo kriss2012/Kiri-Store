@@ -10,6 +10,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import co.touchlab.kermit.Logger
+import zed.rainxch.core.data.BuildKonfig
 import java.util.concurrent.TimeUnit
 
 object UpdateScheduler {
@@ -20,6 +21,11 @@ object UpdateScheduler {
         context: Context,
         intervalHours: Long = DEFAULT_INTERVAL_HOURS,
     ) {
+        if (BuildKonfig.IS_PLAY_STORE) {
+            Logger.i { "UpdateScheduler: Play Store build, skipping update scheduling" }
+            return
+        }
+
         val constraints =
             Constraints
                 .Builder()
@@ -66,6 +72,8 @@ object UpdateScheduler {
         context: Context,
         intervalHours: Long,
     ) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         val constraints =
             Constraints
                 .Builder()
@@ -95,6 +103,8 @@ object UpdateScheduler {
     }
 
     fun scheduleAutoUpdate(context: Context) {
+        if (BuildKonfig.IS_PLAY_STORE) return
+
         val constraints =
             Constraints
                 .Builder()
