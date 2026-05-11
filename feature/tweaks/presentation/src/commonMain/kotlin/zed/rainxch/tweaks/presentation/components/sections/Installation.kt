@@ -48,6 +48,7 @@ import zed.rainxch.core.domain.model.InstallerType
 import zed.rainxch.core.domain.model.Platform
 import zed.rainxch.core.domain.model.ShizukuAvailability
 import zed.rainxch.core.presentation.components.ExpressiveCard
+import zed.rainxch.tweaks.presentation.BuildKonfig
 import zed.rainxch.kiristore.core.presentation.res.*
 import zed.rainxch.tweaks.presentation.TweaksAction
 import zed.rainxch.tweaks.presentation.TweaksState
@@ -58,7 +59,7 @@ fun LazyListScope.installationSection(
     state: TweaksState,
     onAction: (TweaksAction) -> Unit,
 ) {
-    if (getPlatform() != Platform.ANDROID) return
+    if (getPlatform() != Platform.ANDROID || BuildKonfig.IS_PLAY_STORE) return
 
     item {
         Spacer(Modifier.height(32.dp))
@@ -106,7 +107,7 @@ fun LazyListScope.updatesSection(
     state: TweaksState,
     onAction: (TweaksAction) -> Unit,
 ) {
-    if (getPlatform() != Platform.ANDROID) return
+    if (getPlatform() != Platform.ANDROID || BuildKonfig.IS_PLAY_STORE) return
 
     item {
         Spacer(Modifier.height(32.dp))
