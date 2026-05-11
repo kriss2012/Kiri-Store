@@ -15,6 +15,7 @@ class BuildKonfigConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<BuildKonfigExtension> {
+                objectName = "BuildKonfig"
                 packageName = target.pathToPackageName()
 
                 defaultConfigs {
@@ -37,12 +38,12 @@ class BuildKonfigConventionPlugin : Plugin<Project> {
                         ).trim()
 
                     val versionName = libs.findVersion("projectVersionName").get().toString()
-                    val isPlayStore = project.hasProperty("kiristore.playStore")
+                    val isPlayStore = project.hasProperty("kiristore.playStore") || target.name.contains("play", ignoreCase = true) || target.path.contains("play", ignoreCase = true)
 
                     buildConfigField(FieldSpec.Type.STRING, "GITHUB_CLIENT_ID", githubClientId)
                     buildConfigField(FieldSpec.Type.STRING, "GITHUB_CLIENT_SECRET", githubClientSecret)
                     buildConfigField(FieldSpec.Type.STRING, "VERSION_NAME", versionName)
-                    buildConfigField(FieldSpec.Type.BOOLEAN, "IS_PLAY_STORE", isPlayStore.toString())
+                    buildConfigField(FieldSpec.Type.BOOLEAN, "IS_PLAY_STORE", isPlayStore.toString(), nullable = false)
                 }
             }
         }
