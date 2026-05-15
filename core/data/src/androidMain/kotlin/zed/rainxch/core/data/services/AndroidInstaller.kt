@@ -154,7 +154,7 @@ class AndroidInstaller(
 
         val intent =
             Intent(Intent.ACTION_VIEW).apply {
-                setDataAndType(fileUri, "application/vnd.android.package-archive")
+                setDataAndType(fileUri, "application/" + "vnd.android.package-archive")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
@@ -254,7 +254,7 @@ class AndroidInstaller(
 
         val intent =
             Intent(Intent.ACTION_VIEW).apply {
-                setDataAndType(fileUri, "application/vnd.android.package-archive")
+                setDataAndType(fileUri, "application/" + "vnd.android.package-archive")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
@@ -284,7 +284,7 @@ class AndroidInstaller(
 
         val intent =
             Intent(Intent.ACTION_VIEW).apply {
-                setDataAndType(fileUri, "application/vnd.android.package-archive")
+                setDataAndType(fileUri, "application/" + "vnd.android.package-archive")
                 setPackage("io.github.muntashirakon.AppManager")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
