@@ -55,7 +55,7 @@ projectVersionName = "17.1.0"
 projectMinSdkVersion = "26"
 projectTargetSdkVersion = "36"
 projectCompileSdkVersion = "36"
-projectVersionCode = "27"
+projectVersionCode = "28"
 
 [libraries]
 # Kotlin
