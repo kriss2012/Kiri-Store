@@ -6,11 +6,14 @@ import androidx.compose.ui.graphics.Color
 import org.jetbrains.compose.resources.stringResource
 import zed.rainxch.core.domain.model.AppTheme
 import zed.rainxch.core.domain.model.AppTheme.AMBER
+import zed.rainxch.core.domain.model.AppTheme.CYBERPUNK
 import zed.rainxch.core.domain.model.AppTheme.DYNAMIC
 import zed.rainxch.core.domain.model.AppTheme.FOREST
 import zed.rainxch.core.domain.model.AppTheme.OCEAN
 import zed.rainxch.core.domain.model.AppTheme.PURPLE
 import zed.rainxch.core.domain.model.AppTheme.SLATE
+import zed.rainxch.core.presentation.theme.cyberpunkDark
+import zed.rainxch.core.presentation.theme.cyberpunkLight
 import zed.rainxch.core.presentation.theme.amberOrangeDark
 import zed.rainxch.core.presentation.theme.amberOrangeLight
 import zed.rainxch.core.presentation.theme.deepPurpleDark
@@ -32,6 +35,7 @@ val AppTheme.lightScheme: ColorScheme?
             FOREST -> forestGreenLight
             SLATE -> slateGrayLight
             AMBER -> amberOrangeLight
+            CYBERPUNK -> cyberpunkLight
         }
 
 val AppTheme.darkScheme: ColorScheme?
@@ -43,6 +47,7 @@ val AppTheme.darkScheme: ColorScheme?
             FOREST -> forestGreenDark
             SLATE -> slateGrayDark
             AMBER -> amberOrangeDark
+            CYBERPUNK -> cyberpunkDark
         }
 
 val AppTheme.primaryColor: Color?
@@ -54,6 +59,7 @@ val AppTheme.primaryColor: Color?
             FOREST -> Color(0xFF356859)
             SLATE -> Color(0xFF535E6C)
             AMBER -> Color(0xFF8B5000)
+            CYBERPUNK -> Color(0xFF8A2BE2)
         }
 
 val AppTheme.displayName: String
@@ -67,6 +73,7 @@ val AppTheme.displayName: String
                 FOREST -> Res.string.theme_forest
                 SLATE -> Res.string.theme_slate
                 AMBER -> Res.string.theme_amber
+                CYBERPUNK -> Res.string.theme_cyberpunk
             },
         )
 
