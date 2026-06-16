@@ -1,5 +1,7 @@
 package zed.rainxch.core.presentation.theme
 
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.MaterialExpressiveTheme
@@ -333,6 +335,83 @@ val slateGrayDark =
     )
 
 // ============================================================================
+// CYBERPUNK CODE QUEST THEME (Neon Cyan, Pink, Purple)
+// ============================================================================
+val cyberpunkLight =
+    lightColorScheme(
+        primary = Color(0xFF8A2BE2),
+        onPrimary = Color(0xFFFFFFFF),
+        primaryContainer = Color(0xFFEBE1FF),
+        onPrimaryContainer = Color(0xFF2B0066),
+        secondary = Color(0xFFFF007F),
+        onSecondary = Color(0xFFFFFFFF),
+        secondaryContainer = Color(0xFFFFE5F0),
+        onSecondaryContainer = Color(0xFF4A0020),
+        tertiary = Color(0xFF009EAD),
+        onTertiary = Color(0xFFFFFFFF),
+        tertiaryContainer = Color(0xFFD2F9FF),
+        onTertiaryContainer = Color(0xFF002024),
+        background = Color(0xFFFAF9FF),
+        onBackground = Color(0xFF100E26),
+        surface = Color(0xFFF4F1FD),
+        onSurface = Color(0xFF100E26),
+        surfaceVariant = Color(0xFFE6E1F4),
+        onSurfaceVariant = Color(0xFF48445E),
+        outline = Color(0xFF79748E),
+        outlineVariant = Color(0xFFC9C4DC),
+        scrim = Color(0xFF000000),
+        inverseSurface = Color(0xFF100E26),
+        inverseOnSurface = Color(0xFFF4F1FD),
+        inversePrimary = Color(0xFFD2BCFF),
+        surfaceDim = Color(0xFFD9D5EB),
+        surfaceBright = Color(0xFFFAF9FF),
+        surfaceContainerLowest = Color(0xFFFFFFFF),
+        surfaceContainerLow = Color(0xFFF3EDFD),
+        surfaceContainer = Color(0xFFEDE7FA),
+        surfaceContainerHigh = Color(0xFFE7E1F7),
+        surfaceContainerHighest = Color(0xFFE1DBF4),
+    )
+
+val cyberpunkDark =
+    darkColorScheme(
+        primary = Color(0xFF00E5FF),
+        onPrimary = Color(0xFF000000),
+        primaryContainer = Color(0xFF0A0718),
+        onPrimaryContainer = Color(0xFFF0EDFF),
+        secondary = Color(0xFFFF007F),
+        onSecondary = Color(0xFFFFFFFF),
+        secondaryContainer = Color(0xFF1B153B),
+        onSecondaryContainer = Color(0xFFF0EDFF),
+        tertiary = Color(0xFF8A2BE2),
+        onTertiary = Color(0xFFFFFFFF),
+        tertiaryContainer = Color(0xFF352975),
+        onTertiaryContainer = Color(0xFFF0EDFF),
+        error = Color(0xFFFFB4AB),
+        onError = Color(0xFF690005),
+        errorContainer = Color(0xFF93000A),
+        onErrorContainer = Color(0xFFFFDAD6),
+        background = Color(0xFF0A0718),
+        onBackground = Color(0xFFF0EDFF),
+        surface = Color(0xFF120E28),
+        onSurface = Color(0xFFF0EDFF),
+        surfaceVariant = Color(0xFF1B153B),
+        onSurfaceVariant = Color(0xFF8C82B5),
+        outline = Color(0xFF352975),
+        outlineVariant = Color(0xFF120E28),
+        scrim = Color(0xFF000000),
+        inverseSurface = Color(0xFFF0EDFF),
+        inverseOnSurface = Color(0xFF0A0718),
+        inversePrimary = Color(0xFF00E5FF),
+        surfaceDim = Color(0xFF0A0718),
+        surfaceBright = Color(0xFF1E193C),
+        surfaceContainerLowest = Color(0xFF05030D),
+        surfaceContainerLow = Color(0xFF120E28),
+        surfaceContainer = Color(0xFF171231),
+        surfaceContainerHigh = Color(0xFF201A40),
+        surfaceContainerHighest = Color(0xFF2C2454),
+    )
+
+// ============================================================================
 // AMBER ORANGE THEME (Energetic & Warm)
 // ============================================================================
 val amberOrangeLight =
@@ -446,12 +525,57 @@ fun KiriStoreTheme(
             baseColorScheme
         }
 
+    val animatedColorScheme = colorScheme?.let { animateColorScheme(it) } ?: colorScheme
+
     MaterialExpressiveTheme(
-        colorScheme = colorScheme,
+        colorScheme = animatedColorScheme,
         typography = getAppTypography(fontTheme),
         motionScheme = MotionScheme.expressive(),
         shapes = MaterialTheme.shapes,
         content = content,
+    )
+}
+
+@Composable
+fun animateColorScheme(targetScheme: ColorScheme): ColorScheme {
+    val animSpec = tween<Color>(durationMillis = 500)
+    return ColorScheme(
+        primary = animateColorAsState(targetScheme.primary, animSpec).value,
+        onPrimary = animateColorAsState(targetScheme.onPrimary, animSpec).value,
+        primaryContainer = animateColorAsState(targetScheme.primaryContainer, animSpec).value,
+        onPrimaryContainer = animateColorAsState(targetScheme.onPrimaryContainer, animSpec).value,
+        inversePrimary = animateColorAsState(targetScheme.inversePrimary, animSpec).value,
+        secondary = animateColorAsState(targetScheme.secondary, animSpec).value,
+        onSecondary = animateColorAsState(targetScheme.onSecondary, animSpec).value,
+        secondaryContainer = animateColorAsState(targetScheme.secondaryContainer, animSpec).value,
+        onSecondaryContainer = animateColorAsState(targetScheme.onSecondaryContainer, animSpec).value,
+        tertiary = animateColorAsState(targetScheme.tertiary, animSpec).value,
+        onTertiary = animateColorAsState(targetScheme.onTertiary, animSpec).value,
+        tertiaryContainer = animateColorAsState(targetScheme.tertiaryContainer, animSpec).value,
+        onTertiaryContainer = animateColorAsState(targetScheme.onTertiaryContainer, animSpec).value,
+        background = animateColorAsState(targetScheme.background, animSpec).value,
+        onBackground = animateColorAsState(targetScheme.onBackground, animSpec).value,
+        surface = animateColorAsState(targetScheme.surface, animSpec).value,
+        onSurface = animateColorAsState(targetScheme.onSurface, animSpec).value,
+        surfaceVariant = animateColorAsState(targetScheme.surfaceVariant, animSpec).value,
+        onSurfaceVariant = animateColorAsState(targetScheme.onSurfaceVariant, animSpec).value,
+        surfaceTint = animateColorAsState(targetScheme.surfaceTint, animSpec).value,
+        inverseSurface = animateColorAsState(targetScheme.inverseSurface, animSpec).value,
+        inverseOnSurface = animateColorAsState(targetScheme.inverseOnSurface, animSpec).value,
+        error = animateColorAsState(targetScheme.error, animSpec).value,
+        onError = animateColorAsState(targetScheme.onError, animSpec).value,
+        errorContainer = animateColorAsState(targetScheme.errorContainer, animSpec).value,
+        onErrorContainer = animateColorAsState(targetScheme.onErrorContainer, animSpec).value,
+        outline = animateColorAsState(targetScheme.outline, animSpec).value,
+        outlineVariant = animateColorAsState(targetScheme.outlineVariant, animSpec).value,
+        scrim = animateColorAsState(targetScheme.scrim, animSpec).value,
+        surfaceDim = animateColorAsState(targetScheme.surfaceDim, animSpec).value,
+        surfaceBright = animateColorAsState(targetScheme.surfaceBright, animSpec).value,
+        surfaceContainerLowest = animateColorAsState(targetScheme.surfaceContainerLowest, animSpec).value,
+        surfaceContainerLow = animateColorAsState(targetScheme.surfaceContainerLow, animSpec).value,
+        surfaceContainer = animateColorAsState(targetScheme.surfaceContainer, animSpec).value,
+        surfaceContainerHigh = animateColorAsState(targetScheme.surfaceContainerHigh, animSpec).value,
+        surfaceContainerHighest = animateColorAsState(targetScheme.surfaceContainerHighest, animSpec).value,
     )
 }
 
