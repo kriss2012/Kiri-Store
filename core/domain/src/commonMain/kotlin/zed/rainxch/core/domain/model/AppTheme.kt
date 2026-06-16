@@ -7,6 +7,7 @@ enum class AppTheme {
     FOREST,
     SLATE,
     AMBER,
+    CYBERPUNK,
     ;
 
     companion object {
