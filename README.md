@@ -139,3 +139,21 @@ Your project will appear automatically if it meets these simple criteria:
 ## 📄 License
 
 Copyright 2025 kriss2012. Released under the **Apache License, Version 2.0**.
+
+---
+
+## Security
+
+Please refer to [SECURITY.md](SECURITY.md) for vulnerability reporting guidelines.
+
+## Contributing
+
+Contributions are welcome! Please review [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Developed and maintained by **[Krishna Patil](https://github.com/kriss2012)**.

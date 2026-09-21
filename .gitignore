@@ -37,3 +37,16 @@ google-services.json
 composeApp/release/baselineProfiles/
 
 composeApp/kotzilla.json
+
+# Standards & hygiene
+.env
+.env.local
+.env.*.local
+*.pem
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+target/
+*.class
